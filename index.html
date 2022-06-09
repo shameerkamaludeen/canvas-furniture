@@ -29,9 +29,11 @@
 </head>
 
 <body>
-    <aside class="top-bar centered">
-        <p>Free Shipping on every order<span>.</span> 30 Days Return</p>
-        <p>Need Help? Call us at <a href="#">+00-11-22-7541</a> or <a href="#">email</a> us.</p>
+    <aside class="top-bar">
+        <div class="top-bar-container centered">
+            <p>Free Shipping on every order<span>.</span> 30 Days Return</p>
+            <p>Need Help? Call us at <a href="#">+00-11-22-7541</a> or <a href="#">email</a> us.</p>
+        </div>
     </aside>
 
     <header>
@@ -44,17 +46,19 @@
                 <li class="nav-menu">
 
                     <!-- Hamburger -->
-                    <div class="hamburger">
-                        <button type="button">
-                            <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg" class="active">
-                                <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF"
-                                    fill-rule="evenodd" />
+                    <div class="menu-controls">
+                        <button type="button" class="hamburger">
+                            <svg id="Layer_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path
+                                    d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
                             </svg>
                         </button>
 
                         <button type="button" class="close-button"><span></span></button>
                     </div>
 
+                    <!-- Remove: when menu open the page shold not scroll -->
                     <!-- Menu -->
                     <div class="menu-wr">
                         <ul class="menu">
@@ -63,7 +67,16 @@
                             <li class="main-menu">
                                 <a href="#">Shop <span class="caret"></span></a>
                                 <ul>
-                                    <li class="sub-menu"><a href="#">Sofa</a></li>
+                                    <li class="sub-menu">
+                                        <a href="#">Sofa <span class="caret"></span></a>
+                                        <ul>
+                                            <li class="super-sub-menu"><a href="#">Sofa Set</a></li>
+                                            <li class="super-sub-menu"><a href="#">Single Seater</a></li>
+                                            <li class="super-sub-menu"><a href="#">Recliner</a></li>
+                                            <li class="super-sub-menu"><a href="#">Sofa Cum Bed</a></li>
+                                            <li class="super-sub-menu"><a href="#">BeanBag</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="sub-menu"><a href="#">Chairs</a></li>
                                     <li class="sub-menu"><a href="#">Beds</a></li>
                                     <li class="sub-menu"><a href="#">Wardrobe</a></li>
@@ -94,18 +107,49 @@
                 <!-- Logo -->
                 <li class="nav-logo">
                     <div class="logo-wr">
-                        <h1><a href="index.html">Inlay</a></h1>
+                        <h1 class="logo"><a href="index.html">Inlay</a></h1>
                     </div>
                 </li>
 
                 <!-- Search and cart -->
                 <li class="nav-search-cart">
                     <div class="search-cart-wr">
-                        <!-- search -->
 
-                        <!-- search icon -->
+                        <div class="search">
+                            <form action="index.html">
+                                <input type="search" name="search" id="search">
+                            </form>
 
-                        <!-- cart icon -->
+                            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <circle cx="128" cy="128" r="96" opacity="0.2"></circle>
+                                <circle cx="128" cy="128" r="96" fill="none" stroke="var(--themecolor)"
+                                    stroke-miterlimit="10" stroke-width="16"></circle>
+                                <line x1="160" y1="96" x2="96" y2="160" fill="none" stroke="var(--themecolor)"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                <line x1="160" y1="160" x2="96" y2="96" fill="none" stroke="var(--themecolor)"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                            </svg>
+
+                            <!-- <button type="button" class="close-button"><span></span></button> -->
+                        </div>
+
+                        <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" fill="var(--themecolor)"
+                            viewBox="0 0 256 256">
+                            <rect width="256" height="256" fill="none"></rect>
+                            <path d="M62.54543,144H188.10132a16,16,0,0,0,15.74192-13.13783L216,64H48Z" opacity="0.2">
+                            </path>
+                            <path d="M184,184H69.81818L41.92162,30.56892A8,8,0,0,0,34.05066,24H16" fill="none"
+                                stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16"></path>
+                            <circle cx="80" cy="204" r="20" fill="none" stroke="var(--themecolor)"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle>
+                            <circle cx="184" cy="204" r="20" fill="none" stroke="var(--themecolor)"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle>
+                            <path d="M62.54543,144H188.10132a16,16,0,0,0,15.74192-13.13783L216,64H48" fill="none"
+                                stroke="var(--themecolor)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16"></path>
+                        </svg>
                     </div>
                 </li>
             </ul>

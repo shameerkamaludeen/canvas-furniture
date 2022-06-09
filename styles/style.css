@@ -3,6 +3,244 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Zilla Slab', serif;
 
- */
+*/
 
- 
+/* Remove: remove the below rule once done the entire project */
+img {
+    width: 100%;
+}
+
+/* || General */
+:root {
+
+    /* color */
+    --c-primary: #193532;
+    --bc-primary: #ffffff;
+    --bc-primary-s-10: #f9f9f9;
+    --bc-secondary: #ebf1f0;
+    --bc-icon: #d1d6d6;
+
+    /* Font family */
+    --ff-primary: 'Zilla Slab', serif;
+    --ff-secondary: 'Roboto', sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+/* || Typography */
+
+body {
+    background-color: var(--bc-primary);
+}
+
+/* Font color */
+body, 
+header .close-button, 
+.logo {
+    color: var(--c-primary);
+}
+
+/* Font family */
+.top-bar {
+    font-family: var(--ff-primary);
+}
+
+.menu, 
+header .close-button, 
+.logo {
+    font-family: var(--ff-secondary);
+}
+
+/* Font size */
+
+.top-bar p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.top-bar p a {
+    font-weight: 500;
+}
+
+header .close-button {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 0;
+}
+
+header .main-menu>a {
+    font-size: 0.8125rem;
+    line-height: 3.847;
+    font-weight: 700;
+}
+
+header .sub-menu>a, 
+header .super-sub-menu>a {
+    font-size: 0.75rem;
+    line-height: 3.67;
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* || Layout */
+
+.centered {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+/* || Aside top bar */
+
+.top-bar {
+    background-color: var(--bc-secondary);
+    padding: 10px 0 10px;
+}
+
+.top-bar p {
+    text-align: center;
+}
+
+.top-bar p span {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.top-bar a {
+    cursor: pointer;
+}
+
+.top-bar a:link {
+    color: var(--c-primary);
+}
+
+/* || Header */
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    height: 80px;
+}
+
+header .nav-bar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-wr {
+    position: absolute;
+    background-color: var(--bc-primary);
+    width: 100%;
+}
+
+.menu-controls {
+    width: 24px;
+    height: 24px;
+    margin: 0 13px;
+}
+
+.hamburger, 
+.menu-controls .close-button {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border: 1px solid var(--c-primary);
+    background-color: var(--bc-icon);
+}
+
+.nav-menu .hamburger {
+    display: inline-block;
+}
+
+.nav-menu.active .hamburger {
+    display: none;
+}
+
+.hamburger:active,
+.nav-menu .close-button:active {
+    background-color: var(--bc-primary-s-10);
+    transition: background-color 2s;
+}
+
+.hamburger svg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    fill: var(--c-primary);
+}
+
+.hamburger  svg path {
+    fill: var(--c-primary);
+}
+
+header .nav-menu .close-button {
+    display: none;
+}
+
+header .nav-menu.active .close-button {
+    display: inline-block;
+}
+
+header .nav-menu .close-button span::after {
+    content: '\00D7';
+}
+
+.logo {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logo a {
+    color: inherit;
+}
+
+.search {
+    overflow: hidden;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.search form {
+    position: absolute;
+    min-width: 0;
+    right: 50px;
+}
+
+.search.active form {
+    min-width: 80vw;
+    left: 300px;
+}
+
+.search svg {
+    width: 100%;
+    height: 100%;
+}
+
+.search svg {
+    fill: var(--c-primary);
+    stroke: var(--c-primary);
+}
+
+/* || Hero */
