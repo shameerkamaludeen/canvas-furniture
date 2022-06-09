@@ -154,23 +154,29 @@ header .nav-bar {
 }
 
 .menu-controls {
-    width: 24px;
-    height: 24px;
-    margin: 0 13px;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-controls svg {
+    fill: var(--c-primary);
+    stroke: var(--c-primary);
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .hamburger, 
 .menu-controls .close-button {
-    border-radius: 25px;
+    padding: 0;
+    border: none;
     width: 100%;
     height: 100%;
-    padding: 4px;
-    border: 1px solid var(--c-primary);
-    background-color: var(--bc-icon);
+    background-color: transparent;
 }
 
 .nav-menu .hamburger {
-    display: inline-block;
+    display: block;
 }
 
 .nav-menu.active .hamburger {
@@ -183,27 +189,12 @@ header .nav-bar {
     transition: background-color 2s;
 }
 
-.hamburger svg {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    fill: var(--c-primary);
-}
-
-.hamburger  svg path {
-    fill: var(--c-primary);
-}
-
 header .nav-menu .close-button {
     display: none;
 }
 
 header .nav-menu.active .close-button {
-    display: inline-block;
-}
-
-header .nav-menu .close-button span::after {
-    content: '\00D7';
+    display: block;
 }
 
 .logo {
