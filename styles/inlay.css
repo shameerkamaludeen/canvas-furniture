@@ -1,0 +1,598 @@
+/* || Typography */
+
+.hero h2,
+.why-us-sec h4,
+.new-arrivals-sec h4,
+.explore-sec h4 {
+    font-weight: 500;
+    font-family: var(--ff-primary);
+}
+
+.hero h2 {
+    font-size: 2.125rem;
+    line-height: 1.2;
+    color: var(--bc-primary);
+    text-align: center;
+}
+
+.hero p,
+.hero a,
+.why-us-sec p,
+.new-arrivals-sec p,
+.new-arrivals-sec .lead a,
+.explore-sec .content-wr p,
+.explore-sec .feature p,
+.social-sec .content-wr a {
+    font-weight: 400;
+    font-family: var(--ff-secondary);
+}
+
+.hero p {
+    font-size: 0.8rem;
+    color: var(--bc-primary);
+    text-align: center;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero a {
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+h3,
+.new-arrivals-sec .price {
+    font-weight: 400;
+    font-family: var(--ff-primary);
+}
+
+.why-us-sec h3 {
+    font-size: 2rem;
+    color: var(--c-primary);
+}
+
+.why-us-sec h4,
+.explore-sec h4 {
+    font-size: 1.35rem;
+    color: var(--c-primary);
+}
+
+.why-us-sec p,
+.new-arrivals-sec p,
+.explore-sec .feature p {
+    font-size: 1rem;
+    color: var(--c-primary);
+}
+
+.why-us-sec p,
+.explore-sec .feature p {
+    line-height: 1.5;
+}
+
+.shop-sec h3,
+.new-arrivals-sec h3,
+.explore-sec h3 {
+    font-size: 1.7rem;
+    color: var(--c-primary);
+}
+
+.view-all,
+.explore-sec .content-wr a {
+    font-weight: 700;
+    font-family: var(--ff-secondary);
+}
+
+.shop-sec .view-all a,
+.explore-sec .content-wr a {
+    color: var(--c-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.shop-sec .view-all a {
+    font-size: 0.75rem;
+}
+
+.explore-sec .content-wr a {
+    font-size: 0.875rem;
+}
+
+.shop-sec .product a {
+    font-weight: 700;
+    font-family: var(--ff-primary);
+}
+
+.shop-sec .product a {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: var(--c-primary);
+    letter-spacing: 1px;
+}
+
+.new-arrivals-sec p,
+.explore-sec .content-wr p {
+    line-height: 1.8;
+}
+
+.new-arrivals-sec .lead a {
+    font-size: 0.875rem;
+    color: var(--c-secondary);
+}
+
+.new-arrivals-sec h4,
+.explore-sec .content-wr p {
+    font-size: 1rem;
+    color: var(--c-primary);
+}
+
+.new-arrivals-sec .price {
+    font-size: 1.125rem;
+    color: var(--c-tertiary);
+}
+
+.explore-sec h4,
+.explore-sec .feature p {
+    text-align: center;
+}
+
+.social-sec h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--bc-neutral);
+    line-height: 1.2;
+}
+
+.social-sec .content-wr a {
+    color: var(--bc-primary);
+    font-size: 1rem;
+    text-transform: lowercase;
+    line-height: 1.2;
+}
+
+/* || Hero */
+
+.hero {
+    background-image: linear-gradient(to bottom, #375754 0%, var(--c-primary) 90%, var(--bc-secondary) 90%);
+    text-align: center;
+}
+
+.hero .content-block {
+    padding: 71px 0 80px;
+}
+
+.hero>.centered {
+    margin-right: initial;
+    margin-left: initial;
+}
+
+.hero h2 {
+    margin: 0.5em 0 1.4em;
+}
+
+.hero .decor-underline::after, 
+.social-sec .decor-underline::after {
+    background: url(../images/underline_dark.svg) center / 100% auto no-repeat;
+}
+
+.hero a {
+    display: inline-block;
+    outline: none;
+    background-color: #f9f9f9;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 24px;
+}
+
+.hero a svg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: var(--c-primary);
+    stroke: var(--c-primary);
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+}
+
+.hero a:link,
+.hero a:visited {
+    color: var(--c-primary);
+}
+
+.hero a:hover {
+    opacity: 0.9;
+}
+
+.hero hr {
+    border: none;
+    border-top: 1px solid var(--bc-neutral);
+    margin: 0;
+    opacity: 0.15;
+}
+
+.hero .image-block .img-wrapper {
+    text-align: center;
+}
+
+.hero .image-block .img-wrapper img {
+    width: 98%;
+}
+
+/* || Why us section */
+
+.why-us-sec {
+    background-color: var(--bc-secondary);
+    padding: 76px 0 100px;
+    text-align: center;
+}
+
+.why-us-sec h3,
+.why-us-sec h4,
+.why-us-sec p {
+    text-align: center;
+}
+
+.why-us-sec h3 {
+    margin: 1em 0 2.45em;
+}
+
+.why-us-sec .quality {
+    margin-bottom: 49px;
+}
+
+.why-us-sec svg {
+    fill: var(--c-primary);
+    stroke: var(--c-primary);
+    stroke-width: 0;
+}
+
+.why-us-sec h4 {
+    margin: 1.1em 0 1.1em;
+}
+
+.why-us-sec .customers {
+    opacity: 0.5;
+}
+
+.why-us-sec .customers .row-1,
+.why-us-sec .customers .row-2 {
+    display: grid;
+    align-items: center;
+}
+
+.why-us-sec .customers .row-1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.why-us-sec .customers .row-2 {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 13px;
+}
+
+.why-us-sec .customers .img-wrapper {
+    padding: 0 12px;
+    height: 60px;
+}
+
+.why-us-sec .customers img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* || Shop section */
+
+.shop-sec {
+    padding: 53px 0 15px;
+}
+
+.shop-sec h3 {
+    text-align: center;
+    margin: 0.95em 0;
+}
+
+.shop-sec .view-all {
+    text-align: center;
+}
+
+.shop-sec .view-all a,
+.explore-sec .content-wr a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1.5px solid var(--bc-neutral);
+    outline: none;
+}
+
+.shop-sec .view-all a {
+    padding: 9.5px 30px;
+}
+
+.shop-sec .view-all a svg {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+    fill: var(--c-secondary);
+}
+
+.shop-sec .products-wr {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 19px 0;
+    padding: 0 12px;
+}
+
+.shop-sec .product {
+    position: relative;
+    height: 340px;
+}
+
+.shop-sec .product a {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+.shop-sec .product a,
+.shop-sec .product img {
+    width: 100%;
+    height: 100%;
+}
+
+.shop-sec .product img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.shop-sec .product h4 {
+    padding: 15px;
+    background-color: var(--bc-primary);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+/* || New arrivals section */
+
+.new-arrivals-sec {
+    background-color: var(--bc-tertiary);
+    padding: 119px 0 122px;
+}
+
+.new-arrivals-sec .sec-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px 0;
+}
+
+.new-arrivals-sec h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.new-arrivals-sec p {
+    opacity: 0.7;
+}
+
+.new-arrivals-sec .lead {
+    margin-top: 23px;
+}
+
+.new-arrivals-sec .lead a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1.5px solid var(--c-tertiary);
+    padding: 7.5px 22px;
+    outline: none;
+    margin: 5px;
+}
+
+.new-arrivals-sec .grid-box:not(.content.grid-box, :last-child) {
+    margin-bottom: 22px;
+}
+
+.new-arrivals-sec .grid-box .img-wrapper {
+    height: 438px;
+}
+
+.new-arrivals-sec .grid-box .control-box {
+    height: 100%;
+    background: transparent;
+}
+
+.new-arrivals-sec .grid-box .controls {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    height: 100%;
+}
+
+.new-arrivals-sec .grid-box .control-box button {
+    background-color: var(--bc-btn);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.new-arrivals-sec .grid-box .control-box svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: var(--c-secondary);
+}
+
+.new-arrivals-sec .grid-box:nth-child(2) .img-wrapper {
+    background: url(../images/shop/light-grey-sofa-2.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec .grid-box:nth-child(3) .img-wrapper {
+    background: url(../images/shop/celling-lights-3.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec .grid-box:nth-child(4) .img-wrapper {
+    background: url(../images/shop/high-stand-chair-4-1.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec .grid-box:nth-child(5) .img-wrapper {
+    background: url(../images/shop/dining-sofa-5.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec .grid-box:nth-child(6) .img-wrapper {
+    background: url(../images/shop/bathroom-cloths-shelves-6.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec .grid-box:nth-child(7) .img-wrapper {
+    background: url(../images/shop/golden-lamp-7.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec .grid-box:nth-child(8) .img-wrapper {
+    background: url(../images/shop/white-cuddle-chair-8.jpg) 20% center / cover no-repeat;
+}
+
+.new-arrivals-sec h4 {
+    margin: 1.15em 0 0.3em;
+}
+
+/* || Explore section */
+
+.explore-sec .img-wrapper {
+    height: 50vh;
+}
+
+.explore-sec .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.explore-sec .content-wr {
+    padding: 24px 0 78px;
+}
+
+.explore-sec h3 {
+    margin: 0.96em 0;
+}
+
+.explore-sec .content-wr p {
+    margin-bottom: 1.8em;
+}
+
+.explore-sec .content-wr a {
+    padding: 10.5px 22px;
+}
+
+.explore-sec .content-wr a svg {
+    width: 16px;
+    fill: var(--c-secondary);
+}
+
+.explore-sec .feature-block {
+    background-color: var(--bc-feature);
+    padding: 81px 0 63px;
+}
+
+.explore-sec .feature-block svg {
+    width: 64px;
+    height: 64px;
+    fill: var(--c-primary);
+    stroke: var(--c-primary);
+    stroke-width: 0;
+    display: block;
+    margin: auto;
+}
+
+.explore-sec .feature:not(:last-child) {
+    margin-bottom: 50.5px;
+}
+
+.explore-sec h4 {
+    margin: 1.1em 0;
+}
+
+.explore-sec .feature p {
+    opacity: 0.6;
+}
+
+/* || Social section */
+
+.social-sec {
+    background-color: var(--c-primary);
+}
+
+.social-sec .content-wr {
+    text-align: center;
+    padding: 96px 38px 95px;
+}
+
+.social-sec h3 {
+    margin: 0.65em 0;
+}
+
+.social-sec .content-wr a {
+    display: inline-block;
+    outline: none;
+    background-color: var(--c-primary);
+    text-align: center;
+    text-decoration: none;
+    padding: 11px 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    margin-top: 32px;
+}
+
+.social-sec .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.social-sec .gallery .img-wrapper {
+    position: relative;
+    height: 33vh;
+}
+
+.social-sec .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.social-sec .gallery a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .65);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.social-sec .gallery a:hover {
+    opacity: 1;
+}
+
+.social-sec .gallery a svg {
+    width: 40px;
+    height: 40px;
+}
+
+.social-sec .gallery-left {
+    margin-bottom: 5px;
+}
