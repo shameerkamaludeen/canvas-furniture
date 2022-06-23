@@ -468,7 +468,7 @@ h3,
 /* || Explore section */
 
 .explore-sec .img-wrapper {
-    height: 50vh;
+    height: 330px;
 }
 
 .explore-sec .img-wrapper img {
@@ -560,7 +560,7 @@ h3,
 
 .social-sec .gallery .img-wrapper {
     position: relative;
-    height: 33vh;
+    height: 220px;
 }
 
 .social-sec .gallery img {
@@ -595,4 +595,13 @@ h3,
 
 .social-sec .gallery-left {
     margin-bottom: 5px;
+}
+
+@media screen and (min-width: 27.5em) {
+    
+    /* || Social section */
+
+    .social-sec .gallery .img-wrapper {
+        height: 270px;
+    }
 }
