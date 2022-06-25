@@ -1,3 +1,4 @@
+/* Remove: check all form validations */
 
 /* || General */
 :root {
@@ -423,10 +424,6 @@ header .main-menu>div>a,
 header .sub-menu>div>a,
 header .super-sub-menu>div>a {
     flex: 1;
-}
-
-header .main-menu>div>a {
-    padding-left: 15px;
 }
 
 header .sub-menu>div>a {
@@ -881,5 +878,25 @@ footer .attribution p a:active {
 
     footer .attribution p {
         font-size: 0.8125rem;
+    }
+}
+
+/* || Media query for ipads/tablets breakpoint */
+
+@media screen and (min-width: 36em) {
+
+    /* || Header */
+
+    .search.active form {
+        min-width: calc(516px - 72px);
+    }
+    
+    /* || Layout */
+
+    header .centered, 
+    footer .centered {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 516px;
     }
 }
