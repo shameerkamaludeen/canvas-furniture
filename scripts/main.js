@@ -26,44 +26,38 @@ function animateDecorUnderline() {
 
 // Document click
 document.addEventListener('click', e => {
-    // closing menu on clicking outside of the manu
-    // get the bubbled elements to check wheather the click is on menu element
+    // get the bubbled elements
     const elements = e.composedPath();
-    let isClickedMenu = false;
+    let isClickedOutsideMenu = true;
+    let isClickedOutsideSearch = true;
+    let isClickedOutsideProduct = true;
 
-    if (navMenu.classList.contains('active')) {
+    // here the 'elements.length - 2' is for ignoring last two element (document and window) 
+    for (let index = 0; index < elements.length - 2; index++) {
 
-        // checking the click is on or inside the menu container
-        if (document.documentElement.clientWidth <= 1024) {
-            // here the 'elements.length - 2' is for ignoring last two element (document and window) 
-            for (let index = 0; index < elements.length - 2; index++) {
-                if (elements[index].classList.contains('menu-wr') || elements[index].classList.contains('hamburger')) {
-                    isClickedMenu = true;
-                    break;
-                }
+        // check weather click is on outside of the manu
+        if (isClickedOutsideMenu && navMenu.classList.contains('active')) {
+            if (elements[index].classList.contains('menu-wr') || elements[index].classList.contains('hamburger')) {
+                isClickedOutsideMenu = false;
             }
+        }
 
-            // if not clicked on menu then changes to close the menu
-            if (!isClickedMenu) {
-                navMenu.classList.remove('active');
+        // check weather the click is on outside of the search
+        if (isClickedOutsideSearch && searchElement.classList.contains('active')) {
+            if (elements[index].classList.contains('search-button') || elements[index].classList.contains('search-input')) {
+                isClickedOutsideSearch = false;
             }
         }
     }
 
-    // closing search on clicking outside of it
-    if (searchElement.classList.contains('active')) {
-        // here the 'elements.length - 2' is for ignoring last two element (document and window) 
-        for (let index = 0; index < elements.length - 2; index++) {
-            if (elements[index].classList.contains('search-button') || elements[index].classList.contains('search-input')) {
-                isClickedMenu = true;
-                break;
-            }
-        }
+    // Close menu if the click is outside of it
+    if (isClickedOutsideMenu) {
+        navMenu.classList.remove('active');
+    }
 
-        // if not clicked on search button or search input then changes to close the the search
-        if (!isClickedMenu) {
-            searchElement.classList.remove('active');
-        }
+    // closing search on clicking outside of it
+    if (isClickedOutsideSearch) {
+        searchElement.classList.remove('active');
     }
 });
 
@@ -162,5 +156,26 @@ subscribeEmail.addEventListener('blur', () => {
 // to-top button click event
 const toTopButton = document.querySelector('.to-top button');
 toTopButton.addEventListener('click', () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+/* adding events to display controls and background image 
+for new arrivals products */
+const newArrivalsProducts = document.querySelectorAll('.new-arrivals-sec .grid-box .img-wrapper');
+for (const product of newArrivalsProducts) {
+
+    product.addEventListener('mouseover', () => {
+        if (document.documentElement.clientWidth >= 768) {
+            product.classList.add('animate');
+        }
+    });
+
+    product.addEventListener('mouseleave', () => {
+        if (document.documentElement.clientWidth >= 768) {
+            product.classList.remove('animate');
+        }
+    });
+}
+
+
+

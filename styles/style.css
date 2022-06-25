@@ -873,7 +873,7 @@ footer .attribution p a:active {
 
 
 @media screen and (min-width: 27.5em) {
-    
+
     /* || Typography */
 
     footer .attribution p {
@@ -890,13 +890,58 @@ footer .attribution p a:active {
     .search.active form {
         min-width: calc(516px - 72px);
     }
-    
+
     /* || Layout */
 
-    header .centered, 
+
+    .top-bar .centered,
+    header .centered,
     footer .centered {
         margin-right: auto;
         margin-left: auto;
         max-width: 516px;
+    }
+}
+
+/* || Media query for small screens/laptops breakpoint */
+
+@media screen and (min-width: 48em) {
+
+    /* || Aside top bar */
+
+    .top-bar .top-bar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* || Header */
+
+    .search.active form {
+        min-width: calc(696px - 72px);
+    }
+
+    /* || Layout */
+
+    .top-bar .centered,
+    header .centered,
+    footer .centered {
+        max-width: 696px;
+    }
+
+    /* || Footer */
+
+    footer .menu {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 36px 24px;
+    }
+
+    footer .menu .subscribe {
+        grid-column: 1 / 5;
+    }
+
+    footer .attribution p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 }
