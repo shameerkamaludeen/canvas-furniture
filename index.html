@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Zilla+Slab:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/efb6dbae73.js" crossorigin="anonymous"></script>
 
     <!-- local style import -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -106,11 +108,13 @@
                                 <div><a href="index.html">Home</a></div>
                             </li>
 
-                            <li class="main-menu">
-                                <div><a href="pages/products.html">Shop</a><button class="caret"></button></div>
+                            <li class="main-menu" has-sub-menu="true">
+                                <div><a href="pages/products.html">Shop</a><button class="caret"><i
+                                            class="fa-solid fa-angle-down"></i></button></div>
                                 <ul>
-                                    <li class="sub-menu">
-                                        <div><a href="pages/products.html">Sofa</a><button class="caret"></button></div>
+                                    <li class="sub-menu" has-sub-menu="true">
+                                        <div><a href="pages/products.html">Sofa</a><button class="caret"><i
+                                                    class="fa-solid fa-angle-down"></i></button></div>
                                         <ul>
                                             <li class="super-sub-menu">
                                                 <div><a href="pages/products.html">Sofa Set</a></div>
@@ -142,8 +146,9 @@
                                         <div><a href="pages/products.html">Tables</a></div>
                                     </li>
 
-                                    <li class="sub-menu">
-                                        <div><a href="pages/products.html">More</a><button class="caret"></button></div>
+                                    <li class="sub-menu" has-sub-menu="true">
+                                        <div><a href="pages/products.html">More</a><button class="caret"><i
+                                                    class="fa-solid fa-angle-down"></i></button></div>
                                         <ul>
                                             <li class="super-sub-menu">
                                                 <div><a href="pages/products.html">Kids Room</a></div>
@@ -966,7 +971,7 @@
         <aside class="shoping-cart" transition-style="out:wipe:right">
 
             <div class="header">
-                <h2 class="centered">Shopping Cart</h2>
+                <h2 class="centered">Shopping Cart <span>2</span></h2>
                 <hr>
             </div>
 

@@ -10,6 +10,7 @@ window.addEventListener('scroll', () => {
     // Animate decor-underline 
     animateDecorUnderline();
 });
+
 // Animate decor-underline on page load
 animateDecorUnderline();
 
@@ -76,24 +77,27 @@ searchButton.addEventListener('click', () => {
 // Click event for caret to expand menu
 const caretElements = document.querySelectorAll('header .caret');
 for (const caretElement of caretElements) {
-    caretElement.addEventListener('click', (event) => {
-        const menuElement = caretElement.parentElement.parentElement;
-        if (menuElement.classList.contains('active')) {
-            if (menuElement.classList.contains('main-menu')) {
-                removeActiveMenuClass(true);
-            } else {
-                removeActiveMenuClass(false);
-            }
-        } else {
-            if (activeMenus !== null && typeof activeMenus !== 'undefined' && activeMenus.length > 0) {
+    caretElement.addEventListener('click', () => {
+        if (document.documentElement.clientWidth < 992) {
+
+            const menuElement = caretElement.parentElement.parentElement;
+            if (menuElement.classList.contains('active')) {
                 if (menuElement.classList.contains('main-menu')) {
                     removeActiveMenuClass(true);
-                } else if (activeMenus.length > 1) {
+                } else {
                     removeActiveMenuClass(false);
                 }
+            } else {
+                if (activeMenus !== null && typeof activeMenus !== 'undefined' && activeMenus.length > 0) {
+                    if (menuElement.classList.contains('main-menu')) {
+                        removeActiveMenuClass(true);
+                    } else if (activeMenus.length > 1) {
+                        removeActiveMenuClass(false);
+                    }
+                }
+                menuElement.classList.add('active');
+                activeMenus.push(menuElement);
             }
-            menuElement.classList.add('active');
-            activeMenus.push(menuElement);
         }
     });
 }
@@ -177,5 +181,6 @@ for (const product of newArrivalsProducts) {
     });
 }
 
-
-
+if(document.documentElement.clientWidth >= 1200) {
+    document.querySelector('.hero h2 br').remove();
+}
