@@ -18,6 +18,7 @@ function animateDecorUnderline() {
     var decorUnderlines = document.querySelectorAll('.decor-underline');
     for (const decorUnderline of decorUnderlines) {
         const windowHeight = window.innerHeight;
+				// get distance from the top of the viewport
         const elementTop = decorUnderline.getBoundingClientRect().top;
         if (elementTop < windowHeight) {
             decorUnderline.classList.add('active');
