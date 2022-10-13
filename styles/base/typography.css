@@ -1,0 +1,391 @@
+body {
+	color: var(--c-primary);
+	background-color: var(--bc-primary);
+}
+
+.top-bar p {
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: var(--ff-primary);
+}
+
+.top-bar p a {
+	font-weight: 500;
+	color: var(--c-primary);
+}
+
+.menu {
+	font-family: var(--ff-secondary);
+}
+
+header .main-menu>div>a {
+	font-size: 0.8125rem;
+	line-height: 3.847;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: var(--c-primary);
+}
+
+@media screen and (min-width: 62em) {
+	header .main-menu>div>a {
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 4.5;
+	}
+}
+
+header .sub-menu>div>a,
+header .super-sub-menu>div>a {
+	font-size: 0.75rem;
+	line-height: 3.67;
+	font-weight: 400;
+	color: var(--c-neutral);
+}
+
+@media screen and (min-width: 62em) {
+	header .super-sub-menu>div>a {
+		line-height: 3.5;
+	}
+}
+
+header .main-menu>div .caret {
+	font-size: 0.875rem;
+	font-weight: 700;
+	font-family: var(--ff-secondary);
+}
+
+
+@media screen and (min-width: 62em) {
+	header .main-menu>div .caret {
+		font-size: 0.75rem;
+		font-weight: 400;
+	}
+}
+
+header .sub-menu>div .caret {
+	font-size: 0.75rem;
+}
+
+@media screen and (min-width: 62em) {
+	header .sub-menu>div .caret {
+		font-size: 0.75rem;
+		font-weight: 400;
+	}
+}
+
+header .sub-menu>div .caret,
+.shoping-cart .body h4,
+.shoping-cart .total span {
+	font-weight: 500;
+	font-family: var(--ff-secondary);
+}
+
+.logo {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--c-primary);
+	font-family: var(--ff-secondary);
+	letter-spacing: 1px;
+}
+
+.nav-search-cart .cart-button::after,
+.shoping-cart h2 span,
+.shoping-cart .body .price,
+.shoping-cart .body button,
+.shoping-cart .quantity,
+.shoping-cart .footer p,
+.shoping-cart .total h3,
+.shoping-cart .footer>a,
+footer .sub-menu a,
+footer .subscribe input,
+footer .subscribe input::placeholder,
+footer .subscribe button,
+footer .attribution p {
+	font-weight: 400;
+	font-family: var(--ff-secondary);
+}
+
+.nav-search-cart .cart-button::after {
+	color: var(--bc-primary);
+}
+
+.search.active form input,
+.shoping-cart h2 {
+	font-family: var(--ff-primary);
+	font-weight: 700;
+}
+
+.search.active form input {
+	color: var(--c-secondary);
+	font-size: 1.5rem;
+}
+
+.search.active form input::placeholder {
+	text-transform: uppercase;
+}
+
+.shoping-cart h2,
+.shoping-cart .total h3 {
+	font-size: 0.875rem;
+	color: var(--c-primary);
+	text-transform: uppercase;
+}
+
+.shoping-cart h2 span {
+	font-size: 0.78rem;
+}
+
+.shoping-cart .body h4 {
+	font-size: 0.8125rem;
+	color: var(--c-secondary);
+}
+
+.shoping-cart .body .price {
+	font-size: 0.75rem;
+	color: #999;
+}
+
+.shoping-cart .body button,
+.shoping-cart .footer p {
+	font-size: 0.8125rem;
+	color: rgba(0, 0, 0, .5);
+}
+
+.shoping-cart .quantity {
+	font-size: 0.75rem;
+	color: var(--c-tertiary);
+}
+
+.shoping-cart .total h3 {
+	letter-spacing: 1px;
+}
+
+.shoping-cart .total span {
+	font-size: 1rem;
+	columns: var(--c-primary);
+}
+
+.shoping-cart .footer>a {
+	color: var(--bc-primary);
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+footer .sub-menu a:not(.social .sub-menu a),
+footer .main-menu.social .sub-menu a span {
+	font-size: 0.725rem;
+	color: var(--c-tertiary);
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+footer .main-menu>span {
+	font-weight: 600;
+	font-family: var(--ff-primary);
+}
+
+footer .main-menu>span {
+	font-size: 0.9375rem;
+	color: var(--c-primary);
+	line-height: 1.5;
+}
+
+footer .main-menu.subscribe>span {
+	letter-spacing: 1px;
+}
+
+footer .subscribe>p {
+	font-weight: 300;
+	font-family: var(--ff-secondary);
+}
+
+footer .subscribe>p {
+	font-size: 0.875rem;
+	color: var(--c-primary);
+	line-height: 1.5;
+}
+
+footer .attribution p {
+	font-size: 0.75rem;
+	line-height: 1.8;
+	text-align: center;
+	letter-spacing: 0.5px;
+	word-spacing: 0.5px;
+}
+
+footer .attribution p,
+footer .attribution a {
+	color: rgb(25, 53, 50, .5);
+}
+
+footer .subscribe input {
+	font-size: 1rem;
+	color: #212529;
+}
+
+footer .subscribe input::placeholder {
+	font-size: 0.8125rem;
+	color: #aaa;
+}
+
+footer .subscribe button {
+	font-size: 1rem;
+	color: var(--bc-primary);
+}
+
+
+.hero h2,
+.why-us-sec h4,
+.new-arrivals-sec h4,
+.explore-sec h4 {
+	font-weight: 500;
+	font-family: var(--ff-primary);
+}
+
+.hero h2 {
+	font-size: 2.125rem;
+	line-height: 1.2;
+	color: var(--bc-primary);
+	text-align: center;
+}
+
+.hero p,
+.hero a,
+.why-us-sec p,
+.new-arrivals-sec p,
+.new-arrivals-sec .lead a,
+.explore-sec .content-wr p,
+.explore-sec .feature p,
+.social-sec .content-wr a {
+	font-weight: 400;
+	font-family: var(--ff-secondary);
+}
+
+.hero p {
+	font-size: 0.8rem;
+	color: var(--bc-primary);
+	text-align: center;
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.hero a {
+	font-size: 1rem;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+h3,
+.new-arrivals-sec .price {
+	font-weight: 400;
+	font-family: var(--ff-primary);
+}
+
+.why-us-sec h3 {
+	font-size: 2rem;
+	color: var(--c-primary);
+}
+
+.why-us-sec h4,
+.explore-sec h4 {
+	font-size: 1.35rem;
+	color: var(--c-primary);
+}
+
+.why-us-sec p,
+.new-arrivals-sec p,
+.explore-sec .feature p {
+	font-size: 1rem;
+	color: var(--c-primary);
+}
+
+.why-us-sec p,
+.explore-sec .feature p {
+	line-height: 1.5;
+}
+
+.shop-sec h3,
+.new-arrivals-sec h3,
+.explore-sec h3 {
+	font-size: 1.7rem;
+	color: var(--c-primary);
+}
+
+.view-all,
+.explore-sec .content-wr a {
+	font-weight: 700;
+	font-family: var(--ff-secondary);
+}
+
+.shop-sec .view-all a,
+.explore-sec .content-wr a {
+	color: var(--c-secondary);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.shop-sec .view-all a {
+	font-size: 0.75rem;
+}
+
+.explore-sec .content-wr a {
+	font-size: 0.875rem;
+}
+
+.shop-sec .product a {
+	font-weight: 700;
+	font-family: var(--ff-primary);
+}
+
+.shop-sec .product a {
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	color: var(--c-primary);
+	letter-spacing: 1px;
+}
+
+.new-arrivals-sec p,
+.explore-sec .content-wr p {
+	line-height: 1.8;
+}
+
+.new-arrivals-sec .lead a {
+	font-size: 0.875rem;
+	color: var(--c-secondary);
+}
+
+.new-arrivals-sec h4,
+.explore-sec .content-wr p {
+	font-size: 1rem;
+	color: var(--c-primary);
+}
+
+.new-arrivals-sec h4 {
+	line-height: 1.5;
+}
+
+.new-arrivals-sec .price {
+	font-size: 1.125rem;
+	color: var(--c-tertiary);
+}
+
+.explore-sec h4,
+.explore-sec .feature p {
+	text-align: center;
+}
+
+.social-sec h3 {
+	font-size: 1.5rem;
+	text-align: center;
+	color: var(--bc-neutral);
+	line-height: 1.2;
+}
+
+.social-sec .content-wr a {
+	color: var(--bc-primary);
+	font-size: 1rem;
+	text-transform: lowercase;
+	line-height: 1.2;
+}

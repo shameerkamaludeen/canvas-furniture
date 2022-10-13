@@ -1,0 +1,56 @@
+.centered {
+	margin-right: 12px;
+	margin-left: 12px;
+}
+
+@media screen and (min-width: 36em) {
+
+	.top-bar .centered,
+	header .centered,
+	footer .centered {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 516px;
+	}
+}
+
+@media screen and (min-width: 48em) {
+
+	.top-bar .centered,
+	header .centered,
+	footer .centered {
+		max-width: 696px;
+	}
+}
+
+@media screen and (min-width: 62em) {
+
+	.top-bar .centered,
+	header .centered,
+	footer .centered {
+		max-width: 936px;
+	}
+}
+
+@media screen and (min-width: 75em) {
+
+	.top-bar .centered,
+	header .centered,
+	footer .centered {
+		max-width: 1116px;
+	}
+}
+
+
+@media screen and (min-width: 87.5em) {
+
+	.top-bar .centered,
+	header .centered,
+	footer .centered {
+		max-width: 1296px;
+	}
+}
+
+body.cart-active {
+	overflow: hidden;
+}

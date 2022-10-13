@@ -1,0 +1,21 @@
+:root {
+
+	/* color */
+	--c-primary: #193532;
+	--c-secondary: #333333;
+	--c-neutral: #666666;
+	--c-tertiary: #444;
+
+	/* background color */
+	--bc-primary: #ffffff;
+	--bc-secondary: #ebf1f0;
+	--bc-icon: #d1d6d6;
+	--bc-neutral: #eeeeee;
+	--bc-tertiary: #f3f3ed;
+	--bc-btn: #f8f9fa;
+	--bc-feature: #fdf3e7;
+
+	/* Font family */
+	--ff-primary: 'Zilla Slab', serif;
+	--ff-secondary: 'Roboto', sans-serif;
+}
