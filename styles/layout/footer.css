@@ -87,7 +87,7 @@ footer .subscribe form p input {
 	border-bottom-left-radius: 3px;
 	border-top-left-radius: 3px;
 	flex: 1;
-	background-color: var(--bc-tertiary);
+	background-color: var(--bc-ternary);
 	outline: none;
 	padding: 0 0.625em;
 }
@@ -118,6 +118,10 @@ footer .attribution {
 	padding: 10px 0;
 }
 
+footer .attribution p {
+	text-align: center;
+}
+
 @media screen and (min-width: 62em) {
 	footer .attribution {
 		margin-top: 84px;
@@ -135,6 +139,10 @@ footer .attribution {
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
+}
+
+footer .attribution a {
+	color: hsla(174, 36%, 15%, 0.5);
 }
 
 footer .attribution p a {

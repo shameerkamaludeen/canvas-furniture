@@ -1,0 +1,9 @@
+/** 
+ * This will hide an element or block visually and still be able available for 
+ * for screen readers
+ */
+.hide-visually {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}

@@ -1,3 +1,4 @@
+/* 1. Variables */
 @import 'base/variables.css';
 
 /* 2. Normalize and Resets */
@@ -21,8 +22,8 @@
 /* @import 'layout/sidebar.css'; */
 @import 'layout/forms.css';
 
-/* 7. Page-specific styles */
+/* 6. Page-specific styles */
 @import 'pages/home.css';
 
-/* 8. Themes */
+/* 7. Themes */
 @import 'themes/default.css';

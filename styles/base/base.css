@@ -1,29 +1,21 @@
-/* || General style rules */
+/* || Base - Base
+   ========================================================================== */
 
-*, *::after, *::before {
+/**
+ * Set up a decent box model on the root element
+ */
+ html {
 	box-sizing: border-box;
 }
 
-/* This as the class implies hide the lement visually */
-.hide-visually {
-	font-size: 0;
-	width: 1px;
-	height: 1px;
-	display: inline-block;
-	overflow: hidden;
-	position: absolute!important;
-	border: 0!important;
-	padding: 0!important;
-	margin: 0!important;
-	clip: rect(1px,1px,1px,1px);
-}
-
-/* || Typography */
-
-html {
-	font-size: 100%;
-}
-
-body {
-	font-size: 10px;
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }

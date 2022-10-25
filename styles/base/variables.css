@@ -1,21 +1,97 @@
 :root {
-
-	/* color */
-	--c-primary: #193532;
-	--c-secondary: #333333;
-	--c-neutral: #666666;
-	--c-tertiary: #444;
-
+	
 	/* background color */
-	--bc-primary: #ffffff;
-	--bc-secondary: #ebf1f0;
-	--bc-icon: #d1d6d6;
-	--bc-neutral: #eeeeee;
-	--bc-tertiary: #f3f3ed;
-	--bc-btn: #f8f9fa;
-	--bc-feature: #fdf3e7;
+	--bc-primary: hsl(0, 0%, 100%);
+	--bc-primary-dark: hsl(0, 0%, 93%);
+	--bc-primary-darker: hsl(0, 0%, 60%);
+	--bc-secondary: hsl(170, 18%, 93%);
+	--bc-secondary-lighter: hsl(210, 17%, 98%);
+	--bc-secondary-darker: hsl(180, 6%, 83%);
+	--bc-secondary-darkest: hsl(210, 11%, 15%);
+	--bc-ternary: hsl(60, 20%, 94%);
+	--bc-neutral: hsl(33, 85%, 95%);
+	
+	/* Font color */
+	--c-primary: hsl(174, 37%, 15%);
+	--c-secondary: hsl(0, 0%, 20%);
+	--c-secondary-lightest: hsl(0, 0%, 40%);
+	--c-secondary-lighter: hsl(0, 0%, 27%);
 
 	/* Font family */
 	--ff-primary: 'Zilla Slab', serif;
 	--ff-secondary: 'Roboto', sans-serif;
+
+	/* Viewports */
+	--mobile-small-view: 20em;
+	/* 320px standard */
+	--mobile-portrait-view: 30em;
+	/* 480px standard */
+	--mobile-landscape-view: 40em;
+	/* 640px standard */
+	--tablet-view: 48em;
+	/* 768px standard */
+	--laptop-view: 64em;
+	/* 1024px standard */
+	--pc-view: 75em;
+	/* 1200px standard */
+
+	/* Word spacing */
+	--ws-base: 0.5px;
+	--ws-normal: 1.5px;
+	--ws-wide: 2.5px;
+
+	/* Letter spacing */
+	--ls-base: 0.5px;
+	--ls-normal: 1px;
+	--ls-wide: 2px;
+
+	/* Font size */
+	--fs-xxxl: 2.75rem;
+	/* 44px */
+	--fs-xxl: 2.25rem;
+	/* 36px */
+	--fs-xl: 1.875rem;
+	/* 30px */
+	--fs-l: 1.5rem;
+	/* 24px */
+	--fs-m: 1.125rem;
+	/* 18px */
+	--fs-s: 1rem;
+	/* 16px */
+	--fs-xs: 0.875rem;
+	/* 14px */
+	--fs-xxs: 0.75rem;
+	/* 12px */
+
+	/* Line height */
+	--lh-base: 1.2;
+	--lh-normal: 1.5;
+	--lh-wide: 2;
+
+	/* layout margin fixed */
+	--lm-fixed-msv: 15px;
+	/* mobile small view */
+	--lm-fixed-mpv: 25px;
+	/* mobile portrait view */
+	--lm-fixed-mlv: 25px;
+	/* mobile landscape view */
+	--lm-fixed-tv: 45px;
+	/* tablet view */
+	--lm-fixed-lv: 45px;
+	/* laptop view */
+	--lm-fixed-pcv: 65px;
+	/* pc view */
+
+	/* Layout margin fixed width  */
+	--lm-auto-fixed-width: 560px;
+
+	/* Layout padding */
+	--lp-base: 40px;
+	--lp-normal: 50px;
+	--lp-wide: 60px;
+
+	/* Layout content padding */
+	--lcp-base: 50px;
+	--lcp-normal: 70px;
+	--lcp-wide: 95px;
 }

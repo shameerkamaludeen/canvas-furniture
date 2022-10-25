@@ -142,7 +142,7 @@ header .sub-menu.active>ul {
 header .main-menu>div,
 header .sub-menu>div,
 header .super-sub-menu>div {
-	border-bottom: 1px solid var(--bc-neutral);
+	border-bottom: 1px solid var(--bc-primary-dark);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -333,6 +333,7 @@ header .menu .caret:focus {
 .search.active form input::placeholder {
 	color: var(--c-secondary);
 	opacity: 0.8;
+	text-transform: uppercase;
 }
 
 .nav-search-cart .search-button,
