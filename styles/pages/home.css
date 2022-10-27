@@ -1,4 +1,12 @@
-/* Decor underline */
+/* || Component - Decor underline 
+	 ========================================================================== */
+
+/** 
+ * 1. Decor underline component is an image pattern as underline which animate on 
+ * scroll to appear.
+ * 2. Find javascript code for animation
+ */
+
 .decor-underline {
 	position: relative;
 	display: inline-block;
@@ -7,19 +15,18 @@
 .decor-underline::after {
 	content: '';
 	display: block;
-	width: 100%;
-	max-width: 0;
+	width: 0;
 	position: absolute;
 	background: url(../../images/underline.svg) center / 100% auto no-repeat;
-	bottom: -3px;
 	left: 0;
-	height: 13px;
 	overflow: hidden;
 	opacity: 0.7;
+	height: 13px;
+	bottom: -2px;
 }
 
-.decor-underline.active::after {
-	max-width: 250px;
+.du-active::after {
+	width: 100%;
 	animation: 1s cubic-bezier(.25, 1, .30, 1) .3s wipe-in-right both;
 }
 
@@ -279,16 +286,17 @@
 	display: block;
 }
 
-/* || Hero block */
+/* || Block - Hero absolute image
+	 ========================================================================== */
 
-.hero {
+.hero-absolute-image {
 	background-image: linear-gradient(to bottom, #375754 0%, var(--c-primary) 90%, var(--bc-secondary) 90%);
 	text-align: center;
 }
 
 @media screen and (min-width: 75em) {
 
-	.hero {
+	.hero-absolute-image {
 		text-align: left;
 		position: relative;
 	}
@@ -296,12 +304,12 @@
 
 @media screen and (min-width: 87.5em) {
 
-	.hero {
-		background-image: linear-gradient(to bottom, #375754 0%, var(--c-primary) 84%, var(--bc-secondary) 84%);
+	.hero-absolute-image {
+		background-image: linear-gradient(to bottom, var(--c-primary-lighter) 0%, var(--c-primary) 84%, var(--bc-secondary) 84%);
 	}
 }
 
-.hero p {
+.hero-ai-tag {
 	text-align: center;
 	opacity: 0.7;
 	text-transform: uppercase;
@@ -309,18 +317,18 @@
 
 @media screen and (min-width: 75em) {
 
-	.hero p {
+	.hero-ai-tag {
 		text-align: left;
 	}
 }
 
-.hero .content-block {
+.hero-ai-content-wr {
 	padding: 71px 0 80px;
 }
 
 @media screen and (min-width: 75em) {
 
-	.hero .content-block {
+	.hero-ai-content-wr {
 		padding: 95px 50% 112px 0;
 		position: absolute;
 		left: 0;
@@ -331,36 +339,40 @@
 
 @media screen and (min-width: 87.5em) {
 
-	.hero .content-block {
+	.hero-ai-content-wr {
 		padding: 95px 50% 216px 0;
 	}
 }
 
-.hero h2 {
+.hero-ai-tittle {
 	margin: 0.5em 0 1.4em;
 	text-align: center;
 }
 
 @media screen and (min-width: 36em) {
-	.hero h2 {
+	.hero-ai-tittle {
 		margin: 0.45em 0 1.2em;
 	}
 }
 
 @media screen and (min-width: 75em) {
 
-	.hero h2 {
+	.hero-ai-tittle {
 		margin: 0.35em 0 0.8em;
 		text-align: left;
 	}
 }
 
-.hero .decor-underline::after,
-.social-sec .decor-underline::after {
+.hero-ai-decor-underline::after {
+	height: 13px;
+	bottom: -2px;
 	background: url(../../images/underline_dark.svg) center / 100% auto no-repeat;
 }
 
-.hero a {
+/* Redesigning progress 
+	 ========================================================================== */
+
+.hero-absolute-image a {
 	display: inline-block;
 	outline: none;
 	background-color: #f9f9f9;
@@ -371,7 +383,7 @@
 	transition: opacity 0.3s ease;
 }
 
-.hero a svg {
+.hero-absolute-image a svg {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -382,16 +394,16 @@
 	margin-right: 5px;
 }
 
-.hero a:link,
-.hero a:visited {
+.hero-absolute-image a:link,
+.hero-absolute-image a:visited {
 	color: var(--c-primary);
 }
 
-.hero a:hover {
+.hero-absolute-image a:hover {
 	opacity: 0.9;
 }
 
-.hero hr {
+.hero-absolute-image hr {
 	border: none;
 	border-top: 1px solid var(--bc-primary-dark);
 	margin: 0;
@@ -400,36 +412,36 @@
 
 @media screen and (min-width: 75em) {
 
-	.hero hr {
+	.hero-absolute-image hr {
 		display: none;
 	}
 }
 
-.hero .image-block .img-wrapper {
+.hero-absolute-image .image-block .img-wrapper {
 	text-align: center;
 }
 
 @media screen and (min-width: 75em) {
 
-	.hero .image-block .img-wrapper {
+	.hero-absolute-image .image-block .img-wrapper {
 		text-align: right;
 	}
 }
 
-.hero .image-block .img-wrapper img {
+.hero-absolute-image .image-block .img-wrapper img {
 	width: 92%;
 }
 
 @media screen and (min-width: 48em) {
 
-	.hero .image-block .img-wrapper img {
+	.hero-absolute-image .image-block .img-wrapper img {
 		width: 80%;
 	}
 }
 
 @media screen and (min-width: 75em) {
 
-	.hero .image-block .img-wrapper img {
+	.hero-absolute-image .image-block .img-wrapper img {
 		width: 65%;
 		margin-right: 30px;
 	}
@@ -1213,6 +1225,10 @@
 .social-sec h3 {
 	margin: 0.65em 0;
 	text-align: center;
+}
+
+.social-sec .decor-underline::after {
+	background: url(../../images/underline_dark.svg) center / 100% auto no-repeat;
 }
 
 .social-sec .content-wr a {
