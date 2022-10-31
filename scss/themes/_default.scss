@@ -1,0 +1,68 @@
+/* || Themes - Default theme
+   ========================================================================== */
+
+// When having several themes, this file contains everything related to the
+// default one.
+
+@use '../abstracts/variables' as var;
+@use '../base/utilities';
+
+/* || General styles */
+html {
+	overflow: auto;
+}
+
+body {
+	overflow-x: hidden;
+	background: url(../images/home-bg.webp) 50% top / cover no-repeat;
+
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		background: url(../images/home-bg.webp) 54% top / cover no-repeat;
+	}
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		background: url(../images/home-bg.webp) 59% top / cover no-repeat;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		background: url(../images/home-bg.webp) center top / cover no-repeat;
+	}
+}
+
+/* || Typography */
+
+/* || Header and Main Navigation */
+
+/* || Utilitites */
+
+/* || Sitewiede */
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+/* || Store Pages */
+// Specific things, broken down by the context, page, or even component in 
+// which they are used.
+.breadcrumbs-center {
+	margin-top: 3px;
+}
+
+.main-heading-hv {
+	@extend %hide-visually;
+}
+
+.team-desc-gallery,
+.company-tab-contents,
+.services-three-column {
+	.btn-capsule-hover-wipe {
+		height: 44.5px;
+		font-size: var.$fs-s;
+	}
+
+	.btn-chw-content {
+		padding: 12.8px 38px;
+	}
+}
+
+// || Footer

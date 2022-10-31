@@ -1,0 +1,314 @@
+/* || Base - Typography
+   ========================================================================== */
+@use '../abstracts/variables' as var;
+
+// In the below font category the first word indicate its color then size (l-large 
+// denotes h1 and xl or xxl indicate size for design purpose)
+// font sizes: large(h1), medium(h2), small(h3), x-small(h4)(optional: x-large, 
+// xx-large, xx-small)
+
+// || Placeholders
+// -----------------------------------------------------------------------------
+
+%base-spacing {
+	word-spacing: var.$base-ws;
+	letter-spacing: var.$base-ls;
+}
+
+%normal-spacing {
+	word-spacing: var.$normal-ws;
+	letter-spacing: var.$normal-ls;
+}
+
+%wide-spacing {
+	word-spacing: var.$wide-ws;
+	letter-spacing: var.$wide-ls;
+}
+
+// || FFP-CP Fonts (ff-primary c-primary fonts)
+
+%ffp-cp-xxl-font {
+	font-size: var.$fs-xxl;
+	color: var.$c-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cp-xl-font {
+	font-size: var.$fs-xl;
+	color: var.$c-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cp-l-font {
+	font-size: var.$fs-l;
+	color: var.$c-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cp-m-font {
+	font-size: var.$fs-m;
+	color: var.$c-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cp-s-font {
+	font-size: var.$fs-s;
+	color: var.$c-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cp-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-primary;
+	font-family: var.$ff-primary;
+}
+
+// || FFP-CS fonts (ff-primary c-secondary fonts)
+
+%ffp-cs-m-font {
+	font-size: var.$fs-m;
+	color: var.$c-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cs-s-font {
+	font-size: var.$fs-s;
+	color: var.$c-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cs-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cs-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$c-secondary;
+	font-family: var.$ff-primary;
+}
+
+// || FFP-CT fonts (ff-primary c-ternary fonts)
+
+%ffp-ct-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-ternary;
+	font-family: var.$ff-primary;
+}
+
+// || FFP-BCP fonts (ff-primary bc-secondary fonts)
+
+%ffp-bcp-xxl-font {
+	font-size: var.$fs-xxl;
+	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcp-m-font {
+	font-size: var.$fs-m;
+	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcp-s-font {
+	font-size: var.$fs-s;
+	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcp-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
+// || FFP-BCS fonts (ff-primary bc-secondary fonts)
+
+%ffp-bcs-xxl-font {
+	font-size: var.$fs-xxl;
+	color: var.$bc-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-xl-font {
+	font-size: var.$fs-xl;
+	color: var.$bc-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-s-font {
+	font-size: var.$fs-s;
+	color: var.$bc-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-secondary;
+	font-family: var.$ff-primary;
+}
+
+// || FFP-CE fonts (ff-primary c-error fonts)
+
+%ffp-ce-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-error;
+	font-family: var.$ff-primary;
+}
+
+// || FFS-CP fonts (ff-secondary c-primary fonts)
+
+%ffs-cp-m-font {
+	font-size: var.$fs-m;
+	color: var.$c-primary;
+	font-family: var.$ff-secondary;
+}
+
+// || FFT-CP fonts (ff-ternary c-primary fonts)
+
+%fft-cp-s-font {
+	font-size: var.$fs-s;
+	color: var.$c-primary;
+	font-family: var.$ff-ternary;
+}
+
+%fft-cs-s-font {
+	font-size: var.$fs-s;
+	color: var.$c-secondary;
+	font-family: var.$ff-ternary;
+}
+
+// || FFT-BCP fonts (ff-ternary bc-primary fonts)
+
+%fft-bcp-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$bc-primary;
+	font-family: var.$ff-ternary;
+}
+
+// || FFN-BCS fonts (ff-neutral bc-secondary fonts)
+
+%ffn-bcs-s-font {
+	font-size: var.$fs-s;
+	color: var.$bc-secondary;
+	font-family: var.$ff-neutral;
+}
+
+// || LH-FW (Line height with font weight)
+
+%base-300 {
+	line-height: var.$lh-base;
+	font-weight: 300;
+}
+
+%base-400 {
+	line-height: var.$lh-base;
+	font-weight: 400;
+}
+
+%base-500 {
+	line-height: var.$lh-base;
+	font-weight: 500;
+}
+
+%base-600 {
+	line-height: var.$lh-base;
+	font-weight: 600;
+}
+
+%base-700 {
+	line-height: var.$lh-base;
+	font-weight: 700;
+}
+
+%normal-300 {
+	line-height: var.$lh-normal;
+	font-weight: 300;
+}
+
+%normal-400 {
+	line-height: var.$lh-normal;
+	font-weight: 400;
+}
+
+%normal-500 {
+	line-height: var.$lh-normal;
+	font-weight: 500;
+}
+
+%normal-700 {
+	line-height: var.$lh-normal;
+	font-weight: 700;
+}
+
+%wide-300 {
+	line-height: var.$lh-wide;
+	font-weight: 300;
+}
+
+%wide-400 {
+	line-height: var.$lh-wide;
+	font-weight: 400;
+}
+
+%wide-500 {
+	line-height: var.$lh-wide;
+	font-weight: 500;
+}
+
+%wide-700 {
+	line-height: var.$lh-wide;
+	font-weight: 700;
+}
+
+// || mixins
+// -----------------------------------------------------------------------------
+
+// || styles
+// -----------------------------------------------------------------------------
+
+body {
+	font-size: 15px;
+	font-family: var.$ff-primary;
+	color: var.$c-primary;
+	line-height: var.$lh-normal;
+	font-weight: 400;
+}
+
+h1 {
+	@extend %ffp-cp-xxl-font;
+	@extend %base-700;
+}
+
+h2 {
+	@extend %ffp-cp-l-font;
+	@extend %base-700;
+}
+
+h3 {
+	@extend %ffp-cs-m-font;
+	@extend %base-700;
+}
+
+h4 {
+	@extend %ffp-cs-s-font;
+	@extend %base-700;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+p {
+	@extend %ffp-cs-s-font;
+	@extend %normal-400;
+}
+
+label {
+	@extend %ffp-cs-s-font;
+	font-weight: 400;
+}
+
+button {
+	@extend %ffp-cs-s-font;
+	font-weight: 400;
+}

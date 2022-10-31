@@ -1,0 +1,42 @@
+/* || Components - Attribution single line with background
+   ========================================================================== */
+// Link color in this component is same as description with underline 
+@use '../../abstracts/variables' as var;
+@use '../../abstracts/mixins' as mx;
+@use '../../base/typography';
+@use '../../layout/layout-base';
+
+.attr-sl-underline {
+	padding: 13px 0;
+}
+
+.attr-slu-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.attr-slu-content {
+	// ff, c, fs
+	@extend %fft-bcp-xxs-font;
+	// lh, fw
+	@extend %wide-400;
+	margin: 0;
+	letter-spacing: 0.4px;
+
+	@media screen and (min-width: var.$pc-view) {
+		font-size: var.$fs-xxs + 0.05rem;
+	}
+}
+
+.attr-slu-link {
+	@include mx.link-border-underline;
+}
+
+// modifiers
+
+.attr-slu-bg {
+	background-color: var.$bc-secondary;
+}
+
+.attr-slu-cnt-center {
+	text-align: center;
+}

@@ -1,0 +1,75 @@
+/* Abstracts - Variables
+   ========================================================================== */
+
+@use 'sass:color';
+
+// Background colors
+$bc-primary: hsl(0, 0%, 100%);
+$bc-secondary: hsl(228, 61%, 53%);
+$bc-ternary: hsl(208, 100%, 96%);
+$bc-ternary-lighter: hsl(207, 100%, 99%);
+
+// Font colors
+$c-primary: hsl(226, 13%, 19%);
+$c-secondary: hsl(0, 0%, 47%);
+$c-ternary: hsl(236, 7%, 57%);
+$c-error: hsl(0, 100%, 74%);
+
+// Font family 
+$ff-primary: 'Poppins', sans-serif;
+$ff-secondary: 'PT Sans Caption', sans-serif;
+$ff-ternary: 'Montserrat', sans-serif;
+$ff-neutral: 'Nunito Sans', sans-serif;
+
+// Viewports
+$mobile-small-view: 20em; // 320px standard
+$mobile-portrait-view: 30em; // 480px standard
+$mobile-landscape-view: 40em; // 640px standard
+$tablet-view: 48em; // 768px standard
+$laptop-view: 64em; // 1024px standard
+$pc-view: 75em; // 1200px standard
+
+// Word spacing
+$base-ws: 0.8px;
+$normal-ws: 2px;
+$wide-ws: 3px;
+
+// Letter spacing
+$base-ls: 0.4px;
+$normal-ls: 1px;
+$wide-ls: 2px;
+
+$fs-xxxl: 2.75rem; // 44px
+$fs-xxl: 2.25rem; // 36px
+$fs-xl: 1.875rem; // 30px
+$fs-l: 1.5rem; // 24px
+$fs-m: 1.125rem; // 18px
+$fs-s: 1rem; // 16px
+$fs-xs: 0.875rem; // 14px
+$fs-xxs: 0.75rem; // 12px
+
+// Line height
+$lh-base: 1.2;
+$lh-normal: 1.65;
+$lh-wide: 2;
+
+// layout margin fixed
+$lm-fixed-msv: 15px; // mobile small view
+$lm-fixed-mpv: 25px; // mobile portrait view
+$lm-fixed-mlv: 25px; // mobile landscape view
+$lm-fixed-tv: 45px; // tablet view
+$lm-fixed-lv: 45px; // laptop view
+$lm-fixed-pcv: 65px; // pc view
+
+// Layout margin fixed width 
+$lm-auto-fixed-width: 560px;
+
+// Layout padding
+$lp-base: 40px;
+$lp-normal: 50px;
+$lp-wide: 60px;
+
+// Layout content padding
+$lcp-base: 50px;
+$lcp-normal: 70px;
+$lcp-wide: 95px;
