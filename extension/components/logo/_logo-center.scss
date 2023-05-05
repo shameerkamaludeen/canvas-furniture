@@ -1,0 +1,29 @@
+/* || Component - Logo center
+	 ========================================================================== */
+
+// 1. Features
+// Logo will be center on mobile as well as on large devices
+
+@use '../../base/typography';
+@use '../../base/utilities';
+
+.logo-center {
+	text-align: center;
+}
+
+.lc-tittle {
+	display: inline-block;
+	margin: 0;
+	@extend %normal-700;
+	@extend %ws-base-ls-normal;
+	@extend %ffs-cp-l-font;
+}
+
+.lc-link {
+	cursor: pointer;
+	@extend %link-no-style;
+}
+
+.lc-tittle-caps {
+	text-transform: uppercase;
+}

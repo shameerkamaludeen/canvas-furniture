@@ -1,0 +1,112 @@
+/* || Block - Shop by category with tittle over image
+	 ========================================================================== */
+
+// 1. Features
+// Tittle, lead and grid of products
+// Each product itself is a lead and a card with tittle over image 
+// Products are placed on a full with grid
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../layout/layout-base';
+@use '../../../base/typography';
+@use '../../../components/shape/decor-texture-underline/decor-texture-underline';
+@use '../../../components/card/card-lead-it-he/card-lead-it-he';
+
+.shop-category-tittle-img {
+	padding: 53px 0 15px;
+}
+
+.shop-cti-tittle {
+	text-align: center;
+	margin: 0.95em 0;
+	@extend %ffp-cp-xl-font;
+	@extend %base-400;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		margin: 0.85em 0;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-xxl;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		font-size: var.$fs-xxxl;
+	}
+}
+
+.shop-cti-decor-tu {
+	&::after {
+		bottom: -4px;
+	}
+}
+
+.shop-cti-lead-wr {
+	text-align: center;
+}
+
+.shop-cti-lead {
+	@extend %ffs-cs-xxs-font;
+	@extend %base-700;
+	@extend %ws-base-ls-normal;
+	@include mx.link-btn-basic($bg-color: transparent,
+		$bg-active-color: false,
+		$bg-hover-color: var.$c-primary,
+		$color-hover: var.$bc-primary,
+		$border: 1.5px solid var.$bc-primary-dark,
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: false,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$text-decoration: none,
+		$transition: (background-color 0.3s ease));
+	text-transform: uppercase;
+	padding: 9.5px 30px;
+
+	&:hover {
+		.shop-cti-lead-icon {
+			fill: var.$bc-primary;
+		}
+	}
+}
+
+.shop-cti-lead-icon {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 12px,
+		$height: 12px,
+		$stroke: false,
+		$fill: var.$c-secondary,
+		$display: inline-block);
+	position: relative;
+	top: 1px;
+	margin-right: 8px;
+}
+
+.shop-cti-product-ctr {
+	margin-top: 48px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 19px 0;
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 19px 20px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+// Layout
+// --------
+
+.shop-cti-lm-fixed {
+	@extend %lm-fixed;
+}

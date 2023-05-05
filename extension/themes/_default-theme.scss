@@ -1,0 +1,40 @@
+/* || Themes - Default theme
+   ========================================================================== */
+
+// When having several themes, this file contains everything related to the
+// default one.
+
+@use '../abstracts/variables' as var;
+@use '../base/utilities';
+
+/* || General styles */
+
+/* || Typography */
+
+/* || Header and Main Navigation */
+
+// Logo
+.lc-tittle {
+	font-size: 21px;
+}
+
+/* || Utilitites */
+
+/* || Sitewiede */
+
+/* || Store Pages */
+
+// Specific things, broken down by the context, page, or even component in 
+// which they are used.
+
+/* || Aside shopping cart */
+
+.card-ci-aid-tittle {
+	font-size: 13px;
+
+	@media screen and (min-width: var.$tv-view) {
+		font-size: var.$fs-xs;
+	}
+}
+
+// || Footer

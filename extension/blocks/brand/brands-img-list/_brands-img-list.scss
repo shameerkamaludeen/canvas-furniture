@@ -47,6 +47,18 @@
 	@extend %lm-fixed;
 }
 
+.brands-il-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.brands-il-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.brands-il-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
 .brands-il-link-wr {
 	@extend %link-wrapper-basic;
 	display: inline-block;

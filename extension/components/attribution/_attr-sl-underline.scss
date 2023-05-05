@@ -10,10 +10,6 @@
 	padding: 13px 0;
 }
 
-.attr-slu-lm-fixed {
-	@extend %lm-fixed;
-}
-
 .attr-slu-content {
 	// ff, c, fs
 	@extend %fft-bcp-xxs-font;
@@ -39,4 +35,23 @@
 
 .attr-slu-cnt-center {
 	text-align: center;
+}
+
+// Layout
+// ------
+
+.attr-slu-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.attr-slu-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.attr-slu-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.attr-slu-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
 }

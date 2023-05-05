@@ -7,7 +7,7 @@
 @use 'sass:color';
 
 .category-links-rounded-bg {
-	@extend %flex-row-wrap;
+	@extend %flex-wrap;
 	gap: 13px 8px;
 }
 

@@ -1,0 +1,30 @@
+/* || Component - Decor texture underline
+		 ======================================================================== */
+
+// 1. Features
+// Animated texture underline using a texture image
+
+.decor-texture-underline {
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 0;
+		position: absolute;
+		background: url(../images/underline.svg) center / 100% auto no-repeat;
+		left: 0;
+		overflow: hidden;
+		opacity: 0.7;
+		height: 13px;
+		bottom: -2px;
+	}
+}
+
+.decor-tu-animate {
+	&::after {
+		width: 100%;
+		animation: 1s cubic-bezier(.25, 1, .30, 1) .3s wipe-in-right both;
+	}
+}

@@ -17,14 +17,6 @@
 	}
 }
 
-.tc-lm-fixed {
-	@extend %lm-fixed;
-}
-
-.tc-lm-auto-fw {
-	@extend %lm-auto-fixed-width;
-}
-
 .tc-heading-normal {
 	@extend %ffp-cp-xl-font;
 	@extend %base-500;
@@ -56,4 +48,31 @@
 
 .tc-carousel {
 	margin-top: 30px;
+}
+
+// Layout
+// --------
+
+.tc-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.tc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.tc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.tc-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
+.tc-lm-auto-mpv {
+	@extend %lm-auto-mpv;
+}
+
+.tc-fw-layout-mpv {
+	@extend %fw-layout-mpv;
 }

@@ -33,7 +33,7 @@
 	@extend %base-600;
 	@extend %ffp-bcp-m-font;
 	margin: 0;
-	@extend %wide-spacing;
+	@extend %ws-wide-ls-wide;
 	text-align: center;
 }
 
@@ -41,6 +41,6 @@
 	@extend %base-300;
 	@extend %ffp-bcp-s-font;
 	margin-top: 0.3em;
-	@extend %base-spacing;
+	@extend %ws-base-ls-base;
 	text-align: center;
 }

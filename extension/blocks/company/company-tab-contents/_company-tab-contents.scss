@@ -103,6 +103,18 @@
 	@extend %lm-fixed;
 }
 
+.ctc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.ctc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.ctc-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
 .ctc-lm-fixed-r-tv {
 	@extend %lm-fixed-right-tv;
 }
@@ -111,8 +123,16 @@
 	@extend %lm-fixed-left-tv;
 }
 
-.ctc-lp-left-tv {
-	@extend %lp-left-tv;
+.ctc-lpf-left-tv {
+	@extend %lp-fixed-left-tv;
+}
+
+.ctc-lpf-left-lv {
+	@extend %lp-fixed-left-lv;
+}
+
+.ctc-lpf-left-pcv {
+	@extend %lp-fixed-left-pcv;
 }
 
 .ctc-site-link-bcs {
@@ -122,10 +142,6 @@
 
 .ctc-img-animate {
 	animation: slide-in-left 1.25s;
-}
-
-.ctc-lcp-right-pcv-normal {
-	@extend %lcp-right-pcv-normal;
 }
 
 .ctc-read-more {

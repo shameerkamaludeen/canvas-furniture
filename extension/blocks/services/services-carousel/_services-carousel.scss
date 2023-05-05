@@ -73,14 +73,31 @@
 	}
 }
 
-/* layout margin fixed */
+// Layout
+// --------
+
 .sc-lm-fixed {
 	@extend %lm-fixed;
 }
 
-// Layout margin auto fixed width
-.sc-lm-auto-fw {
-	@extend %lm-auto-fixed-width;
+.sc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.sc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.sc-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
+.sc-lm-auto-mpv {
+	@extend %lm-auto-mpv;
+}
+
+.sc-fw-layout-mpv {
+	@extend %fw-layout-mpv;
 }
 
 .sc-link-wrapper {

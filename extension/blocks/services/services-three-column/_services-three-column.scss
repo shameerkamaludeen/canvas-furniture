@@ -166,10 +166,33 @@
 	}
 }
 
+// Layout
+// --------
+
 .services-tc-lm-fixed {
 	@extend %lm-fixed;
 }
 
-.services-tc-lp-left-tv {
-	@extend %lp-left-tv;
+.services-tc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.services-tc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.services-tc-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
+.services-tc-lpf-left-tv {
+	@extend %lp-fixed-left-tv;
+}
+
+.services-tc-lpf-left-lv {
+	@extend %lp-fixed-left-lv;
+}
+
+.services-tc-lpf-left-pcv {
+	@extend %lp-fixed-left-pcv;
 }

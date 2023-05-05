@@ -1,0 +1,25 @@
+/* || Component - Nav options right
+	 ========================================================================== */
+
+// 1. Features
+// Search form, search icon button and cart button
+// Search form stretched in navigation bar
+
+@use '../../../base/sitewide';
+@use '../../form/search-form-stretch-left/search-form-stretch-left';
+@use '../../button/cart-btn-trans-bg-count/cart-btn-trans-bg-count';
+
+.nav-options-right {
+	@extend %flex-h-right;
+	width: 72px;
+}
+
+.nor-option {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.nor-icon {
+	width: 31px;
+	height: 31px;
+}

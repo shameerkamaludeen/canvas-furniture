@@ -27,3 +27,20 @@
 	margin: 0;
 	border: none;
 }
+
+// 
+%link-no-style {
+	text-decoration: none;
+
+	&:link,
+	&:visited,
+	&:focus,
+	&:hover,
+	&:active {
+		color: inherit;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

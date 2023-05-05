@@ -24,11 +24,11 @@
 @use 'layout/main';
 @use 'layout/article';
 @use 'layout/footer';
-@use 'layout/sidebar';
+@use 'layout/aside';
 @use 'layout/forms';
 
 // 7. Page-specific styles
 @use 'pages/home';
 
 // 8. Themes
-@use 'themes/default';
+@use 'themes/default-theme';

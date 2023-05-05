@@ -10,20 +10,181 @@
 // || Placeholders
 // -----------------------------------------------------------------------------
 
-%base-spacing {
+// || Word space and letter space
+%ws-base-ls-base {
 	word-spacing: var.$base-ws;
-	letter-spacing: var.$base-ls;
+	letter-spacing: var.$ls-base;
 }
 
-%normal-spacing {
+%ws-base-ls-normal {
+	word-spacing: var.$base-ws;
+	letter-spacing: var.$ls-normal;
+}
+
+%ws-base-ls-wide {
+	word-spacing: var.$base-ws;
+	letter-spacing: var.$ls-wide;
+}
+
+%ws-normal-ls-base {
 	word-spacing: var.$normal-ws;
-	letter-spacing: var.$normal-ls;
+	letter-spacing: var.$ls-base;
 }
 
-%wide-spacing {
-	word-spacing: var.$wide-ws;
-	letter-spacing: var.$wide-ls;
+%ws-normal-ls-normal {
+	word-spacing: var.$normal-ws;
+	letter-spacing: var.$ls-normal;
 }
+
+%ws-normal-ls-wide {
+	word-spacing: var.$normal-ws;
+	letter-spacing: var.$ls-wide;
+}
+
+%ws-wide-ls-base {
+	word-spacing: var.$wide-ws;
+	letter-spacing: var.$ls-base;
+}
+
+%ws-wide-ls-normal {
+	word-spacing: var.$wide-ws;
+	letter-spacing: var.$ls-normal;
+}
+
+%ws-wide-ls-wide {
+	word-spacing: var.$wide-ws;
+	letter-spacing: var.$ls-wide;
+}
+
+// || Font-family, font-size
+
+// || FFP fonts
+
+%ffp-xxxl-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-xxxl;
+}
+
+%ffp-xxl-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-xxl;
+}
+
+%ffp-xl-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-xl;
+}
+
+%ffp-l-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-l;
+}
+
+%ffp-m-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-m;
+}
+
+%ffp-s-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-s;
+}
+
+%ffp-xs-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-xs;
+}
+
+%ffp-xxs-font {
+	font-family: var.$ff-primary;
+	font-size: var.$fs-xxs;
+}
+
+// || FFS fonts
+
+%ffs-xxxl-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-xxxl;
+}
+
+%ffs-xxl-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-xxl;
+}
+
+%ffs-xl-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-xl;
+}
+
+%ffs-l-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-l;
+}
+
+%ffs-m-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-m;
+}
+
+%ffs-s-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-s;
+}
+
+%ffs-xs-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-xs;
+}
+
+%ffs-xxs-font {
+	font-family: var.$ff-secondary;
+	font-size: var.$fs-xxs;
+}
+
+// || FFT fonts
+
+%fft-xxxl-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-xxxl;
+}
+
+%fft-xxl-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-xxl;
+}
+
+%fft-xl-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-xl;
+}
+
+%fft-l-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-l;
+}
+
+%fft-m-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-m;
+}
+
+%fft-s-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-s;
+}
+
+%fft-xs-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-xs;
+}
+
+%fft-xxs-font {
+	font-family: var.$ff-ternary;
+	font-size: var.$fs-xxs;
+}
+
+// || Font-family, color, font-size
 
 // || FFP-CP Fonts (ff-primary c-primary fonts)
 
@@ -65,9 +226,21 @@
 
 // || FFP-CS fonts (ff-primary c-secondary fonts)
 
+%ffp-cs-l-font {
+	font-size: var.$fs-l;
+	color: var.$c-secondary;
+	font-family: var.$ff-primary;
+}
+
 %ffp-cs-m-font {
 	font-size: var.$fs-m;
 	color: var.$c-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-cs-lighter-m-font {
+	font-size: var.$fs-m;
+	color: var.$c-secondary-lighter;
 	font-family: var.$ff-primary;
 }
 
@@ -102,6 +275,18 @@
 %ffp-bcp-xxl-font {
 	font-size: var.$fs-xxl;
 	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcp-xl-font {
+	font-size: var.$fs-xl;
+	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcp-dark-l-font {
+	font-size: var.$fs-l;
+	color: var.$bc-primary-dark;
 	font-family: var.$ff-primary;
 }
 
@@ -159,13 +344,139 @@
 
 // || FFS-CP fonts (ff-secondary c-primary fonts)
 
+%ffs-cp-l-font {
+	font-size: var.$fs-l;
+	color: var.$c-primary;
+	font-family: var.$ff-secondary;
+}
+
 %ffs-cp-m-font {
 	font-size: var.$fs-m;
 	color: var.$c-primary;
 	font-family: var.$ff-secondary;
 }
 
+%ffs-cp-s-font {
+	font-size: var.$fs-s;
+	color: var.$c-primary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cp-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-primary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cp-dark-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-primary-dark;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cp-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$c-primary;
+	font-family: var.$ff-secondary;
+}
+
+// || FFS-CS fonts (ff-secondary c-secondary fonts)
+
+%ffs-cs-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-secondary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cs-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$c-secondary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cs-light-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$c-secondary-light;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cs-lighter-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$c-secondary-lighter;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-cs-lighter-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$c-secondary-lighter;
+	font-family: var.$ff-secondary;
+}
+
+// || FFS-BCP fonts (ff-secondary c-primary fonts)
+
+%ffs-bcp-s-font {
+	font-size: var.$fs-s;
+	color: var.$bc-primary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcp-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-primary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcp-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$bc-primary;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcp-darker-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-primary-darker;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcp-darker-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$bc-primary-darker;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcp-darkest-s-font {
+	font-size: var.$fs-s;
+	color: var.$bc-primary-darkest;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcp-darkest-xxs-font {
+	font-size: var.$fs-xxs;
+	color: var.$bc-primary-darkest;
+	font-family: var.$ff-secondary;
+}
+
+// || FFS-BCS fonts (ff-secondary bc-secondary fonts)
+
+%ffs-bcs-darker-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-secondary-darker;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcs-darkest-s-font {
+	font-size: var.$fs-s;
+	color: var.$bc-secondary-darkest;
+	font-family: var.$ff-secondary;
+}
+
 // || FFT-CP fonts (ff-ternary c-primary fonts)
+
+%fft-cp-l-font {
+	font-size: var.$fs-l;
+	color: var.$c-primary;
+	font-family: var.$ff-ternary;
+}
 
 %fft-cp-s-font {
 	font-size: var.$fs-s;
@@ -237,6 +548,11 @@
 	font-weight: 500;
 }
 
+%normal-600 {
+	line-height: var.$lh-normal;
+	font-weight: 600;
+}
+
 %normal-700 {
 	line-height: var.$lh-normal;
 	font-weight: 700;
@@ -273,42 +589,5 @@ body {
 	font-family: var.$ff-primary;
 	color: var.$c-primary;
 	line-height: var.$lh-normal;
-	font-weight: 400;
-}
-
-h1 {
-	@extend %ffp-cp-xxl-font;
-	@extend %base-700;
-}
-
-h2 {
-	@extend %ffp-cp-l-font;
-	@extend %base-700;
-}
-
-h3 {
-	@extend %ffp-cs-m-font;
-	@extend %base-700;
-}
-
-h4 {
-	@extend %ffp-cs-s-font;
-	@extend %base-700;
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-p {
-	@extend %ffp-cs-s-font;
-	@extend %normal-400;
-}
-
-label {
-	@extend %ffp-cs-s-font;
-	font-weight: 400;
-}
-
-button {
-	@extend %ffp-cs-s-font;
 	font-weight: 400;
 }

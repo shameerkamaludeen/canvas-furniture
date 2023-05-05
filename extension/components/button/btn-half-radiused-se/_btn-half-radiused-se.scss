@@ -1,0 +1,48 @@
+/* || Component - Button half radiused with states effects
+	 ========================================================================== */
+
+// 1. Features 
+// Either left or right radiused 
+// Inlucludes states effects
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+
+.btn-half-radiused-se {
+	@extend %ffs-s-font;
+	@extend %normal-400;
+	@include mx.btn-basic-modifiers($color: var.$bc-primary,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: false,
+		$bg-color: var.$c-primary,
+		$bg-color-focus: false,
+		$bg-color-hover: false,
+		$bg-color-active: false,
+		$border: none,
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: false,
+		$content-vh-center: false,
+		$display: false,
+		$transition: (background-color 0.2s ease, color 0.2s ease));
+}
+
+.btn-hr-se-rd-right {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.btn-hr-se-rd-left {
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}

@@ -1,0 +1,47 @@
+/* || Component - Card center columnwise content
+		 ======================================================================== */
+
+// 1. Features
+// Content will be centered
+// Content placed in columnwise order of flex
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+
+.card-center-columnwise-cnt {}
+
+.card-ccc-img-icon-wr {
+	margin-left: auto;
+	margin-right: auto;
+	width: 64px;
+	height: 64px;
+}
+
+.card-ccc-svg {
+	@include mx.svg-fixed-size ($color: flase,
+		$width: 100%,
+		$height: 100%,
+		$stroke: var.$c-primary,
+		$fill: var.$c-primary,
+		$display: inline-block);
+	stroke-width: 0;
+}
+
+.card-ccc-tittle {
+	margin: 1.1em 0;
+	text-align: center;
+	@extend %base-500;
+	@extend %ffp-cp-l-font;
+
+	@media screen and (min-width: var.$laptop-view) {
+		margin: 1em 0;
+	}
+}
+
+.card-ccc-para {
+	text-align: center;
+	@extend %ffs-cp-s-font;
+	@extend %normal-400;
+}

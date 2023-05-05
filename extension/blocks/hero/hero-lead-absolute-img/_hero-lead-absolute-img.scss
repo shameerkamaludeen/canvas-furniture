@@ -1,0 +1,206 @@
+/* || Block - Hero with lead and an absolute image
+	 ========================================================================== */
+
+// 1. Features
+// Title with Lead
+// Absolute hero image
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../components/shape/decor-texture-underline/decor-texture-underline';
+@use 'sass:color';
+
+.hero-lead-absolute-img {
+	background-image: linear-gradient(to bottom, var.$c-primary-light 0%, var.$c-primary 90%, var.$bc-secondary 90%);
+	text-align: center;
+
+	@media screen and (min-width: var.$pc-view) {
+		text-align: left;
+		position: relative;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		background-image: linear-gradient(to bottom, var.$c-primary-light 0%, var.$c-primary 84%, var.$bc-secondary 84%);
+	}
+}
+
+.hero-lai-content-layout-wr {
+	@media screen and (min-width: var.$pc-view) {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+	}
+}
+
+.hero-lai-content-ctr {
+	padding: 71px 0 80px;
+
+	@media screen and (min-width: var.$pc-view) {
+		padding: 95px 50% 112px 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		padding-right: 48%;
+	}
+}
+
+.hero-lai-tagline {
+	text-align: center;
+	opacity: 0.7;
+	text-transform: uppercase;
+	@extend %ffs-bcp-xxs-font;
+	@extend %normal-400;
+	@extend %ws-base-ls-wide;
+
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		font-size: var.$fs-xs;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		text-align: left;
+	}
+}
+
+.hero-lai-tittle {
+	margin: 0.6em 0 1.5em;
+	text-align: center;
+	@extend %ffp-bcp-xl-font;
+	@extend %base-500;
+	@extend %ws-base-ls-normal;
+
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		margin: 0.45em 0 1.2em;
+		font-size: var.$fs-xxl;
+	}
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		font-size: var.$fs-xxxl;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: calc(var.$fs-xxxl * 1.1);
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: calc(var.$fs-xxxl * 1.2);
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		margin: 0.35em 0 0.8em;
+		text-align: left;
+		font-size: calc(var.$fs-xxxl * 1.3);
+	}
+}
+
+.hero-lai-tittle-break {
+	@media screen and (max-width: (var.$pc-view - 0.0625em)) {
+		display: block;
+	}
+}
+
+.hero-lai-lead {
+	$lead-bg: color.adjust(var.$bc-primary, $lightness: -3%);
+
+	@extend %ffs-cp-s-font;
+	@extend %wide-400;
+	@extend %ws-base-ls-normal;
+	@include mx.link-btn-basic($bg-color: $lead-bg,
+		$bg-active-color: false,
+		$bg-hover-color: color.adjust($lead-bg, $alpha: -0.1),
+		$border: none,
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$text-decoration: none,
+		$transition: (background-color 0.3s ease));
+
+	text-transform: uppercase;
+	padding: 7px 24px;
+}
+
+.hero-lai-lead-icon {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 20px,
+		$height: 20px,
+		$stroke: var.$c-primary,
+		$fill: var.$c-primary,
+		$display: inline-block);
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+}
+
+.hero-lai-line {
+	border: none;
+	border-top: 1px solid var.$bc-primary-dark;
+	margin: 0;
+	opacity: 0.15;
+
+	@media screen and (min-width: var.$pc-view) {
+		display: none;
+	}
+}
+
+.hero-lai-image-wr {
+	text-align: center;
+
+	@media screen and (min-width: var.$pc-view) {
+		text-align: right;
+	}
+}
+
+.hero-lai-image {
+	width: 92%;
+
+	@media screen and (min-width: var.$tablet-view) {
+		width: 80%;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		width: 65%;
+		margin-right: 30px;
+	}
+}
+
+.hero-lai-decor-tu {
+	&::after {
+		height: 13px;
+		bottom: -4px;
+		background: url(../images/underline_dark.svg) center / 100% auto no-repeat;
+	}
+}
+
+// Layout
+// -------
+
+.hero-lai-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.hero-lai-lm-auto-pcv {
+	@extend %lm-auto-pcv;
+}
+
+.hero-lai-lm-auto-tvv {
+	@extend %lm-auto-tvv;
+}
+
+.hero-lai-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.hero-lai-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

@@ -1,3 +1,18 @@
 /* || Pages - Home
    ========================================================================== */
-	 
+
+@use '../blocks/hero/hero-lead-absolute-img/hero-lead-absolute-img';
+@use '../blocks/company/why-us-cards-ccc/why-us-cards-ccc';
+@use '../blocks/shop/shop-category-tittle-img/shop-category-tittle-img';
+@use '../blocks/shop/shop-product-dtls-controls-img/shop-product-dtls-controls-img';
+@use '../blocks/lead/lead-img-content-grid/lead-img-content-grid';
+@use '../blocks/feature/feature-flex-centered-cards/feature-flex-centered-cards';
+@use '../blocks/social/social-single-lead-gallery-grid/social-single-lead-gallery-grid';
+@use '../components/go-to-top/gtt-sq-icon-bg-hover/gtt-sq-icon-bg-hover';
+
+/* || Aside -Shoping cart */
+.cart-btn-tbg-count-home {
+	&::after {
+		font-size: 10px;
+	}
+}

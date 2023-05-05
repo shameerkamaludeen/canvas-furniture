@@ -1,0 +1,50 @@
+/* || Component - Top bar space between
+	 ========================================================================== */
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../layout/layout-base';
+
+.top-bar-space-between {
+	background-color: var.$bc-secondary;
+	padding: 14px 0 12px;
+}
+
+.top-bar-sb-container {
+	@media screen and (min-width: var.$tablet-view) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.top-bar-sb-para {
+	@extend %ffp-cp-s-font;
+	@extend %normal-400;
+	text-align: center;
+	margin: 0 0 0.2em;
+}
+
+.top-bar-sb-para-dot {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.top-bar-sb-link {
+	@extend %normal-500;
+	@extend %site-link-c-primary;
+}
+
+.top-bar-sb-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.top-bar-sb-fwl-mlv {
+	@extend %lm-auto-mlv;
+	@extend %fw-layout-mlv;
+	@extend %fw-layout-tv;
+	@extend %fw-layout-lv;
+	@extend %fw-layout-pcv;
+	@extend %fw-layout-tvv;
+}

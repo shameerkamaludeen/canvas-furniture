@@ -61,12 +61,27 @@
 	margin-top: 13px;
 }
 
-// Utilties
-// -------------
+// Layout
+// --------
 
 .team-dg-lm-fixed {
 	@extend %lm-fixed;
 }
+
+.team-dg-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.team-dg-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.team-dg-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
+// Utilties
+// ---------
 
 .team-dg-split-heading {
 	margin: 0;

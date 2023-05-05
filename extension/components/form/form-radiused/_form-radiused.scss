@@ -58,7 +58,7 @@
 	@extend %base-400;
 }
 
-// common
+// Common
 .form-rd-input-email,
 .form-rd-input-text,
 .form-rd-textarea {
@@ -104,7 +104,7 @@
 .form-rd-submit-btn {
 	@extend %ffp-bcp-xs-font;
 	@extend %base-400;
-	@extend %base-spacing;
+	@extend %ws-base-ls-base;
 	@include mx.btn-capsule($background-color: var.$bc-secondary,
 		$color: false,
 		$width: false,

@@ -1,124 +1,169 @@
 /* || Layout - Layout base
    ========================================================================== */
+
+// 1. Abreviations:
+// msv - Mobile small view
+// mpv - Mobile portrait view
+// mlv - Mobile landscape view
+// tv - Tablet view
+// lv - Laptop view
+// pcv - PC View
+// tvv - TV view
+// lm - Layout margin
+// lp - Layout padding
+// lcp - Layout content padding
+
 @use '../abstracts/variables' as var;
 
-// || Layout margin
+// || Layout margin fixed
 
-// Layout margin fixed
 %lm-fixed {
-	margin-right: var.$lm-fixed-msv;
-	margin-left: var.$lm-fixed-msv;
+	margin-right: var.$lm-fixed;
+	margin-left: var.$lm-fixed;
+}
 
-	@media screen and (min-width: var.$mobile-portrait-view) {
-		margin-right: var.$lm-fixed-mpv;
-		margin-left: var.$lm-fixed-mpv;
-	}
-
-	@media screen and (min-width: var.$tablet-view) {
-		margin-right: var.$lm-fixed-tv;
-		margin-left: var.$lm-fixed-tv;
-	}
-
-	@media screen and (min-width: var.$pc-view) {
-		margin-right: var.$lm-fixed-pcv;
-		margin-left: var.$lm-fixed-pcv;
+%lm-fixed-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		margin-right: var.$lm-fixed-msv;
+		margin-left: var.$lm-fixed-msv;
 	}
 }
 
-// Mobile portrait view
 %lm-fixed-mpv {
-
 	@media screen and (min-width: var.$mobile-portrait-view) {
 		margin-right: var.$lm-fixed-mpv;
 		margin-left: var.$lm-fixed-mpv;
 	}
+}
 
-	@media screen and (min-width: var.$tablet-view) {
-		margin-right: var.$lm-fixed-tv;
-		margin-left: var.$lm-fixed-tv;
-	}
-
-	@media screen and (min-width: var.$pc-view) {
-		margin-right: var.$lm-fixed-pcv;
-		margin-left: var.$lm-fixed-pcv;
+%lm-fixed-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		margin-right: var.$lm-fixed-mlv;
+		margin-left: var.$lm-fixed-mlv;
 	}
 }
 
-// tablet view
 %lm-fixed-tv {
-
 	@media screen and (min-width: var.$tablet-view) {
 		margin-right: var.$lm-fixed-tv;
 		margin-left: var.$lm-fixed-tv;
 	}
+}
 
-	@media screen and (min-width: var.$pc-view) {
-		margin-right: var.$lm-fixed-pcv;
-		margin-left: var.$lm-fixed-pcv;
+%lm-fixed-lv {
+	@media screen and (min-width: var.$laptop-view) {
+		margin-right: var.$lm-fixed-lv;
+		margin-left: var.$lm-fixed-lv;
 	}
 }
 
-// pc view
 %lm-fixed-pcv {
-
 	@media screen and (min-width: var.$pc-view) {
 		margin-right: var.$lm-fixed-pcv;
 		margin-left: var.$lm-fixed-pcv;
 	}
 }
 
-// Layout margin fixed left 
-// Tablet view
+%lm-fixed-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		margin-right: var.$lm-fixed-tvv;
+		margin-left: var.$lm-fixed-tvv;
+	}
+}
+
+// || Layout margin fixed left
+// 1.'margin-right: initial' has to be added in the component or block where it 
+// is used if any of the 'lm-fixed' device views used before
+
+%lm-fixed-left {
+	margin-left: var.$lm-fixed;
+}
+
+%lm-fixed-left-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		margin-left: var.$lm-fixed-mlv;
+	}
+}
+
 %lm-fixed-left-tv {
 	@media screen and (min-width: var.$tablet-view) {
-		margin-right: initial;
+		margin-left: var.$lm-fixed-tv;
 	}
 }
 
-// Laptop view
 %lm-fixed-left-lv {
-	@media screen and (min-width: var.$pc-view) {
-		margin-right: initial;
+	@media screen and (min-width: var.$laptop-view) {
+		margin-left: var.$lm-fixed-lv;
 	}
 }
 
-// PC view
 %lm-fixed-left-pcv {
 	@media screen and (min-width: var.$pc-view) {
-		margin-right: initial;
+		margin-left: var.$lm-fixed-pcv;
 	}
 }
 
-// Layout margin fixed right 
+%lm-fixed-left-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		margin-left: var.$lm-fixed-tvv;
+	}
+}
 
-// Tablet view
+// || Layout margin fixed right 
+// 1.'margin-left: initial' has to be added in the component or block where it 
+// is used if any of the 'lm-fixed' device views used before
+
+%lm-fixed-right-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		margin-right: var.$lm-fixed-mlv;
+	}
+}
+
 %lm-fixed-right-tv {
 	@media screen and (min-width: var.$tablet-view) {
-		margin-left: initial;
+		margin-right: var.$lm-fixed-tv;
 	}
 }
 
-// Laptop view
 %lm-fixed-right-lv {
 	@media screen and (min-width: var.$laptop-view) {
-		margin-left: initial;
+		margin-right: var.$lm-fixed-lv;
 	}
 }
 
-// PC view
 %lm-fixed-right-pcv {
 	@media screen and (min-width: var.$pc-view) {
-		margin-left: initial;
+		margin-right: var.$lm-fixed-pcv;
 	}
 }
 
-// Layout margin auto
+%lm-fixed-right-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		margin-right: var.$lm-fixed-tvv;
+	}
+}
+
+// || Layout margin auto
+
 %lm-auto {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-// Mobile landscape view
+%lm-auto-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+%lm-auto-mpv {
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 %lm-auto-mlv {
 	@media screen and (min-width: var.$mobile-landscape-view) {
 		margin-left: auto;
@@ -126,7 +171,6 @@
 	}
 }
 
-// Tablet view
 %lm-auto-tv {
 	@media screen and (min-width: var.$tablet-view) {
 		margin-left: auto;
@@ -134,7 +178,6 @@
 	}
 }
 
-// Laptop view
 %lm-auto-lv {
 	@media screen and (min-width: var.$laptop-view) {
 		margin-left: auto;
@@ -142,7 +185,6 @@
 	}
 }
 
-// PC view
 %lm-auto-pcv {
 	@media screen and (min-width: var.$pc-view) {
 		margin-left: auto;
@@ -150,88 +192,153 @@
 	}
 }
 
-// Layout margin auto fixed width
-%lm-auto-fixed-width {
-	max-width: var.$lm-auto-fixed-width;
-	@extend %lm-auto;
+%lm-auto-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-// || Layout padding
+// || Fixed width layout
 
-// Layout padding right
-// Tablet view
-%lp-right-tv {
+%fw-layout {
+	max-width: var.$fw-layout;
+}
+
+%fw-layout-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		max-width: var.$fw-layout-msv;
+	}
+}
+
+%fw-layout-mpv {
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		max-width: var.$fw-layout-mpv;
+	}
+}
+
+%fw-layout-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		max-width: var.$fw-layout-mlv;
+	}
+}
+
+%fw-layout-tv {
 	@media screen and (min-width: var.$tablet-view) {
-		padding-right: var.$lp-base;
+		max-width: var.$fw-layout-tv;
 	}
+}
 
+%fw-layout-lv {
 	@media screen and (min-width: var.$laptop-view) {
-		padding-right: var.$lp-normal;
-	}
-
-	@media screen and (min-width: var.$pc-view) {
-		padding-right: var.$lp-wide
+		max-width: var.$fw-layout-lv;
 	}
 }
 
-// Laptop view
-%lp-right-lv {
-	@media screen and (min-width: var.$laptop-view) {
-		padding-right: var.$lp-normal;
-	}
-
+%fw-layout-pcv {
 	@media screen and (min-width: var.$pc-view) {
-		padding-right: var.$lp-wide
+		max-width: var.$fw-layout-pcv;
 	}
 }
 
-// PC view
-%lp-right-pcv {
-	@media screen and (min-width: var.$pc-view) {
-		padding-right: var.$lp-wide;
+%fw-layout-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		max-width: var.$fw-layout-tvv;
 	}
 }
 
-// Layout padding left
+// || Layout padding right
 
-// Tablet view
-%lp-left-tv {
+%lp-fixed-right {
+	padding-right: var.$lp-fixed;
+}
+
+%lp-fixed-right-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		padding-right: var.$lp-fixed-msv;
+	}
+}
+
+%lp-fixed-right-mpv {
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		padding-right: var.$lp-fixed-mpv;
+	}
+}
+
+%lp-fixed-right-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		padding-right: var.$lp-fixed-mlv;
+	}
+}
+
+%lp-fixed-right-tv {
 	@media screen and (min-width: var.$tablet-view) {
-		padding-left: var.$lp-base;
+		padding-right: var.$lp-fixed-tv;
 	}
+}
 
+%lp-fixed-right-lv {
 	@media screen and (min-width: var.$laptop-view) {
-		padding-left: var.$lp-normal;
-	}
-
-	@media screen and (min-width: var.$pc-view) {
-		padding-left: var.$lp-wide;
+		padding-right: var.$lp-fixed-lv;
 	}
 }
 
-// Laptop view
-%lp-left-lv {
+%lp-fixed-right-pcv {
+	@media screen and (min-width: var.$pc-view) {
+		padding-right: var.$lp-fixed-pcv;
+	}
+}
+
+%lp-fixed-right-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		padding-right: var.$lp-fixed-tvv;
+	}
+}
+
+// || Layout padding left
+
+%lp-fixed-left {
+	padding-left: var.$lp-fixed;
+}
+
+%lp-fixed-left-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		padding-left: var.$lp-fixed-msv;
+	}
+}
+
+%lp-fixed-left-mpv {
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		padding-left: var.$lp-fixed-mpv;
+	}
+}
+
+%lp-fixed-left-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		padding-left: var.$lp-fixed-mlv;
+	}
+}
+
+%lp-fixed-left-tv {
+	@media screen and (min-width: var.$tablet-view) {
+		padding-left: var.$lp-fixed-tv;
+	}
+}
+
+%lp-fixed-left-lv {
 	@media screen and (min-width: var.$laptop-view) {
-		padding-left: var.$lp-normal;
-	}
-
-	@media screen and (min-width: var.$pc-view) {
-		padding-left: var.$lp-wide;
+		padding-left: var.$lp-fixed-lv;
 	}
 }
 
-// PC view
-%lp-left-pcv {
+%lp-fixed-left-pcv {
 	@media screen and (min-width: var.$pc-view) {
-		padding-left: var.$lp-wide;
+		padding-left: var.$lp-fixed-pcv;
 	}
 }
 
-// Layout content padding right
-
-// PC view
-%lcp-right-pcv-normal {
-	@media screen and (min-width: var.$pc-view) {
-		padding-right: var.$lcp-normal;
+%lp-fixed-left-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		padding-left: var.$lp-fixed-tvv;
 	}
 }

@@ -88,14 +88,31 @@
 	}
 }
 
-/* layout margin fixed */
+// Layout
+// --------
+
 .services-cc-lm-fixed {
 	@extend %lm-fixed;
 }
 
-// Layout margin auto fixed width
-.services-cc-lm-auto-fw {
-	@extend %lm-auto-fixed-width;
+.services-cc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.services-cc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.services-cc-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
+.services-cc-lm-auto-mpv {
+	@extend %lm-auto-mpv;
+}
+
+.services-cc-fw-layout-mpv {
+	@extend %fw-layout-mpv;
 }
 
 .services-cc-link-wr {

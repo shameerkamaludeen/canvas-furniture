@@ -21,8 +21,23 @@
 	}
 }
 
+// Layout
+//--------
+
 .navbar-rrm-lm-fixed {
 	@extend %lm-fixed;
+}
+
+.navbar-rrm-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.navbar-rrm-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.navbar-rrm-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
 }
 
 .navbar-rrm-wr {

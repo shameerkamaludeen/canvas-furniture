@@ -1,6 +1,10 @@
 /* || Component - Menu item hover underline
    ========================================================================== */
 
+// 1. Features
+// last level of menu item
+// On hover after underline
+
 @use '../../abstracts/variables' as var;
 @use '../../abstracts/mixins' as mx;
 @use '../../base/typography';
@@ -21,7 +25,8 @@
 
 	@include mx.link-basic-modifiers($color: var.$c-primary,
 		$visited-color: false,
-		$focus-hover-color: false,
+		$focus-color: false,
+		$hover-color: false,
 		$active-color: var.$bc-secondary);
 
 	@include mx.link-after-underline($underline-height: 2px,

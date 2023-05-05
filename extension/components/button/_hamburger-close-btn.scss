@@ -5,8 +5,6 @@
 @use '../../abstracts/mixins' as mx;
 @use '../../base/utilities';
 
-$background-color: var.$bc-secondary;
-
 .hamburger-close-btn {
 	margin: 10px;
 	@include mx.btn-icon-compatible($bg-color: var.$bc-secondary,

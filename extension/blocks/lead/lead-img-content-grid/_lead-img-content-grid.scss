@@ -1,0 +1,137 @@
+/* || Block - Lead image content grid
+	 ========================================================================== */
+
+// 1. Features
+// Image and content placed in a right to left grid
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+@use '../../../layout/layout-base';
+
+.lead-img-content-grid {
+	@media screen and (min-width: var.$laptop-view) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		grid-template-columns: auto 35%;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		grid-template-columns: auto 33%;
+	}
+}
+
+.lead-icg-img-wr {
+	height: 330px;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		height: 410px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		height: 100%;
+		max-height: 580px;
+	}
+}
+
+.lead-icg-img {
+	@extend %img-icon-cover-center;
+}
+
+.lead-icg-content-wr {
+	padding: 24px 0 78px;
+
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 92px 48px 84px;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		padding: 79px 48px 71px;
+	}
+}
+
+.lead-icg-tittle {
+	margin: 0.96em 0;
+	@extend %ffp-cp-xl-font;
+	@extend %base-400;
+
+	@media screen and (min-width: var.$tablet-view) {
+		margin: 0.7em 0;
+		font-size: var.$fs-xxl;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		font-size: var.$fs-xxxl;
+	}
+}
+
+.lead-icg-decor-tu {
+	&::after {
+		bottom: -3px;
+	}
+}
+
+.lead-icg-para {
+	margin-bottom: 1.8em;
+	@extend %ffs-cp-s-font;
+	@extend %wide-400;
+}
+
+.lead-icg-lead {
+	@extend %ffs-cs-xs-font;
+	@extend %normal-700;
+	@extend %ws-base-ls-normal;
+
+	@include mx.link-btn-basic($bg-color: transparent,
+		$bg-active-color: false,
+		$bg-hover-color: var.$c-primary,
+		$border: 1.5px solid var.$bc-primary-dark,
+		$width: false,
+		$height: false,
+		$border-radius: 4px,
+		$outline: 2px solid var.$c-lead-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: false,
+		$content-vh-center: true,
+		$display: inline-block,
+		$text-decoration: none,
+		$transition: (background-color 0.2s ease));
+	padding: 10.5px 22px;
+	text-transform: uppercase;
+
+	&:hover {
+		color: var.$bc-primary;
+
+		.lead-icg-lead-svg {
+			fill: var.$bc-primary;
+		}
+	}
+}
+
+.lead-icg-lead-svg {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 16px,
+		$height: false,
+		$stroke: false,
+		$fill: var.$c-secondary,
+		$display: inline-block);
+	position: relative;
+	top: 3px;
+	transition: fill 0.3s ease;
+}
+
+// Layout
+// -------
+
+.lead-icg-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.lead-icg-lm-auto-lv {
+	@extend %lm-auto-lv;
+}

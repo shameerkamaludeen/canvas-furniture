@@ -8,6 +8,10 @@
 
 // || General
 
+.overflow-hidden {
+	overflow: hidden;
+}
+
 // absolute element cover its container
 %position-absolute-cover {
 	position: absolute;
@@ -28,15 +32,21 @@
 
 // || Flex
 
+// Flexible wrap
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 // Flexible vertically center(vc) and horizontally space between(hsb)
-%flex-vc-hsb {
+%flex-v-center-h-sb {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 // Flexible vertical and horizontal centered
-%flex-vh-center {
+%flex-v-center-h-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -67,8 +77,39 @@
 	justify-content: center;
 }
 
+// Flexible horizontally center wrap
+%flex-h-center-wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+// Flexible horizontally space around
+%flex-h-sa {
+	display: flex;
+	justify-content: space-around;
+}
+
+// Flexible horizontally space between
+%flex-h-sb {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Flexible direction column
+%flex-dc {
+	display: flex;
+	flex-direction: column;
+}
+
+// Flexible direction column wrap 
+%flex-dc-wrap {
+	display: flex;
+	flex-flow: column wrap;
+}
+
 // Flexible direction column vertically and horizontally centerd 
-%flex-dc-vh-center {
+%flex-dc-v-center-h-center {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -82,22 +123,10 @@
 	align-items: center;
 }
 
-// flexible row wrap
-%flex-row-wrap {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-%flex-row-wrap-h-center {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
 // || Inline-flex
 
 // Flexible(inline) vertical and horizontal centered
-%inline-flex-vh-center {
+%inline-flex-v-center-h-center {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -292,6 +321,31 @@
 	}
 }
 
+%site-link-c-primary {
+	transition: color 0.3s ease;
+	cursor: pointer;
+
+	&:link {
+		color: var.$c-primary;
+	}
+
+	&:visited {
+		color: var.$c-secondary;
+	}
+
+	&:focus {
+		outline: 2px solid var.$c-lead-light;
+	}
+
+	&:hover {
+		color: var.$c-primary-light;
+	}
+
+	&:active {
+		color: var.$c-primary;
+	}
+}
+
 %site-link-c-secondary {
 	transition: color 0.3s ease;
 	cursor: pointer;
@@ -335,38 +389,32 @@
 
 // || Animation
 
-@keyframes slide-in-right {
+@keyframes wipe-in-down {
 	from {
-		opacity: 0;
-		transform: translate(100%);
+		clip-path: inset(0 0 100% 0);
 	}
 
 	to {
-		opacity: 1;
-		transform: none;
+		clip-path: inset(0 0 0 0);
 	}
 }
 
-@keyframes slide-in-left {
+@keyframes wipe-out-up {
 	from {
-		opacity: 0;
-		transform: translate(-100%);
+		clip-path: inset(0 0 0 0);
 	}
 
 	to {
-		opacity: 1;
-		transform: none;
+		clip-path: inset(0 0 100% 0);
 	}
 }
 
-@keyframes slide-in-bottom {
+@keyframes wipe-in-right {
 	from {
-		opacity: 0;
-		transform: translate(0, 100%);
+		clip-path: inset(0 100% 0 0);
 	}
 
 	to {
-		opacity: 1;
-		transform: none;
+		clip-path: inset(0 0 0 0);
 	}
 }

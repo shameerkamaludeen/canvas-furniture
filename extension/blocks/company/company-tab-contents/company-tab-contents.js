@@ -4,7 +4,7 @@
 import { animateOnScroll } from '../../../../scripts/utilities.js'
 
 export { default as addRowFullWidthTabsEvents } from '../../../components/tab/row-full-width-tabs/row-full-width-tabs.js';
-export { default as animateCounters } from '../../../components/counter/conters-splitter-tag/conters-splitter-tag.js';
+export { default as animateCounters } from '../../../components/counter/counters-splitter-tag/counters-splitter-tag.js';
 // animate company image
 export function animateCTCImage() {
 	const companyImg = $('#companyTCImg');

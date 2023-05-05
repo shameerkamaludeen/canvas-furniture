@@ -64,7 +64,7 @@
 .img-fg-id-heading {
 	@extend %ffp-cp-m-font;
 	@extend %base-500;
-	@extend %base-spacing;
+	@extend %ws-base-ls-base;
 	margin: 0;
 }
 
@@ -72,7 +72,7 @@
 	@extend %ffp-cs-xxs-font;
 	@extend %base-500;
 	text-transform: uppercase;
-	@extend %normal-spacing;
+	@extend %ws-normal-ls-normal;
 	margin-top: 0.7em;
 	margin-bottom: 0;
 }

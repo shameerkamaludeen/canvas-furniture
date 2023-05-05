@@ -22,6 +22,18 @@
 	@extend %lm-fixed;
 }
 
+.lead-bg-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.lead-bg-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.lead-bg-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
 .lead-bg-heading {
 	@extend %ffp-bcp-xxl-font;
 	margin: 0;
@@ -52,7 +64,7 @@
 	line-height: 1;
 	@extend %ffp-bcp-m-font;
 	font-weight: 600;
-	@extend %base-spacing;
+	@extend %ws-base-ls-base;
 	@include mx.link-border-underline($outline: none,
 		$color: var.$bc-primary,
 		$border-bottom-width: 1.5px,

@@ -12,9 +12,9 @@
 @mixin after-underline($underline-height: 2px,
 	$width: 100%,
 	$left: 0,
-	$right: auto,
+	$right: false,
 	$bottom: -2px,
-	$top: auto,
+	$top: false,
 	$border-radius: 5px,
 	$underline-color: var.$bc-secondary) {
 
@@ -30,19 +30,19 @@
 			width: $width;
 		}
 
-		@if $right  !=auto {
+		@if $right {
 			right: $right;
 		}
 
-		@if $left  !=auto {
+		@if $left {
 			left: $left;
 		}
 
-		@if $bottom  !=auto {
+		@if $bottom {
 			bottom: $bottom;
 		}
 
-		@if $top  !=auto {
+		@if $top {
 			top: $top;
 		}
 
@@ -58,72 +58,102 @@
 
 // || Layouts
 
-// Layout margin auto fixed width
-@mixin lm-auto-fixed-width($max-width: 560px) {
+// Fixed width layout
+@mixin fw-layout($max-width: 560px) {
 	max-width: $max-width;
 	@extend %lm-auto;
 }
 
 // || Links
 
-@mixin link-border-underline($outline: none,
-	$color: var.$bc-primary,
-	$border-bottom-width: 1.5px,
-	$border-bottom-style: solid,
-	$visited-color: color.adjust(var.$bc-primary, $lightness: -20%),
-	$focus-hover-color: var.$bc-ternary-lighter,
-	$active-color: var.$bc-secondary,
-	$transition: (color 0.3s ease, border-bottom-color 0.3s ease),
-	$cursor: pointer) {
+@mixin link-border-underline($color: var.$c-primary,
+	$color-visited: var.$c-primary-darkest,
+	$color-focus: var.$c-primary-dark,
+	$color-hover: var.$c-primary-dark,
+	$color-active: var.$c-secondary,
+	$border-bottom: 1.5px solid var.$c-primary,
+	$outline: 2px solid var.$c-lead-light,
+	$outline-offset: false,
+	$cursor: pointer,
+	$transition: (color 0.3s ease, border-bottom-color 0.3s ease)) {
 
 	text-decoration: none;
-	border-bottom: #{$border-bottom-width} #{$border-bottom-style};
-	transition: $transition;
-	cursor: $cursor;
 
-	@if $outline {
-		outline: none;
+	@if $transition {
+		transition: $transition;
+	}
+
+	@if $cursor {
+		cursor: $cursor;
+	}
+
+	@if $outline-offset {
+		outline-offset: $outline-offset;
 	}
 
 	&:link {
 		color: $color;
-		border-bottom-color: $color;
+		border-bottom: $border-bottom;
 	}
 
 	&:visited {
-		@if $visited-color {
-			color: $visited-color;
-			border-bottom-color: $visited-color;
+		@if $color-visited {
+			color: $color-visited;
+			border-bottom-color: $color-visited;
 		}
 	}
 
-	&:focus,
+	&:focus {
+		@if $color-focus {
+			color: $color-focus;
+			border-bottom-color: $color-focus;
+		}
+	}
+
+	&:focus-visible {
+		@if $outline {
+			outline: $outline;
+		}
+	}
+
 	&:hover {
-		@if $focus-hover-color {
-			color: $focus-hover-color;
-			border-bottom-color: $focus-hover-color;
+		@if $color-hover {
+			color: $color-hover;
+			border-bottom-color: $color-hover
 		}
 	}
 
 	&:active {
-		@if $active-color {
-			color: $active-color;
-			border-bottom-color: $active-color;
+		@if $color-active {
+			color: $color-active;
+			border-bottom-color: $color-active;
 		}
 	}
 }
 
-@mixin link-no-underline ($outline: none,
-	$color: var.$bc-primary,
-	$visited-color: color.adjust(var.$bc-primary, $lightness: -10%),
-	$focus-hover-color: var.$c-primary,
-	$active-color: var.$c-secondary,
-	$transition: color 0.3s ease,
-	$cursor: pointer) {
+@mixin link-no-underline ($color: var.$c-primary,
+	$color-visited: var.$c-primary-darkest,
+	$color-focus: var.$c-primary-dark,
+	$color-hover: var.$c-primary-dark,
+	$color-active: var.$c-secondary,
+	$outline: 2px solid var.$c-lead-light,
+	$cursor: pointer,
+	$display: false,
+	$transition: (color 0.3s ease)) {
 
 	text-decoration: none;
-	transition: $transition;
-	cursor: $cursor;
+
+	@if $display {
+		display: $display;
+	}
+
+	@if $transition {
+		transition: $transition;
+	}
+
+	@if $cursor {
+		cursor: $cursor;
+	}
 
 	&:link {
 		@if $color {
@@ -132,27 +162,32 @@
 	}
 
 	&:visited {
-		@if $visited-color {
-			color: $visited-color;
+		@if $color-visited {
+			color: $color-visited;
 		}
 	}
 
-	&:focus {
+	&:focus-visible {
 		@if $outline {
 			outline: $outline;
 		}
 	}
 
-	&:focus,
+	&:focus {
+		@if $color-focus {
+			color: $color-focus;
+		}
+	}
+
 	&:hover {
-		@if $focus-hover-color {
-			color: $focus-hover-color;
+		@if $color-hover {
+			color: $color-hover;
 		}
 	}
 
 	&:active {
-		@if $active-color {
-			color: $active-color;
+		@if $color-active {
+			color: $color-active;
 		}
 	}
 }
@@ -222,14 +257,21 @@
 
 // use this along with '%link-no-decor-outline' if required
 @mixin link-basic-modifiers($color: var.$bc-primary,
-	$visited-color: color.adjust(var.$bc-primary, $lightness: -10%),
-	$focus-hover-color: var.$c-primary,
-	$active-color: var.$c-secondary,
-	$transition: color 0.3s ease,
-	$cursor: pointer) {
+	$color-visited: false,
+	$color-focus: false,
+	$color-hover: false,
+	$color-active: false,
+	$outline: 2px solid var.$c-lead-light,
+	$cursor: pointer,
+	$transition: (color 0.3s ease)) {
 
-	transition: $transition;
-	cursor: $cursor;
+	@if $transition {
+		transition: $transition;
+	}
+
+	@if $cursor {
+		cursor: $cursor;
+	}
 
 	&:link {
 		@if $color {
@@ -238,21 +280,32 @@
 	}
 
 	&:visited {
-		@if $visited-color {
-			color: $visited-color;
+		@if $color-visited {
+			color: $color-visited;
 		}
 	}
 
-	&:focus,
+	&:focus {
+		@if $color-focus {
+			color: $color-focus;
+		}
+	}
+
+	&:focus-visible {
+		@if $outline {
+			outline: $outline;
+		}
+	}
+
 	&:hover {
-		@if $focus-hover-color {
-			color: $focus-hover-color;
+		@if $color-hover {
+			color: $color-hover;
 		}
 	}
 
 	&:active {
-		@if $active-color {
-			color: $active-color;
+		@if $color-active {
+			color: $color-active;
 		}
 	}
 }
@@ -320,41 +373,10 @@
 	}
 }
 
-// link wrapper with modifiers
-@mixin link-wrapper-modifiers() {
-	// add later
-	// we have a placeholder for basic, make a mixin with modifiers also
-}
-
-// || SVG's
-
-@mixin svg-fixed-size ($color: var.$bc-primary,
-	$width: 10px,
-	$height: 10px,
-	$stroke: var.$bc-primary,
-	$fill: var.$bc-primary) {
-
-	width: $width;
-	height: $height;
-
-	@if $color {
-		color: $color;
-	}
-
-	@if $stroke {
-		stroke: $stroke;
-	}
-
-	@if $fill {
-		fill: $fill;
-	}
-}
-
-// || Buttons
-
-@mixin btn-icon-compatible($bg-color: var.$bc-secondary,
+@mixin link-btn-basic($bg-color: var.$bc-secondary,
 	$bg-active-color: false,
 	$bg-hover-color: false,
+	$color-hover: false,
 	$border: none,
 	$width: 35px,
 	$height: 35px,
@@ -362,7 +384,27 @@
 	$outline: 2px solid var.$c-primary,
 	$outline-offset: false,
 	$cursor: pointer,
-	$transition: (background-color 0.2s ease, outline 0.2s ease)) {
+	$text-align: false,
+	$content-vh-center: true,
+	$display: inline-block,
+	$text-decoration: none,
+	$transition: (background-color 0.2s ease)) {
+
+	@if $text-decoration {
+		text-decoration: $text-decoration;
+	}
+
+	@if $display {
+		display: $display;
+	}
+
+	@if $content-vh-center {
+		@extend %inline-flex-v-center-h-center;
+	}
+
+	@if $text-align {
+		text-align: $text-align;
+	}
 
 	@if $border {
 		border: $border;
@@ -396,10 +438,288 @@
 		cursor: pointer;
 	}
 
-	@extend %inline-flex-vh-center;
+	&:focus-visible {
+		@if $outline {
+			outline: $outline;
+		}
+	}
 
-	&:focus,
 	&:hover {
+		@if $bg-hover-color {
+			background-color: $bg-hover-color;
+		}
+
+		@if $color-hover {
+			color: $color-hover;
+		}
+	}
+
+	&:active {
+		@if $bg-active-color {
+			background-color: $bg-active-color
+		}
+	}
+}
+
+@mixin link-img-icon-wr($border: none,
+	$hover-opacity: 0.9,
+	$width: 35px,
+	$height: 35px,
+	$border-radius: 4px,
+	$outline: 2px solid var.$c-lead,
+	$outline-offset: false,
+	$cursor: pointer,
+	$text-align: false,
+	$content-vh-center: true,
+	$display: inline-block,
+	$text-decoration: none,
+	$transition: (background-color 0.2s ease)) {
+
+	@if $text-decoration {
+		text-decoration: $text-decoration;
+	}
+
+	@if $display {
+		display: $display;
+	}
+
+	@if $content-vh-center {
+		@extend %inline-flex-vh-center;
+	}
+
+	@if $text-align {
+		text-align: $text-align;
+	}
+
+	@if $border {
+		border: $border;
+	}
+
+	@if $width {
+		width: $width;
+	}
+
+	@if $height {
+		height: $height;
+	}
+
+	@if $border-radius {
+		border-radius: $border-radius;
+	}
+
+	@if $outline-offset {
+		outline-offset: $outline-offset;
+	}
+
+	@if $transition {
+		transition: $transition;
+	}
+
+	@if $cursor {
+		cursor: pointer;
+	}
+
+	&:focus-visible {
+		@if $outline {
+			outline: $outline;
+		}
+	}
+
+	&:hover {
+		@if $hover-opacity {
+			opacity: $hover-opacity;
+		}
+	}
+}
+
+// || SVG's
+
+@mixin svg-fixed-size ($color: var.$bc-primary,
+	$width: 10px,
+	$height: 10px,
+	$stroke: var.$bc-primary,
+	$fill: var.$bc-primary,
+	$display: inline-block) {
+
+	@if $width {
+		width: $width;
+	}
+
+	@if $height {
+		height: $height;
+	}
+
+	@if $color {
+		color: $color;
+	}
+
+	@if $stroke {
+		stroke: $stroke;
+	}
+
+	@if $fill {
+		fill: $fill;
+	}
+
+	@if $display {
+		display: $display;
+	}
+}
+
+// || Buttons
+
+@mixin btn-basic-modifiers($color: var.$bc-secondary,
+	$color-focus: false,
+	$color-hover: false,
+	$color-active: false,
+	$bg-color: var.$bc-secondary,
+	$bg-color-focus: false,
+	$bg-color-hover: false,
+	$bg-color-active: false,
+	$border: none,
+	$width: 35px,
+	$height: 35px,
+	$border-radius: 4px,
+	$outline: 2px solid var.$c-lead-light,
+	$outline-offset: false,
+	$cursor: pointer,
+	$text-align: false,
+	$content-vh-center: true,
+	$display: inline-block,
+	$transition: (background-color 0.2s ease)) {
+
+	@if $display {
+		display: $display;
+	}
+
+	@if $content-vh-center {
+		@extend %inline-flex-v-center-h-center;
+	}
+
+	@if $text-align {
+		text-align: $text-align;
+	}
+
+	@if $border {
+		border: $border;
+	}
+
+	@if $width {
+		width: $width;
+	}
+
+	@if $height {
+		height: $height;
+	}
+
+	@if $border-radius {
+		border-radius: $border-radius;
+	}
+
+	@if $outline-offset {
+		outline-offset: $outline-offset;
+	}
+
+	@if $transition {
+		transition: $transition;
+	}
+
+	@if $color {
+		color: $color;
+	}
+
+	@if $bg-color {
+		background-color: $bg-color;
+	}
+
+	@if $cursor {
+		cursor: pointer;
+	}
+
+	&:focus {
+		@if $color-focus {
+			color: $color-focus;
+		}
+
+		@if $bg-color-focus {
+			background-color: $bg-color-focus;
+		}
+	}
+
+	&:focus-visible {
+		@if $outline {
+			outline: $outline;
+		}
+	}
+
+	&:hover {
+		@if $color-hover {
+			color: $color-hover;
+		}
+
+		@if $bg-color-hover {
+			background-color: $bg-color-hover;
+		}
+	}
+
+	&:active {
+		@if $color-active {
+			color: $color-active;
+		}
+
+		@if $bg-color-active {
+			background-color: $bg-color-active;
+		}
+	}
+}
+
+@mixin btn-icon-compatible($bg-color: var.$bc-secondary,
+	$bg-active-color: false,
+	$bg-hover-color: false,
+	$border: none,
+	$width: 35px,
+	$height: 35px,
+	$border-radius: 4px,
+	$outline: 2px solid var.$c-primary,
+	$outline-offset: false,
+	$cursor: pointer,
+	$transition: (background-color 0.2s ease)) {
+
+	@if $border {
+		border: $border;
+	}
+
+	@if $width {
+		width: $width;
+	}
+
+	@if $height {
+		height: $height;
+	}
+
+	@if $border-radius {
+		border-radius: $border-radius;
+	}
+
+	@if $outline-offset {
+		outline-offset: $outline-offset;
+	}
+
+	@if $transition {
+		transition: $transition;
+	}
+
+	@if $bg-color {
+		background-color: $bg-color;
+	}
+
+	@if $cursor {
+		cursor: pointer;
+	}
+
+	@extend %inline-flex-v-center-h-center;
+
+	&:focus-visible {
 		@if $outline {
 			outline: $outline;
 		}
@@ -416,10 +736,6 @@
 			background-color: $bg-active-color
 		}
 	}
-}
-
-@mixin btn-text-compatible () {
-	// create with the help of 'btn-icon-compatible'
 }
 
 @mixin btn-capsule($background-color: var.$bc-secondary,
@@ -474,6 +790,68 @@
 
 		@if $active-color {
 			color: $active-color;
+		}
+	}
+}
+
+
+@mixin btn-no-bg-border($color: var.$c-primary,
+	$color-hover: var.$c-primary-light,
+	$color-active: var.$c-secondary,
+	$width: 35px,
+	$height: 35px,
+	$outline: 2px solid var.$c-primary,
+	$outline-offset: false,
+	$cursor: pointer,
+	$text-decoration: underline,
+	$transition: (color 0.2s ease)) {
+
+	border: none;
+	background-color: transparent;
+
+	@if $color {
+		color: $color;
+	}
+
+	@if $width {
+		width: $width;
+	}
+
+	@if $height {
+		height: $height;
+	}
+
+	@if $cursor {
+		cursor: pointer;
+	}
+
+	@if $text-decoration {
+		text-decoration: $text-decoration;
+	}
+
+	@if $transition {
+		transition: $transition;
+	}
+
+	&:focus-visible {
+		@if $outline {
+			outline: $outline;
+		}
+
+		@if $outline-offset {
+			outline-offset: $outline-offset;
+		}
+	}
+
+	&:hover {
+		@if $color-hover {
+			color: $color-hover;
+		}
+	}
+
+	&:active {
+		@if $color-active {
+			color: $color-active;
 		}
 	}
 }

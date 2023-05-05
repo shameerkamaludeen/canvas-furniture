@@ -5,7 +5,7 @@
 @use '../../../abstracts/mixins' as mx;
 @use '../../../base/sitewide';
 @use '../../../layout/layout-base';
-@use '../../counter/conters-splitter-tag/conters-splitter-tag';
+@use '../../counter/counters-splitter-tag/counters-splitter-tag';
 @use 'sass:color';
 
 $hr-color: color.adjust(var.$c-primary, $lightness: 60%);

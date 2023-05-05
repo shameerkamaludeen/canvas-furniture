@@ -118,12 +118,32 @@
 	@extend %lm-fixed;
 }
 
+.hero-id-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.hero-id-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.hero-id-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
 .hero-id-lm-fixed-l-tv {
 	@extend %lm-fixed-left-tv;
 }
 
-.hero-id-lp-right-tv {
-	@extend %lp-right-tv;
+.hero-id-lpf-right-tv {
+	@extend %lp-fixed-right-tv;
+}
+
+.hero-id-lpf-right-lv {
+	@extend %lp-fixed-right-lv;
+}
+
+.hero-id-lpf-right-pcv {
+	@extend %lp-fixed-right-pcv;
 }
 
 .hero-id-img-animate {

@@ -90,7 +90,20 @@
 	@extend %lm-fixed;
 }
 
+.projects-mc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.projects-mc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.projects-mc-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
 // Layout margin auto fixed width
-.projects-mc-lm-auto-fw {
-	@extend %lm-auto-fixed-width;
+.projects-mc-fw-layout-mpv {
+	@extend %lm-auto;
+	@extend %fw-layout-mpv;
 }

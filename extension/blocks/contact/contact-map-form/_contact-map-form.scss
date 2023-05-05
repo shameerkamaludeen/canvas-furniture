@@ -148,6 +148,18 @@
 	@extend %lm-fixed;
 }
 
+.contact-mf-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.contact-mf-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.contact-mf-lm-fixed-pcv {
+	@extend %lm-fixed-pcv;
+}
+
 .contact-mf-lm-auto-fw {
-	@include mx.lm-auto-fixed-width($max-width: 800px);
+	@include mx.fw-layout($max-width: 800px);
 }
