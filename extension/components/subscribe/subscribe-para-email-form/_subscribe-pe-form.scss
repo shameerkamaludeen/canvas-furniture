@@ -1,0 +1,32 @@
+/* || Component - Subscribe paragraph email form
+	 ========================================================================== */
+
+// 1. Features
+// Paragraph and a email field form
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../components/form/form-email-subscribe-sl/form-email-subscribe-sl';
+
+.subscribe-pe-form {
+	margin-top: 36px;
+
+	@media screen and (min-width: var.$laptop-view) {
+		margin-top: 0;
+	}
+}
+
+.subscribe-pef-tittle {
+	@extend %ffp-cp-s-font;
+	@extend %base-600;
+	letter-spacing: var.$ls-normal;
+	margin: 0 0 26.5px;
+}
+
+.subscribe-pef-para {
+	@extend %ffs-cp-xs-font;
+	@extend %normal-300;
+	letter-spacing: var.$ls-base;
+	opacity: 0.4;
+	margin: 0 0 1.3em;
+}

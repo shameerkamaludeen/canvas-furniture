@@ -1,0 +1,379 @@
+/* || Component - Nav menu fixed center
+	 =========================================================================== */
+
+// 1. Features
+// Center resonponsive on mobile, main menu open like accordian in mobile view
+// 2. Notes
+// This component require any of the full width parent element's position 
+// relative
+// Use anchor tag on drop down to lead to a common page otherwise use any other 
+// element
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use 'sass:color';
+@use '../../../base/typography';
+@use '../../../base/utilities';
+@use '../../button/hamburger-close-btn-trans-bg/hamburger-close-btn-trans-bg';
+
+.nav-menu-fixed-center {}
+
+.nm-fc-menu-wr {
+	background-color: var.$bc-primary;
+	left: 0;
+	top: 60px;
+	transition: max-height 0.2s cubic-bezier(0.42, 0.0, 1.0, 1.0);
+	overflow: hidden;
+
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		position: absolute;
+		width: 100%;
+		max-height: 0;
+	}
+}
+
+.nm-fc-menu {
+	@media screen and (min-width: var.$laptop-view) {
+		display: flex;
+		margin: 0;
+	}
+}
+
+.nm-fc-menu-ul {
+	@extend %ul-no-style;
+}
+
+.nm-fc-mi-border-bottom {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		border-bottom: 1px solid var.$c-secondary-lightest;
+	}
+}
+
+.nm-fc-mi-border-top {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		border-top: 1px solid var.$c-secondary-lightest;
+	}
+}
+
+.nm-fc-mi-uc {
+	text-transform: uppercase;
+}
+
+// Maximum laptop view
+.nm-fc-mi-uc-max-lv {
+	@media screen and (max-width: var.$laptop-view) {
+		text-transform: uppercase;
+	}
+}
+
+// Leading icon
+//--------------
+
+// Large device
+.nm-fc-mi-link-icon i {
+	display: none;
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: inline-block;
+		margin-left: 5px;
+		position: relative;
+		top: 1px;
+	}
+}
+
+// Smaller device
+.nm-fc-mi-link-icon-btn-wr {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.nm-fc-mi-link-icon {
+	flex: 1;
+}
+
+.nm-fc-mi-li-active {
+	font-weight: 700;
+	color: var.$c-primary;
+}
+
+.nm-fc-mi-link-icon-btn {
+	font-size: var.$fs-xs;
+
+	@include mx.btn-icon-compatible($bg-color: transparent,
+		$bg-active-color: false,
+		$bg-hover-color: false,
+		$border: none,
+		$width: 32px,
+		$height: 32px,
+		$border-radius: false,
+		$outline: none,
+		$outline-offset: false,
+		$cursor: false,
+		$transition: false);
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: none;
+	}
+}
+
+// Main menu icon
+.nm-fc-mi-lib-mm {
+	color: var.$c-primary;
+	font-weight: 700;
+}
+
+// Sub menu icon
+.nm-fc-mi-lib-sm {
+	font-weight: 400;
+	color: var.$c-secondary-light;
+}
+
+.nm-fc-mi-link-icon-btn i {
+	transform: rotate(-90deg);
+	transition: transform 0.3s ease;
+}
+
+.nm-fc-mi-lib-active i {
+	transform: rotate(0deg);
+}
+
+// Menu item basic
+//----------------
+
+.nm-fc-mi-basic {
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 0 12px;
+	}
+}
+
+// mm(main menu)
+.nm-fc-mib-link-mm {
+	@extend %ffs-cp-xs-font;
+	@extend %base-700;
+	padding: 0 5px;
+	display: block;
+	line-height: 3.5;
+
+	@include mx.link-no-underline($color: var.$c-primary,
+		$color-visited: false,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: color.adjust(var.$c-primary, $blackness: 5%),
+		$outline: false,
+		$cursor: false,
+		$transition: false);
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xxs + 0.0625rem;
+		font-weight: 500;
+		display: inline-block;
+		line-height: 4.6;
+	}
+}
+
+// Menu item hover background
+// --------------------------
+
+.nm-fc-mi-hover-bg {
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 0 12px;
+	}
+
+	&:hover {
+		@media screen and (min-width: var.$laptop-view) {
+			background-color: color.adjust(black, $alpha: -0.97);
+		}
+	}
+}
+
+.nm-fc-mi-hbg-link-sm {
+	@extend %ffs-cs-lighter-xxs-font;
+	font-weight: 400;
+	padding: 0 5px;
+	display: block;
+	line-height: 3.5;
+	@include mx.link-no-underline($color: var.$c-secondary-lighter,
+		$color-visited: false,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: color.adjust(var.$c-primary, $blackness: 5%),
+		$outline: false,
+		$cursor: false,
+		$transition: false);
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xs;
+		display: inline-block;
+		line-height: 4;
+	}
+}
+
+// Menu item hover transform
+// -------------------------
+
+.nm-fc-mi-hover-trans {
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 0 12px;
+	}
+}
+
+.nm-fc-mi-ht-link-ssm {
+	@extend %ffs-cs-lighter-xxs-font;
+	@extend %base-400;
+	padding: 0 5px;
+	display: block;
+	line-height: 3.5;
+	transition: padding-left 0.2s;
+	@include mx.link-no-underline($color: var.$c-secondary-lighter,
+		$color-visited: false,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: color.adjust(var.$c-primary, $blackness: 5%),
+		$outline: false,
+		$cursor: false,
+		$transition: false);
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xs;
+		display: inline-block;
+		width: 218px;
+		line-height: 3.2;
+	}
+
+	&:hover {
+		@media screen and (min-width: var.$laptop-view) {
+			padding-left: 8px;
+		}
+	}
+}
+
+// <-- Drop downs starts here -->
+
+// Common
+[class^="nm-fc-"] [data-drop-down]:not([data-full-width-dd]) {
+	@media screen and (min-width: var.$laptop-view) {
+		position: relative;
+	}
+}
+
+// Full width column wise drop down
+// ---------------------------------
+// 1. Notes:
+// The drop down should contain a div container and a direct child contain the 
+// menu items
+// The top container should not have any vertical padding, margin and border
+
+.nm-fc-dd-fw-columnwise {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s cubic-bezier(0.42, 0.0, 1.0, 1.0);
+
+	@media screen and (min-width: var.$laptop-view) {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		background: var.$bc-primary;
+		box-shadow: 0 2px 2px color.adjust(black, $alpha: -0.80);
+	}
+
+	// as for "overflow: hidden" not working for border
+
+	&[style^="max-height"] {
+		@media screen and (min-width: var.$laptop-view) {
+			border-top: 1px solid var.$c-primary;
+		}
+	}
+
+	&:hover {
+		@media screen and (min-width: var.$laptop-view) {
+			overflow: initial;
+		}
+	}
+}
+
+.nm-fc-dd-fwc-wr {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		padding-left: 15px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+// Row wise drop down
+//-------------------
+
+.nm-fc-dd-rowwise {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s cubic-bezier(0.42, 0.0, 1.0, 1.0);
+
+	@media screen and (min-width: var.$laptop-view) {
+		position: absolute;
+		top: 56px;
+		left: 0;
+		background: var.$bc-primary;
+		box-shadow: 0 2px 2px color.adjust(black, $alpha: -0.80);
+	}
+
+	&[style^="max-height"] {
+		@media screen and (min-width: var.$laptop-view) {
+			border-top: 1px solid var.$c-primary;
+		}
+	}
+
+	&:hover {
+		@media screen and (min-width: var.$laptop-view) {
+			overflow: initial;
+		}
+	}
+}
+
+.nm-fc-ddr-wr {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		padding-left: 15px;
+	}
+}
+
+// <-- Drop downs ends here -->
+
+// Optional
+// --------
+
+.nm-fc-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.nm-fc-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.nm-fc-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.nm-fc-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.nm-fc-lm-auto-lv {
+	@extend %lm-auto-lv;
+}
+
+.nm-fc-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.nm-fc-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.nm-fc-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

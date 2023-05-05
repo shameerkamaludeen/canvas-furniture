@@ -1,0 +1,146 @@
+/* || Block - Cart full height overlay background
+	 ========================================================================== */
+
+// 1. Features
+// swipe in from right
+// full height window height
+// overlay background
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/utilities';
+@use '../../../base/sitewide';
+@use 'sass:color';
+@use '../../../components/card/card-cart-item-aid/card-cart-item-aid';
+@use '../../../components/button/btn-full-width-icon-hbe/btn-full-width-icon-hbe';
+
+.cart-fh-overlay-bg {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.cart-fh-obg-active {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+.cart-fh-obg-inactive {
+	@extend %hide-visually;
+}
+
+.cart-fh-obg-overlay {
+	background-color: color.adjust(var.$c-primary, $alpha: -0.2);
+	cursor: crosshair;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+	flex: 1 0 auto;
+}
+
+.cart-fh-obg-overlay-active {
+	opacity: 1;
+}
+
+.cart-fh-obg-cart {
+	width: 300px;
+	height: 100%;
+	background-color: var.$bc-primary;
+	position: absolute;
+	right: -300px;
+	transition: right 0.4s ease;
+	@extend %flex-dc;
+}
+
+.cart-fh-obg-cart-active {
+	right: 0;
+}
+
+// Cart header
+.cart-fh-obg-cart-header {
+	border-bottom: 1px solid var.$c-secondary-lightest;
+}
+
+.cart-fh-obg-cart-tittle {
+	margin: 0.85em 16px;
+	@extend %ws-base-ls-normal;
+	text-transform: uppercase;
+	@extend %ffp-cp-xs-font;
+	@extend %base-700;
+}
+
+.cart-fh-obg-cart-item-count {
+	display: inline-block;
+	padding: 5px 8px;
+	margin-left: 3px;
+	border-radius: 45px;
+	background-color: var.$bc-secondary;
+	@extend %base-400;
+	@extend %ffs-cp-xxs-font;
+}
+
+// Cart body
+.cart-fh-obg-cart-body {
+	margin-left: 16px;
+	margin-right: 16px;
+	flex-grow: 1;
+	overflow: auto;
+}
+
+.cart-fh-obg-cart-item:not(:last-child) {
+	border-bottom: 1px solid var.$c-secondary-lightest;
+}
+
+// Cart footer
+.cart-fh-obg-cart-footer {}
+
+.cart-fh-obg-coupon-wr {
+	background-color: var.$bc-secondary;
+	padding: 8px 16px;
+}
+
+.cart-fh-obg-coupon-para {
+	margin-top: 0;
+	margin-bottom: 0;
+	@extend %ffs-bcp-darkest-xxs-font;
+	@extend %base-400;
+}
+
+.cart-fh-obg-coupon-icon {
+	@include mx.svg-fixed-size ($color: var.$bc-primary,
+		$width: 16px,
+		$height: 16px,
+		$stroke: var.$c-primary,
+		$fill: var.$c-primary);
+	display: inline-block;
+	stroke-width: 0;
+	position: relative;
+	top: 3px;
+}
+
+.cart-fh-obg-total {
+	padding: 20px 16px 10px;
+	@extend %flex-v-center-h-sb;
+	@extend %ffs-cp-xs-font;
+	@extend %base-400;
+	margin: 0;
+	letter-spacing: var.$ls-normal;
+}
+
+.cart-fh-obg-total-label {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.cart-fh-obg-total-amt {
+	font-weight: 500;
+	font-size: var.$fs-s;
+	letter-spacing: var.$ls-base;
+}
+
+// .cart-fh-obg-checkout-btn {}
+
+// .cart-fh-obg-checkout-icon {
+// }

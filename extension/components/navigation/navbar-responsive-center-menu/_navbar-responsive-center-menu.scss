@@ -1,0 +1,62 @@
+/* || Component - Navbar responsive center menu
+	 ========================================================================== */
+
+// 1. Features
+// Responsive center on small device and in bigger screen drop down column for 
+// one level of menu (no further menu under one of its sub menu) and drop-down 
+// row of submenus on more than one level menu.
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/sitewide';
+@use '../nav-menu-fixed-center/nav-menu-fixed-center';
+@use '../../logo/logo-center';
+@use '../../navigation/nav-options-right/nav-options-right';
+
+.navbar-responsive-center-menu {}
+
+.navbar-rcm-wr-ul {
+	@extend %ul-no-style;
+	margin: 0;
+	@extend %flex-v-center-h-sb;
+
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		height: 60px;
+	}
+}
+
+.navbar-rcm-nav-menu {
+	@media screen and (min-width: var.$laptop-view) {
+		flex-basis: 50%;
+	}
+}
+
+.navbar-rcm-nav-logo {
+	@media screen and (min-width: var.$laptop-view) {
+		flex: 1;
+		margin-left: -34px;
+	}
+}
+
+.navbar-rcm-options {}
+
+// Optional
+// ------------
+
+/* Container or wrapper, use it only if above ul element is not using */
+.navbar-rcm-wr {
+	height: 60px;
+	@extend %flex-v-center-h-sb;
+}
+
+.navbar-rcm-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.navbar-rcm-fwl-mlv {
+	@extend %lm-auto-mlv;
+	@extend %fw-layout-mlv;
+	@extend %fw-layout-tv;
+	@extend %fw-layout-lv;
+	@extend %fw-layout-pcv;
+	@extend %fw-layout-tvv;
+}

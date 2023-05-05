@@ -1,0 +1,188 @@
+/* || Component - Card product details controls image
+	 ========================================================================== */
+
+// 1. Features
+// Product card contains controls like add to cart and quick view over an image along 
+// with name and price at the bottom
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+
+.card-product-dtls-controls-img {
+	&:not(:last-child) {
+		margin-bottom: 22px;
+	}
+
+	&:nth-child(2) .card-pd-ci-img-bg {
+		background: url(../images/shop/light-grey-sofa-2.jpg) 20% center / cover no-repeat;
+
+		@media screen and (min-width: var.$tablet-view) {
+			&:hover {
+				background: url(../images/shop/light-grey-sofa-1.jpg) center / cover no-repeat;
+			}
+		}
+	}
+
+	&:nth-child(3) .card-pd-ci-img-bg {
+		background: url(../images/shop/celling-lights-3.jpg) 20% center / cover no-repeat;
+
+		@media screen and (min-width: var.$tablet-view) {
+			&:hover {
+				background: url(../images/shop/celling-lights-3-1.jpg) center / cover no-repeat;
+			}
+		}
+	}
+
+	&:nth-child(4) .card-pd-ci-img-bg {
+		background: url(../images/shop/high-stand-chair-4-1.jpg) 20% center / cover no-repeat;
+
+		@media screen and (min-width: var.$tablet-view) {
+			&:hover {
+				background: url(../images/shop/high-stand-chair-4.jpg) center / cover no-repeat;
+			}
+		}
+	}
+
+	&:nth-child(5) .card-pd-ci-img-bg {
+		background: url(../images/shop/dining-sofa-5.jpg) 20% center / cover no-repeat;
+
+		@media screen and (min-width: var.$tablet-view) {
+			&:hover {
+				background: url(../images/shop/dining-sofa-5-1.jpg) center / cover no-repeat;
+			}
+		}
+	}
+
+	&:nth-child(6) .card-pd-ci-img-bg {
+		background: url(../images/shop/bathroom-cloths-shelves-6.jpg) 20% center / cover no-repeat;
+	}
+
+	&:nth-child(7) .card-pd-ci-img-bg {
+		background: url(../images/shop/golden-lamp-7.jpg) 20% center / cover no-repeat;
+	}
+
+	&:nth-child(8) .card-pd-ci-img-bg {
+		background: url(../images/shop/white-cuddle-chair-8.jpg) 20% center / cover no-repeat;
+
+		@media screen and (min-width: var.$tablet-view) {
+			&:hover {
+				background: url(../images/shop/white-cuddle-chair-8-1.jpg) center / cover no-repeat;
+			}
+		}
+	}
+}
+
+.card-pd-ci-img-bg {
+	height: 438px;
+	position: relative;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		height: 304px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		height: 265px;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		height: 320px;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		height: 376px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		@include mx.inline-animation(1s) {
+			from {
+				opacity: 0.3;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:hover {
+		@media screen and (min-width: var.$laptop-view) {
+			@include mx.inline-animation(1s) {
+				from {
+					opacity: 0.3;
+				}
+
+				to {
+					opacity: 1;
+				}
+			}
+		}
+
+		.card-pd-ci-controls-ctr {
+			@media screen and (min-width: var.$laptop-view) {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.card-pd-ci-controls-ctr {
+	@extend %flex-h-sb;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	transition: opacity 1s;
+
+	@media screen and (min-width: var.$laptop-view) {
+		opacity: 0;
+	}
+}
+
+.card-pd-ci-control-btn {
+	@include mx.btn-basic-modifiers($color: false,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: false,
+		$bg-color: var.$bc-secondary-light,
+		$bg-color-focus: false,
+		$bg-color-hover: false,
+		$bg-color-active: false,
+		$border: none,
+		$width: false,
+		$height: false,
+		$border-radius: 5px,
+		$outline: 2px solid var.$c-lead-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$transition: false);
+	padding: 10px;
+}
+
+.card-pd-ci-control-btn-icon {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 20px,
+		$height: 20px,
+		$stroke: false,
+		$fill: var.$c-secondary,
+		$display: block);
+}
+
+.card-pd-ci-tittle {
+	margin: 1.15em 0 0.3em;
+	@extend %ffp-cp-s-font;
+	@extend %normal-500;
+
+	@media screen and (min-width: var.$tablet-view) {
+		margin: 0.8em 0 0.2em;
+		font-size: var.$fs-m;
+	}
+}
+
+.card-pd-ci-price {
+	@extend %ffp-cs-lighter-m-font;
+	@extend %base-400;
+}

@@ -1,0 +1,53 @@
+/* || Component - Cart button with transparent background and  cart count
+	 ========================================================================== */
+
+// 1. Features
+// Button with transparent background
+// Item count along with the button
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../abstracts/mixins' as mx;
+
+.cart-btn-trans-bg-count {
+	@include mx.btn-icon-compatible($bg-color: transparent,
+		$border: none,
+		$width: 100%,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-light,
+		$outline-offset: false,
+		$transition: false,
+		$cursor: pointer);
+	position: relative;
+	right: 2px;
+	flex: 1 0 calc(50% - 4px);
+	margin-left: 3px;
+
+	&::after {
+		@extend %ffs-bcp-xxs-font;
+		@extend %base-400;
+		position: absolute;
+		content: '3';
+		background-color: var.$c-primary;
+		border-radius: 10px;
+		width: 16px;
+		height: 16px;
+		line-height: 0;
+		@extend %flex-v-center-h-center;
+		right: -1px;
+		top: -1px;
+		opacity: 0.8;
+	}
+}
+
+.cart-btn-tbg-count-icon {
+	@include mx.svg-fixed-size($color: false,
+		$width: 100%,
+		$height: 100%,
+		$stroke: var.$c-primary,
+		$fill: var.$c-primary);
+	stroke-width: 0;
+	display: block;
+	padding: 5px;
+}

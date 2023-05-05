@@ -1,0 +1,420 @@
+/* || Abstracts - Sitewide
+   ========================================================================== */
+// Sitewide is the collection of style rules in the form of placeholders and 
+// strictly not utilities
+
+@use '../abstracts/variables' as var;
+@use 'sass:color';
+
+// || General
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+// absolute element cover its container
+%position-absolute-cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+// Fixed element cover its container
+%position-fixed-cover {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+// || Flex
+
+// Flexible wrap
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// Flexible vertically center(vc) and horizontally space between(hsb)
+%flex-v-center-h-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// Flexible vertical and horizontal centered
+%flex-v-center-h-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Flexible vertically centered horizontally right
+%flex-v-center-h-right {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+// Flexible horizontally right
+%flex-v-center {
+	display: flex;
+	align-items: center;
+}
+
+// Flexible horizontally right
+%flex-h-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+// Flexible horizontally center
+%flex-h-center {
+	display: flex;
+	justify-content: center;
+}
+
+// Flexible horizontally center wrap
+%flex-h-center-wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+// Flexible horizontally space around
+%flex-h-sa {
+	display: flex;
+	justify-content: space-around;
+}
+
+// Flexible horizontally space between
+%flex-h-sb {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Flexible direction column
+%flex-dc {
+	display: flex;
+	flex-direction: column;
+}
+
+// Flexible direction column wrap 
+%flex-dc-wrap {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+// Flexible direction column vertically and horizontally centerd 
+%flex-dc-v-center-h-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+// Flexible direction column horizontally centered 
+%flex-dc-h-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// || Inline-flex
+
+// Flexible(inline) vertical and horizontal centered
+%inline-flex-v-center-h-center {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// || Images or icons
+
+// Images or icons contains x-center and y-center
+%img-icon-contain-center {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+// Images or icons contains, x-right and y-center
+%img-icon-contain-right {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: right;
+}
+
+// Images or icons contains, x-left and y-center
+%img-icon-contain-left {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: left;
+}
+
+// Images or icons contains, x-center and y-top
+%img-icon-contain-top {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: top;
+}
+
+// Images or icons contains, x-center and y-bottom
+%img-icon-contain-bottom {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: bottom;
+}
+
+// Images or icons contains, x-left and y-top
+%img-icon-contain-left-top {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: left top;
+}
+
+// Images or icons contains, x-left and y-bottom
+%img-icon-contain-left-bottom {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: left bottom;
+}
+
+// Images or icons contains, x-right and y-top
+%img-icon-contain-right-top {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: right top;
+}
+
+// Images or icons contains, x-right and y-bottom
+%img-icon-contain-right-bottom {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: right bottom;
+}
+
+// Images or icons cover x-center and y-center
+%img-icon-cover-center {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+// Images or icons cover, x-right and y-center
+%img-icon-cover-right {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right;
+}
+
+// Images or icons cover, x-left and y-center
+%img-icon-cover-left {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+
+// Images or icons cover, x-center and y-top
+%img-icon-cover-top {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+// Images or icons cover, x-center and y-bottom
+%img-icon-cover-bottom {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+// Images or icons cover, x-left and y-top
+%img-icon-cover-left-top {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left top;
+}
+
+// Images or icons cover, x-left and y-bottom
+%img-icon-cover-left-bottom {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left bottom;
+}
+
+// Images or icons cover, x-right and y-top
+%img-icon-cover-right-top {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right top;
+}
+
+// Images or icons cover, x-right and y-bottom
+%img-icon-cover-right-bottom {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right bottom;
+}
+
+// || Links
+
+%link-wrapper-basic {
+	text-decoration: none;
+	cursor: pointer;
+
+	&:link,
+	&:visited {
+		color: transparent;
+	}
+
+	&:focus {
+		outline: 2px solid var.$bc-secondary;
+	}
+
+	&:hover,
+	&:active {
+		color: transparent;
+	}
+}
+
+%site-link-bc-secondary {
+	transition: color 0.3s ease;
+	cursor: pointer;
+
+	&:link {
+		color: var.$bc-secondary;
+	}
+
+	&:visited {
+		color: color.adjust(var.$bc-secondary, $lightness: 15%);
+	}
+
+	&:focus,
+	&:hover {
+		color: var.$c-primary;
+	}
+
+	&:active {
+		color: color.adjust(var.$c-primary, $lightness: 15%);
+	}
+}
+
+%site-link-c-primary {
+	transition: color 0.3s ease;
+	cursor: pointer;
+
+	&:link {
+		color: var.$c-primary;
+	}
+
+	&:visited {
+		color: var.$c-secondary;
+	}
+
+	&:focus {
+		outline: 2px solid var.$c-lead-light;
+	}
+
+	&:hover {
+		color: var.$c-primary-light;
+	}
+
+	&:active {
+		color: var.$c-primary;
+	}
+}
+
+%site-link-c-secondary {
+	transition: color 0.3s ease;
+	cursor: pointer;
+
+	&:link {
+		color: var.$c-secondary;
+	}
+
+	&:visited {
+		color: color.adjust(var.$c-secondary, $lightness: 10%);
+	}
+
+	&:focus,
+	&:hover {
+		color: var.$bc-secondary;
+	}
+
+	&:active {
+		color: color.adjust(var.$bc-secondary, $lightness: 20%);
+	}
+}
+
+// || Buttons
+
+%button-wrapper-basic {
+	cursor: pointer;
+	display: block;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+
+	&:focus {
+		outline: 2px solid var.$bc-secondary;
+	}
+
+	&:hover,
+	&:active {
+		color: transparent;
+	}
+}
+
+// || Animation
+
+@keyframes wipe-in-down {
+	from {
+		clip-path: inset(0 0 100% 0);
+	}
+
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes wipe-out-up {
+	from {
+		clip-path: inset(0 0 0 0);
+	}
+
+	to {
+		clip-path: inset(0 0 100% 0);
+	}
+}
+
+@keyframes wipe-in-right {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}

@@ -1,0 +1,46 @@
+/* || Abstracts - Utilities
+   ========================================================================== */
+
+// This will hide an element or block visually and still be able available for 
+// for screen readers 
+%hide-visually {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+// Remve unordered list default style
+%ul-no-style {
+	padding: 0;
+	list-style-type: none;
+}
+
+// remove link docoration and outline
+%link-no-decor-outline {
+	text-decoration: none;
+	outline: none;
+}
+
+// Remove field set default style
+%fieldset-no-style {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+// 
+%link-no-style {
+	text-decoration: none;
+
+	&:link,
+	&:visited,
+	&:focus,
+	&:hover,
+	&:active {
+		color: inherit;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

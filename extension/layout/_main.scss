@@ -1,0 +1,33 @@
+/* || Layout - Main
+   ========================================================================== */
+
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mx;
+
+main {
+	background-color: var.$bc-primary;
+}
+
+.main-margin-top {
+	margin-top: 66px;
+}
+
+.main-margin-bottom {
+	margin-bottom: 20px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		margin-bottom: 62px;
+	}
+}
+
+.main-fw-layout {
+	@include mx.fw-layout($max-width: 1300px);
+}
+
+.main-padding-top {
+	padding-top: 73px;
+}
+
+.main-padding-bottom {
+	padding-bottom: 90px;
+}

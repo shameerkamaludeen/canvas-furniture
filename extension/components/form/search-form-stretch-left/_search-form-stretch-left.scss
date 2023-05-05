@@ -1,0 +1,98 @@
+/* || Component - Search form stretch left
+	 ========================================================================== */
+
+// 1. Features
+// Search form with close and open icon to visible search box
+// Search box stretch to left throughout the navigation bar
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../base/utilities';
+@use '../../button/search-close-btn-trans-bg/search-close-btn-trans-bg';
+
+.search-form-stretch-left {
+	position: relative;
+}
+
+.sf-sl-form {
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.sf-sl-form-active {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	opacity: 1;
+	// right position is this component width
+	right: 35px;
+
+	// as for menu drop downs works even the search open because of this component
+	// height is lower than of drop down
+	@media screen and (min-width: var.$laptop-view) {
+		top: -11px;
+		bottom: -11px;
+	}
+}
+
+.sf-sl-form-inactive {
+	@extend %hide-visually;
+}
+
+.sf-sl-input-search {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	@extend %normal-700;
+	@extend %ffp-cs-l-font;
+
+	&::-webkit-search-cancel-button {
+		display: none;
+	}
+
+	&::placeholder {
+		color: var(--c-secondary);
+		opacity: 0.8;
+		text-transform: uppercase;
+	}
+}
+
+// Layout
+//-------
+// Layouts here manually made as our themes layout doesn't work here
+.sf-sl-lm-fixed-left {
+	// Minus 72px(this component width) and both side margins to fit in
+	width: calc(100vw - 72px - (2 * var.$lm-fixed));
+}
+
+.sf-sl-lm-auto-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		width: calc(var.$fw-layout-mlv - 72px);
+	}
+}
+
+.sf-sl-lm-auto-tv {
+	@media screen and (min-width: var.$tablet-view) {
+		width: calc(var.$fw-layout-tv - 72px);
+	}
+}
+
+.sf-sl-lm-auto-lv {
+	@media screen and (min-width: var.$laptop-view) {
+		width: calc(var.$fw-layout-lv - 72px);
+	}
+}
+
+.sf-sl-lm-auto-pcv {
+	@media screen and (min-width: var.$pc-view) {
+		width: calc(var.$fw-layout-pcv - 72px);
+	}
+}
+
+.sf-sl-lm-auto-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		width: calc(var.$fw-layout-tvv - 72px);
+	}
+}
