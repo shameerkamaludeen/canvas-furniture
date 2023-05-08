@@ -77,7 +77,6 @@
 		display: inline-block;
 		margin-left: 5px;
 		position: relative;
-		top: 1px;
 	}
 }
 
@@ -169,6 +168,7 @@
 	@media screen and (min-width: var.$laptop-view) {
 		font-size: var.$fs-xxs + 0.0625rem;
 		font-weight: 500;
+		letter-spacing: var.$ls-normal;
 		display: inline-block;
 		line-height: 4.6;
 	}
@@ -184,7 +184,7 @@
 
 	&:hover {
 		@media screen and (min-width: var.$laptop-view) {
-			background-color: color.adjust(black, $alpha: -0.97);
+			background-color: color.adjust(var.$color-alpha, $alpha: -0.97);
 		}
 	}
 }
@@ -277,7 +277,7 @@
 		left: 0;
 		right: 0;
 		background: var.$bc-primary;
-		box-shadow: 0 2px 2px color.adjust(black, $alpha: -0.80);
+		box-shadow: 0 2px 2px color.adjust(var.$color-alpha, $alpha: -0.80);
 	}
 
 	// as for "overflow: hidden" not working for border
@@ -319,7 +319,7 @@
 		top: 56px;
 		left: 0;
 		background: var.$bc-primary;
-		box-shadow: 0 2px 2px color.adjust(black, $alpha: -0.80);
+		box-shadow: 0 2px 2px color.adjust(var.$color-alpha, $alpha: -0.80);
 	}
 
 	&[style^="max-height"] {

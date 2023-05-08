@@ -1,5 +1,11 @@
 /* || Abstracts - Footer
    ========================================================================== */
 
+@use '../abstracts/variables' as var;
 @use '../components/navigation/footer-nav-grid-ms/footer-nav-grid-ms';
 @use '../components/copyright/copyright-pl-crl-grid/copyright-pl-crl-grid';
+@use 'sass:color';
+
+footer {
+	border-top: 1px solid color.adjust(var.$color-alpha, $alpha: -0.85);
+}

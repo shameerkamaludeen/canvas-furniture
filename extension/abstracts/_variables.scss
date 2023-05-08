@@ -38,9 +38,13 @@ $c-secondary-light: hsl(0, 0%, 27%);
 $c-secondary-lighter: hsl(0, 0%, 40%);
 $c-secondary-lightest: hsl(0, 0%, 93%);
 $c-ternary: hsl(56, 89%, 49%);
+
+// Other colors
 $c-error: hsl(0, 100%, 74%);
-$c-lead: hsl(210deg 100% 40%);
-$c-lead-light: hsl(210deg 100% 49% / 60%);
+$c-lead-outline: hsl(210deg 100% 40%);
+$c-lead-outline-light: hsl(210deg 100% 49% / 60%);
+// Website alpha color
+$color-alpha: black;
 
 // Font family 
 $ff-primary: 'Zilla Slab', serif;

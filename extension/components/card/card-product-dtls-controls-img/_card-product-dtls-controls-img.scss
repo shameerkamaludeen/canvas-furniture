@@ -4,6 +4,8 @@
 // 1. Features
 // Product card contains controls like add to cart and quick view over an image along 
 // with name and price at the bottom
+// 2. Notes:
+// The card background required to set on block that implementing this component
 
 @use '../../../abstracts/variables' as var;
 @use '../../../abstracts/mixins' as mx;
@@ -12,64 +14,6 @@
 .card-product-dtls-controls-img {
 	&:not(:last-child) {
 		margin-bottom: 22px;
-	}
-
-	&:nth-child(2) .card-pd-ci-img-bg {
-		background: url(../images/shop/light-grey-sofa-2.jpg) 20% center / cover no-repeat;
-
-		@media screen and (min-width: var.$tablet-view) {
-			&:hover {
-				background: url(../images/shop/light-grey-sofa-1.jpg) center / cover no-repeat;
-			}
-		}
-	}
-
-	&:nth-child(3) .card-pd-ci-img-bg {
-		background: url(../images/shop/celling-lights-3.jpg) 20% center / cover no-repeat;
-
-		@media screen and (min-width: var.$tablet-view) {
-			&:hover {
-				background: url(../images/shop/celling-lights-3-1.jpg) center / cover no-repeat;
-			}
-		}
-	}
-
-	&:nth-child(4) .card-pd-ci-img-bg {
-		background: url(../images/shop/high-stand-chair-4-1.jpg) 20% center / cover no-repeat;
-
-		@media screen and (min-width: var.$tablet-view) {
-			&:hover {
-				background: url(../images/shop/high-stand-chair-4.jpg) center / cover no-repeat;
-			}
-		}
-	}
-
-	&:nth-child(5) .card-pd-ci-img-bg {
-		background: url(../images/shop/dining-sofa-5.jpg) 20% center / cover no-repeat;
-
-		@media screen and (min-width: var.$tablet-view) {
-			&:hover {
-				background: url(../images/shop/dining-sofa-5-1.jpg) center / cover no-repeat;
-			}
-		}
-	}
-
-	&:nth-child(6) .card-pd-ci-img-bg {
-		background: url(../images/shop/bathroom-cloths-shelves-6.jpg) 20% center / cover no-repeat;
-	}
-
-	&:nth-child(7) .card-pd-ci-img-bg {
-		background: url(../images/shop/golden-lamp-7.jpg) 20% center / cover no-repeat;
-	}
-
-	&:nth-child(8) .card-pd-ci-img-bg {
-		background: url(../images/shop/white-cuddle-chair-8.jpg) 20% center / cover no-repeat;
-
-		@media screen and (min-width: var.$tablet-view) {
-			&:hover {
-				background: url(../images/shop/white-cuddle-chair-8-1.jpg) center / cover no-repeat;
-			}
-		}
 	}
 }
 
@@ -93,6 +37,17 @@
 		height: 376px;
 	}
 
+	&:hover {
+		.card-pd-ci-controls-ctr {
+			@media screen and (min-width: var.$laptop-view) {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// hover effect
+.card-pd-ci-img-bg-he {
 	@media screen and (min-width: var.$laptop-view) {
 		@include mx.inline-animation(1s) {
 			from {
@@ -115,12 +70,6 @@
 				to {
 					opacity: 1;
 				}
-			}
-		}
-
-		.card-pd-ci-controls-ctr {
-			@media screen and (min-width: var.$laptop-view) {
-				opacity: 1;
 			}
 		}
 	}
@@ -152,7 +101,7 @@
 		$width: false,
 		$height: false,
 		$border-radius: 5px,
-		$outline: 2px solid var.$c-lead-light,
+		$outline: 2px solid var.$c-lead-outline-light,
 		$outline-offset: false,
 		$cursor: pointer,
 		$text-align: center,

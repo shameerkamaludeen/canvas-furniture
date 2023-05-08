@@ -44,7 +44,7 @@
 		$color-focus: false,
 		$color-hover: var.$c-primary-light,
 		$color-active: false,
-		$outline: 2px solid var.$c-lead-light,
+		$outline: 2px solid var.$c-lead-outline-light,
 		$cursor: pointer,
 		$transition: (color 0.3s ease));
 
@@ -72,7 +72,7 @@
 		$color-hover: var.$c-primary-light,
 		$color-active: false,
 		$border-bottom: 1.5px solid var.$bc-secondary-darkest,
-		$outline: 2px solid var.$c-lead-light,
+		$outline: 2px solid var.$c-lead-outline-light,
 		$outline-offset: false,
 		$cursor: pointer,
 		$transition: (color 0.3s ease, border-bottom-color 0.3s ease));

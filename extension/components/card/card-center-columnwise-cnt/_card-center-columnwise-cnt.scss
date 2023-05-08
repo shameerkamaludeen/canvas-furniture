@@ -33,9 +33,10 @@
 	margin: 1.1em 0;
 	text-align: center;
 	@extend %base-500;
-	@extend %ffp-cp-l-font;
+	@extend %ffp-cp-s-font;
 
-	@media screen and (min-width: var.$laptop-view) {
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-m;
 		margin: 1em 0;
 	}
 }

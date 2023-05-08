@@ -23,7 +23,7 @@
 	}
 }
 
-.shop-pd-ci-ctr {
+.shop-pd-ci-grid-ctr {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 60px 0;
@@ -110,7 +110,7 @@
 		$width: false,
 		$height: false,
 		$border-radius: false,
-		$outline: 2px solid var.$c-lead-light,
+		$outline: 2px solid var.$c-lead-outline-light,
 		$outline-offset: false,
 		$cursor: pointer,
 		$text-align: center,
@@ -125,6 +125,64 @@
 
 	padding: 7.5px 22px;
 	margin: 5px;
+}
+
+.shop-pd-ci-card-bg-1 {
+	background: url(../images/shop/light-grey-sofa-2.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/light-grey-sofa-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-2 {
+	background: url(../images/shop/celling-lights-3.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/celling-lights-3-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-3 {
+	background: url(../images/shop/high-stand-chair-4-1.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/high-stand-chair-4.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-4 {
+	background: url(../images/shop/dining-sofa-5.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/dining-sofa-5-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-5 {
+	background: url(../images/shop/bathroom-cloths-shelves-6.jpg) 20% center / cover no-repeat;
+}
+
+.shop-pd-ci-card-bg-6 {
+	background: url(../images/shop/golden-lamp-7.jpg) 20% center / cover no-repeat;
+}
+
+.shop-pd-ci-card-bg-7 {
+	background: url(../images/shop/white-cuddle-chair-8.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/white-cuddle-chair-8-1.jpg) center / cover no-repeat;
+		}
+	}
 }
 
 // Layout 

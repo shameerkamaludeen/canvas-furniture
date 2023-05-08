@@ -72,7 +72,7 @@
 	$color-hover: var.$c-primary-dark,
 	$color-active: var.$c-secondary,
 	$border-bottom: 1.5px solid var.$c-primary,
-	$outline: 2px solid var.$c-lead-light,
+	$outline: 2px solid var.$c-lead-outline-light,
 	$outline-offset: false,
 	$cursor: pointer,
 	$transition: (color 0.3s ease, border-bottom-color 0.3s ease)) {
@@ -136,7 +136,7 @@
 	$color-focus: var.$c-primary-dark,
 	$color-hover: var.$c-primary-dark,
 	$color-active: var.$c-secondary,
-	$outline: 2px solid var.$c-lead-light,
+	$outline: 2px solid var.$c-lead-outline-light,
 	$cursor: pointer,
 	$display: false,
 	$transition: (color 0.3s ease)) {
@@ -261,7 +261,7 @@
 	$color-focus: false,
 	$color-hover: false,
 	$color-active: false,
-	$outline: 2px solid var.$c-lead-light,
+	$outline: 2px solid var.$c-lead-outline-light,
 	$cursor: pointer,
 	$transition: (color 0.3s ease)) {
 
@@ -466,7 +466,7 @@
 	$width: 35px,
 	$height: 35px,
 	$border-radius: 4px,
-	$outline: 2px solid var.$c-lead,
+	$outline: 2px solid var.$c-lead-outline,
 	$outline-offset: false,
 	$cursor: pointer,
 	$text-align: false,
@@ -580,7 +580,7 @@
 	$width: 35px,
 	$height: 35px,
 	$border-radius: 4px,
-	$outline: 2px solid var.$c-lead-light,
+	$outline: 2px solid var.$c-lead-outline-light,
 	$outline-offset: false,
 	$cursor: pointer,
 	$text-align: false,
