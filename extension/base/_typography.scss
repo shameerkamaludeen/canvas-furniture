@@ -12,47 +12,47 @@
 
 // || Word space and letter space
 %ws-base-ls-base {
-	word-spacing: var.$base-ws;
+	word-spacing: var.$ws-base;
 	letter-spacing: var.$ls-base;
 }
 
 %ws-base-ls-normal {
-	word-spacing: var.$base-ws;
+	word-spacing: var.$ws-base;
 	letter-spacing: var.$ls-normal;
 }
 
 %ws-base-ls-wide {
-	word-spacing: var.$base-ws;
+	word-spacing: var.$ws-base;
 	letter-spacing: var.$ls-wide;
 }
 
 %ws-normal-ls-base {
-	word-spacing: var.$normal-ws;
+	word-spacing: var.$ws-normal;
 	letter-spacing: var.$ls-base;
 }
 
 %ws-normal-ls-normal {
-	word-spacing: var.$normal-ws;
+	word-spacing: var.$ws-normal;
 	letter-spacing: var.$ls-normal;
 }
 
 %ws-normal-ls-wide {
-	word-spacing: var.$normal-ws;
+	word-spacing: var.$ws-normal;
 	letter-spacing: var.$ls-wide;
 }
 
 %ws-wide-ls-base {
-	word-spacing: var.$wide-ws;
+	word-spacing: var.$ws-wide;
 	letter-spacing: var.$ls-base;
 }
 
 %ws-wide-ls-normal {
-	word-spacing: var.$wide-ws;
+	word-spacing: var.$ws-wide;
 	letter-spacing: var.$ls-normal;
 }
 
 %ws-wide-ls-wide {
-	word-spacing: var.$wide-ws;
+	word-spacing: var.$ws-wide;
 	letter-spacing: var.$ls-wide;
 }
 
@@ -319,6 +319,18 @@
 %ffp-bcs-xl-font {
 	font-size: var.$fs-xl;
 	color: var.$bc-secondary;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-darkest-l-font {
+	font-size: var.$fs-l;
+	color: var.$bc-secondary-darkest;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-darkest-m-font {
+	font-size: var.$fs-m;
+	color: var.$bc-secondary-darkest;
 	font-family: var.$ff-primary;
 }
 

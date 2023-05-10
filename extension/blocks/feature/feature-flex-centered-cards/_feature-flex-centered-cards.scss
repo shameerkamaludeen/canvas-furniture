@@ -23,7 +23,6 @@
 
 	@media screen and (min-width: var.$laptop-view) {
 		padding: 101px 0 85px;
-		column-gap: 12px;
 	}
 }
 
@@ -44,6 +43,7 @@
 // Layout
 // ------
 
+// Layout margin
 .feature-fcc-lm-fixed {
 	@extend %lm-fixed;
 }
@@ -70,4 +70,10 @@
 
 .feature-fcc-fw-layout-tvv {
 	@extend %fw-layout-tvv;
+}
+
+// Layout padding
+
+.feature-fcc-lp-fixed {
+	@extend %lp-fixed;
 }

@@ -53,9 +53,9 @@ $ff-ternary: 'Montserrat', sans-serif;
 $ff-neutral: 'Nunito Sans', sans-serif;
 
 // Word spacing
-$base-ws: 0.5px;
-$normal-ws: 1.5px;
-$wide-ws: 2.5px;
+$ws-base: 0.5px;
+$ws-normal: 1.5px;
+$ws-wide: 2.5px;
 
 // Letter spacing
 $ls-base: 0.5px;
@@ -107,14 +107,14 @@ $lm-fixed-pcv: 65px;
 $lm-fixed-tvv: 80px;
 
 // Layout padding fixed
-$lp-fixed: 10px;
-$lp-fixed-msv: 15px;
-$lp-fixed-mpv: 20px;
-$lp-fixed-mlv: 30px;
-$lp-fixed-tv: 40px;
-$lp-fixed-lv: 50px;
-$lp-fixed-pcv: 60px;
-$lp-fixed-tvv: 80px;
+$lp-fixed: 12px; // 10px;
+$lp-fixed-msv: 25px; // 15px;
+$lp-fixed-mpv: 25px; // 20px;
+$lp-fixed-mlv: 25px; // 30px;
+$lp-fixed-tv: 35px; // 40px;
+$lp-fixed-lv: 45px; // 50px;
+$lp-fixed-pcv: 65px; // 60px;
+$lp-fixed-tvv: 80px; // 80px;
 
 // Layout content padding
 $lcp-fixed: 10px;

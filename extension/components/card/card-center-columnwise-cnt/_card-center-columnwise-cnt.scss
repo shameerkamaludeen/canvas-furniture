@@ -20,7 +20,7 @@
 }
 
 .card-ccc-svg {
-	@include mx.svg-fixed-size ($color: flase,
+	@include mx.svg-fixed-size ($color: false,
 		$width: 100%,
 		$height: 100%,
 		$stroke: var.$c-primary,

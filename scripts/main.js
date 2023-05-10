@@ -6,6 +6,7 @@ import addShopingCartCloseEvent from '../extension/blocks/cart/cart-fh-overlay-b
 import addDecorTUAnimation from '../extension/components/shape/decor-texture-underline/decor-texture-underline.js';
 import addGotoTopEvents from '../extension/components/go-to-top/gtt-sq-icon-bg-hover/gtt-sq-icon-bg-hover.js';
 import addSubscribePEFormEvents from '../extension/components/subscribe/subscribe-para-email-form/subscribe-pe-form.js';
+import addFAQEvents from '../extension/blocks/faq/faq-centered-open-all/faq-centered-open-all.js';
 
 addHamburgerCloseTBGEvents();
 addNavMenuFCEvents();
@@ -16,3 +17,4 @@ addShopingCartCloseEvent();
 addDecorTUAnimation();
 addGotoTopEvents();
 addSubscribePEFormEvents();
+addFAQEvents();

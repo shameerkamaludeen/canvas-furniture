@@ -247,6 +247,62 @@
 	}
 }
 
+// || Layout padding fixed
+
+%lp-fixed {
+	padding-right: var.$lp-fixed;
+	padding-left: var.$lp-fixed;
+}
+
+%lp-fixed-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		padding-right: var.$lp-fixed-msv;
+		padding-left: var.$lp-fixed-msv;
+	}
+}
+
+%lp-fixed-mpv {
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		padding-right: var.$lp-fixed-mpv;
+		padding-left: var.$lp-fixed-mpv;
+	}
+}
+
+%lp-fixed-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		padding-right: var.$lp-fixed-mlv;
+		padding-left: var.$lp-fixed-mlv;
+	}
+}
+
+%lp-fixed-tv {
+	@media screen and (min-width: var.$tablet-view) {
+		padding-right: var.$lp-fixed-tv;
+		padding-left: var.$lp-fixed-tv;
+	}
+}
+
+%lp-fixed-lv {
+	@media screen and (min-width: var.$laptop-view) {
+		padding-right: var.$lp-fixed-lv;
+		padding-left: var.$lp-fixed-lv;
+	}
+}
+
+%lp-fixed-pcv {
+	@media screen and (min-width: var.$pc-view) {
+		padding-right: var.$lp-fixed-pcv;
+		padding-left: var.$lp-fixed-pcv;
+	}
+}
+
+%lp-fixed-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		padding-right: var.$lp-fixed-tvv;
+		padding-left: var.$lp-fixed-tvv;
+	}
+}
+
 // || Layout padding right
 
 %lp-fixed-right {
@@ -340,5 +396,61 @@
 %lp-fixed-left-tvv {
 	@media screen and (min-width: var.$tv-view) {
 		padding-left: var.$lp-fixed-tvv;
+	}
+}
+
+// || Layout margin auto
+
+%lp-initial {
+	margin-left: initial;
+	margin-right: initial;
+}
+
+%lp-initial-msv {
+	@media screen and (min-width: var.$mobile-small-view) {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+%lp-initial-mpv {
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+%lp-initial-mlv {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+%lp-initial-tv {
+	@media screen and (min-width: var.$tablet-view) {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+%lp-initial-lv {
+	@media screen and (min-width: var.$laptop-view) {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+%lp-initial-pcv {
+	@media screen and (min-width: var.$pc-view) {
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+%lp-initial-tvv {
+	@media screen and (min-width: var.$tv-view) {
+		margin-left: initial;
+		margin-right: initial;
 	}
 }
