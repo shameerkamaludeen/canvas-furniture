@@ -1,0 +1,119 @@
+/* || Block - Contact address list map grid
+	 ========================================================================== */
+
+// 1. Features
+// Map and contact address list in a two column grid and responsive
+// Contact list in a two column grid
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/utilities';
+@use '../../../components/shape/decor-texture-underline/decor-texture-underline';
+
+.contact-addr-list-map-grid {
+	background-color: var.$c-primary;
+
+	@media screen and (min-width: var.$tablet-view) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.contact-al-mg-map-wr {
+	position: relative;
+	min-height: 50vh;
+}
+
+// loading label(ll)
+.contact-al-mg-map-ll {
+	position: absolute;
+	z-index: 1;
+	@extend %ffs-bcs-darker-s-font;
+	@extend %normal-400;
+	// To make label place at the center or its wrapper
+	top: calc(50% - 12px);
+	left: calc(50% - 50px);
+}
+
+.contact-al-mg-map {
+	position: relative;
+	z-index: 2;
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: inherit;
+}
+
+.contact-al-mg-cnt-ctr {
+	padding: 48px;
+
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 80px;
+	}
+}
+
+.contact-al-mg-tittle {
+	margin-top: 0;
+	margin-bottom: 3rem;
+	@extend %ffp-bcs-light-xl-font;
+	@extend %normal-400;
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-xxl;
+	}
+}
+
+.contact-al-mg-decor-tu {
+	&::after {
+		bottom: 0px;
+		background: url(../images/underline_dark.svg) center / 100% auto no-repeat;
+	}
+}
+
+.contact-al-mg-addr-ctr {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 50px;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 12px;
+	}
+}
+
+.contact-al-mg-addr-lead-ctr {
+	@include mx.link-img-icon-wr($border: none,
+		$hover-opacity: 0.9,
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: false,
+		$content-vh-center: false,
+		$display: block,
+		$text-decoration: none,
+		$transition: (opacity 0.2s ease));
+}
+
+.contact-al-mg-addr-tittle {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	@extend %ffp-bcs-light-m-font;
+	@extend %normal-500;
+}
+
+.contact-al-mg-addr-para {
+	@extend %ffs-bcs-darker-s-font;
+	@extend %normal-400;
+	margin: 0;
+}
+
+// Utilities
+// ---------
+
+.contact-al-mg-vh {
+	@extend %hide-visually;
+}

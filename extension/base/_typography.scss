@@ -322,6 +322,18 @@
 	font-family: var.$ff-primary;
 }
 
+%ffp-bcs-light-xl-font {
+	font-size: var.$fs-xl;
+	color: var.$bc-secondary-light;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-darkest-xl-font {
+	font-size: var.$fs-xl;
+	color: var.$bc-secondary-darkest;
+	font-family: var.$ff-primary;
+}
+
 %ffp-bcs-darkest-l-font {
 	font-size: var.$fs-l;
 	color: var.$bc-secondary-darkest;
@@ -331,6 +343,12 @@
 %ffp-bcs-darkest-m-font {
 	font-size: var.$fs-m;
 	color: var.$bc-secondary-darkest;
+	font-family: var.$ff-primary;
+}
+
+%ffp-bcs-light-m-font {
+	font-size: var.$fs-m;
+	color: var.$bc-secondary-light;
 	font-family: var.$ff-primary;
 }
 
@@ -472,6 +490,12 @@
 
 %ffs-bcs-darker-xs-font {
 	font-size: var.$fs-xs;
+	color: var.$bc-secondary-darker;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcs-darker-s-font {
+	font-size: var.$fs-s;
 	color: var.$bc-secondary-darker;
 	font-family: var.$ff-secondary;
 }

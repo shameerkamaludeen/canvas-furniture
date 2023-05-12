@@ -1,0 +1,124 @@
+/* || Block - Contact image content side to side grid
+	 ========================================================================== */
+
+// 1. Features
+// Side to side image and content grid
+// Content is itself a grid of lists of info about different ways of connecting
+// Social rounded icons
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+@use '../../../components/shape/decor-texture-underline/decor-texture-underline';
+@use '../../../components/icon/icon-social-bg-color/icon-social-bg-color';
+
+.contact-img-cnt-sts-grid {
+	background-color: var.$c-ternary-light;
+
+	@media screen and (min-width: var.$tablet-view) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+}
+
+.contact-ic-sg-img-wr {
+	height: 400px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		height: 570px;
+	}
+}
+
+.contact-ic-sg-img {
+	@extend %img-icon-cover-center;
+	display: block;
+}
+
+.contact-ic-sg-cnt-ctr {
+	padding: 48px;
+
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 80px 45px 80px 80px;
+	}
+}
+
+// Use this in the grid item to order first
+.contact-ic-sg-order-1 {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.contact-ic-sg-tittle {
+	margin-top: 0;
+	margin-bottom: 3rem;
+	@extend %ffp-bcs-darkest-xl-font;
+	@extend %normal-400;
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-xxl;
+	}
+}
+
+.contact-ic-sg-decor-tu {
+	&::after {
+		bottom: 2px;
+	}
+}
+
+// Contact list(cl) container
+.contact-ic-sg-cl-ctr {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 50px;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 24px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-template-columns: 1fr;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+// Contact item(ci) container
+.contact-ic-sg-ci-ctr {}
+
+.contact-ic-sg-ci-tittle {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	@extend %ffp-bcs-darkest-m-font;
+	@extend %normal-500;
+}
+
+.contact-ic-sg-ci-lead {
+	opacity: 0.7;
+	font-weight: 400;
+	@extend %ffs-s-font;
+
+	@include mx.link-basic-modifiers($color: var.$c-primary,
+		$color-visited: false,
+		$color-focus: false,
+		$color-hover: var.$c-primary-dark,
+		$color-active: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$cursor: pointer,
+		$transition: (color 0.3s ease));
+}
+
+// social icon(si) container
+.contact-ic-sg-si-ctr {
+	margin-top: 1rem;
+}
+
+.contact-ic-sg-si {
+	width: 32px;
+	height: 32px;
+	margin-right: 2px;
+}

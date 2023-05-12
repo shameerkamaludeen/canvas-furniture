@@ -1,0 +1,37 @@
+/* || Pages - Contact us
+	 ========================================================================== */
+
+@use '../blocks/contact/contact-addr-list-map-grid/contact-addr-list-map-grid';
+@use '../blocks/contact/contact-img-cnt-sts-grid/contact-img-cnt-sts-grid';
+@use '../blocks/social/social-single-lead-gallery-grid/social-single-lead-gallery-grid';
+
+/* || Block - Contact address list map grid */
+
+.contact-al-contact {
+	.contact-al-mg-addr-tittle {
+		font-size: 20px;
+	}
+
+	.contact-al-mg-addr-para {
+		line-height: 1.65;
+	}
+}
+
+/* || Block - Contact image content side to side grid */
+
+.contact-ic-sg-contact {
+	.contact-ic-sg-ci-tittle {
+		font-size: 20px;
+	}
+}
+
+/* || Block - Social single lead gallery grid  */
+
+.social-sl-gg-contact {
+
+	.social-sl-gg-gallery-left,
+	.social-sl-gg-gallery-right {
+		padding-bottom: 5px;
+		margin-bottom: initial;
+	}
+}
