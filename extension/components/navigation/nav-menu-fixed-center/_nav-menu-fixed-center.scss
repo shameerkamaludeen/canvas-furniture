@@ -66,76 +66,7 @@
 	}
 }
 
-// Leading icon
-//--------------
-
-// For smaller device
-.nm-fc-mi-link-icon {
-	flex: 1;
-}
-
-.nm-fc-mi-li-active {
-	font-weight: 700;
-	color: var.$c-primary;
-}
-
-.nm-fc-mi-li-btn-wr {
-	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
-
-.nm-fc-mi-li-btn {
-	@include mx.btn-icon-compatible($bg-color: transparent,
-		$bg-active-color: false,
-		$bg-hover-color: false,
-		$border: none,
-		$width: 32px,
-		$height: 32px,
-		$border-radius: false,
-		$outline: none,
-		$outline-offset: false,
-		$cursor: false,
-		$transition: false);
-
-	@media screen and (min-width: var.$laptop-view) {
-		display: none;
-	}
-}
-
-// Main menu icon
-.nm-fc-mi-li-btn-mm {
-	font-size: var.$fs-xs;
-	color: var.$c-primary;
-}
-
-// Sub menu icon
-.nm-fc-mi-li-btn-sm {
-	font-size: var.$fs-xxs;
-	color: var.$c-secondary-light;
-}
-
-.nm-fc-mi-li-btn i {
-	transform: rotate(-90deg);
-	transition: transform 0.3s ease;
-}
-
-.nm-fc-mi-li-btn-active i {
-	transform: rotate(0deg);
-}
-
-// For large device
-.nm-fc-mi-li-icon {
-	display: none;
-
-	@media screen and (min-width: var.$laptop-view) {
-		display: inline-block;
-		margin-left: 5px;
-		position: relative;
-	}
-}
+// <-- Menu items starts here -->
 
 // Menu item basic
 //----------------
@@ -259,6 +190,79 @@
 		@media screen and (min-width: var.$laptop-view) {
 			padding-left: 8px;
 		}
+	}
+}
+
+// <-- Menu items ends here -->
+
+// Leading icon
+//--------------
+
+// For smaller device
+.nm-fc-mi-link-icon {
+	flex: 1;
+}
+
+.nm-fc-mi-li-active {
+	font-weight: 700;
+	color: var.$c-primary;
+}
+
+.nm-fc-mi-li-btn-wr {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.nm-fc-mi-li-btn {
+	@include mx.btn-icon-compatible($bg-color: transparent,
+		$bg-active-color: false,
+		$bg-hover-color: false,
+		$border: none,
+		$width: 32px,
+		$height: 32px,
+		$border-radius: false,
+		$outline: none,
+		$outline-offset: false,
+		$cursor: false,
+		$transition: false);
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: none;
+	}
+}
+
+// Main menu icon
+.nm-fc-mi-li-btn-mm {
+	font-size: var.$fs-xs;
+	color: var.$c-primary;
+}
+
+// Sub menu icon
+.nm-fc-mi-li-btn-sm {
+	font-size: var.$fs-xxs;
+	color: var.$c-secondary-light;
+}
+
+.nm-fc-mi-li-btn i {
+	transform: rotate(-90deg);
+	transition: transform 0.3s ease;
+}
+
+.nm-fc-mi-li-btn-active i {
+	transform: rotate(0deg);
+}
+
+// For large device
+.nm-fc-mi-li-icon {
+	display: none;
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: inline-block;
+		margin-left: 5px;
+		position: relative;
 	}
 }
 
