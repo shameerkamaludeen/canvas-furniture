@@ -1385,6 +1385,13 @@ header {
 }
 
 @media screen and (min-width: 64em) {
+  .nm-fc-mi-li-icon-left {
+    margin-left: initial;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 64em) {
   [class^=nm-fc-] [data-drop-down]:not([data-full-width-dd]) {
     position: relative;
   }
@@ -2736,10 +2743,10 @@ footer {
 
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he {
-    animation-name: inline-uv33ocf;
+    animation-name: inline-u51i0c6;
     animation-duration: 1s;
   }
-  @keyframes inline-uv33ocf {
+  @keyframes inline-u51i0c6 {
     from {
       opacity: 0.3;
     }
@@ -2750,10 +2757,10 @@ footer {
 }
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he:hover {
-    animation-name: inline-uv33oco;
+    animation-name: inline-u51i0d6;
     animation-duration: 1s;
   }
-  @keyframes inline-uv33oco {
+  @keyframes inline-u51i0d6 {
     from {
       opacity: 0.3;
     }

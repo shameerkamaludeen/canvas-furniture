@@ -266,6 +266,13 @@
 	}
 }
 
+.nm-fc-mi-li-icon-left {
+	@media screen and (min-width: var.$laptop-view) {
+		margin-left: initial;
+		margin-right: 10px;
+	}
+}
+
 // <-- Drop downs starts here -->
 
 // Common
