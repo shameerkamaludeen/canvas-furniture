@@ -16,7 +16,7 @@ function addNavMenuFCEvents() {
 
 		// Menu functioning for smaller devices
 		if (document.documentElement.clientWidth < laptopView) {
-			const ddBtnElem = ddMenuItemElem.querySelector('.nm-fc-mi-link-icon-btn');
+			const ddBtnElem = ddMenuItemElem.querySelector('.nm-fc-mi-li-btn');
 			ddBtnElem.addEventListener('click', () => {
 				const ddElem = ddMenuItemElem.querySelector('[data-submenu-active]');
 				if (ddElem.getAttribute('data-submenu-active') === 'false') {
@@ -27,7 +27,7 @@ function addNavMenuFCEvents() {
 						closeDropDownMenuItem(activeMenuItemElem.parentElement);
 					}
 					ddElem.setAttribute('data-submenu-active', 'true');
-					ddBtnElem.classList.add('nm-fc-mi-lib-active');
+					ddBtnElem.classList.add('nm-fc-mi-li-btn-active');
 					ddMenuItemElem.querySelector('.nm-fc-mi-link-icon').classList.add('nm-fc-mi-li-active');
 				}
 				else {
@@ -58,7 +58,7 @@ function addNavMenuFCEvents() {
 
 function closeDropDownMenuItem(ddMenuItemElem) {
 	ddMenuItemElem.querySelector('[data-submenu-active]').setAttribute('data-submenu-active', 'false');
-	ddMenuItemElem.querySelector('.nm-fc-mi-link-icon-btn').classList.remove('nm-fc-mi-lib-active');
+	ddMenuItemElem.querySelector('.nm-fc-mi-li-btn').classList.remove('nm-fc-mi-li-btn-active');
 	ddMenuItemElem.querySelector('.nm-fc-mi-link-icon').classList.remove('nm-fc-mi-li-active');
 	const subMenuDDElem = ddMenuItemElem.querySelector('[data-submenu-active="true"]');
 	if (subMenuDDElem) {

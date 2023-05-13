@@ -69,26 +69,7 @@
 // Leading icon
 //--------------
 
-// Large device
-.nm-fc-mi-link-icon i {
-	display: none;
-
-	@media screen and (min-width: var.$laptop-view) {
-		display: inline-block;
-		margin-left: 5px;
-		position: relative;
-	}
-}
-
-// Smaller device
-.nm-fc-mi-link-icon-btn-wr {
-	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
-
+// For smaller device
 .nm-fc-mi-link-icon {
 	flex: 1;
 }
@@ -98,9 +79,15 @@
 	color: var.$c-primary;
 }
 
-.nm-fc-mi-link-icon-btn {
-	font-size: var.$fs-xs;
+.nm-fc-mi-li-btn-wr {
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
 
+.nm-fc-mi-li-btn {
 	@include mx.btn-icon-compatible($bg-color: transparent,
 		$bg-active-color: false,
 		$bg-hover-color: false,
@@ -119,24 +106,35 @@
 }
 
 // Main menu icon
-.nm-fc-mi-lib-mm {
+.nm-fc-mi-li-btn-mm {
+	font-size: var.$fs-xs;
 	color: var.$c-primary;
-	font-weight: 700;
 }
 
 // Sub menu icon
-.nm-fc-mi-lib-sm {
-	font-weight: 400;
+.nm-fc-mi-li-btn-sm {
+	font-size: var.$fs-xxs;
 	color: var.$c-secondary-light;
 }
 
-.nm-fc-mi-link-icon-btn i {
+.nm-fc-mi-li-btn i {
 	transform: rotate(-90deg);
 	transition: transform 0.3s ease;
 }
 
-.nm-fc-mi-lib-active i {
+.nm-fc-mi-li-btn-active i {
 	transform: rotate(0deg);
+}
+
+// For large device
+.nm-fc-mi-li-icon {
+	display: none;
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: inline-block;
+		margin-left: 5px;
+		position: relative;
+	}
 }
 
 // Menu item basic
@@ -185,6 +183,20 @@
 	&:hover {
 		@media screen and (min-width: var.$laptop-view) {
 			background-color: color.adjust(var.$color-alpha, $alpha: -0.97);
+		}
+	}
+}
+
+.nm-fc-mi-hbg-highlight {
+	@media screen and (min-width: var.$laptop-view) {
+		background-color: color.adjust(var.$color-alpha, $alpha: -0.97);
+	}
+
+	&:hover {
+		@media screen and (min-width: var.$laptop-view) {
+			.nm-fc-mi-hbg-link-sm {
+				font-weight: 500;
+			}
 		}
 	}
 }

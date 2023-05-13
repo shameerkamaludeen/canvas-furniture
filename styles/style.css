@@ -685,7 +685,7 @@ body {
   flex-direction: column;
 }
 
-.lead-icg-lead, .sc-btn-tbg-button, .hc-btn-tbg-button, .nm-fc-mi-link-icon-btn, .icon-social-bg-color, .gtt-sq-ibh-btn, .cart-btn-trans-bg-count {
+.lead-icg-lead, .sc-btn-tbg-button, .hc-btn-tbg-button, .nm-fc-mi-li-btn, .icon-social-bg-color, .gtt-sq-ibh-btn, .cart-btn-trans-bg-count {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1218,25 +1218,6 @@ header {
   }
 }
 
-.nm-fc-mi-link-icon i {
-  display: none;
-}
-@media screen and (min-width: 64em) {
-  .nm-fc-mi-link-icon i {
-    display: inline-block;
-    margin-left: 5px;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 63.9375em) {
-  .nm-fc-mi-link-icon-btn-wr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .nm-fc-mi-link-icon {
   flex: 1;
 }
@@ -1246,39 +1227,57 @@ header {
   color: hsl(174deg, 37%, 15%);
 }
 
-.nm-fc-mi-link-icon-btn {
-  font-size: 0.875rem;
+@media screen and (max-width: 63.9375em) {
+  .nm-fc-mi-li-btn-wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nm-fc-mi-li-btn {
   border: none;
   width: 32px;
   height: 32px;
   background-color: transparent;
 }
-.nm-fc-mi-link-icon-btn:focus-visible {
+.nm-fc-mi-li-btn:focus-visible {
   outline: none;
 }
 @media screen and (min-width: 64em) {
-  .nm-fc-mi-link-icon-btn {
+  .nm-fc-mi-li-btn {
     display: none;
   }
 }
 
-.nm-fc-mi-lib-mm {
+.nm-fc-mi-li-btn-mm {
+  font-size: 0.875rem;
   color: hsl(174deg, 37%, 15%);
-  font-weight: 700;
 }
 
-.nm-fc-mi-lib-sm {
-  font-weight: 400;
+.nm-fc-mi-li-btn-sm {
+  font-size: 0.75rem;
   color: hsl(0deg, 0%, 27%);
 }
 
-.nm-fc-mi-link-icon-btn i {
+.nm-fc-mi-li-btn i {
   transform: rotate(-90deg);
   transition: transform 0.3s ease;
 }
 
-.nm-fc-mi-lib-active i {
+.nm-fc-mi-li-btn-active i {
   transform: rotate(0deg);
+}
+
+.nm-fc-mi-li-icon {
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  .nm-fc-mi-li-icon {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 64em) {
@@ -1317,6 +1316,17 @@ header {
 @media screen and (min-width: 64em) {
   .nm-fc-mi-hover-bg:hover {
     background-color: rgba(0, 0, 0, 0.03);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .nm-fc-mi-hbg-highlight {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+}
+@media screen and (min-width: 64em) {
+  .nm-fc-mi-hbg-highlight:hover .nm-fc-mi-hbg-link-sm {
+    font-weight: 500;
   }
 }
 
@@ -2726,10 +2736,10 @@ footer {
 
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he {
-    animation-name: inline-utop01g;
+    animation-name: inline-u40davp;
     animation-duration: 1s;
   }
-  @keyframes inline-utop01g {
+  @keyframes inline-u40davp {
     from {
       opacity: 0.3;
     }
@@ -2740,10 +2750,10 @@ footer {
 }
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he:hover {
-    animation-name: inline-utop01n;
+    animation-name: inline-u40daw4;
     animation-duration: 1s;
   }
-  @keyframes inline-utop01n {
+  @keyframes inline-u40daw4 {
     from {
       opacity: 0.3;
     }
