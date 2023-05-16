@@ -1,0 +1,71 @@
+/* || Component - Description list icon all open
+	 ========================================================================== */
+
+// 1. Features
+// Description hide by default and open on data term click
+// Data term with open and close icon notification
+// Keep open all description on click
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+@use 'sass:color';
+
+.dl-icon-open-all {
+	margin: 0;
+}
+
+.dl-ioa-td-ctr {
+	padding: 16px 0;
+}
+
+// border bottom
+.dl-ioa-td-ctr-bb {
+	&:not(:last-child) {
+		border-bottom: 1px solid color.adjust(var.$c-primary, $alpha: -0.9);
+	}
+}
+
+.dl-ioa-dt {
+	cursor: pointer;
+	@extend %flex-h-sb;
+}
+
+.dl-ioa-dt-term {
+	margin-top: 0;
+	@extend %ffp-bcp-m-font;
+	@extend %normal-500;
+}
+
+.dl-ioa-dt-icon-ctr {
+	flex: 0 0 auto;
+}
+
+.dl-ioa-dt-icon {
+	display: none;
+	color: var.$bc-primary;
+	font-size: var.$fs-xs;
+}
+
+.dl-ioa-dt-icon-active {
+	display: initial;
+}
+
+.dl-ioa-dd {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.3s, top 0.3s;
+	position: relative;
+	top: -10px;
+	margin-left: 0;
+}
+
+.dl-ioa-dd-active {
+	top: 0;
+}
+
+.dl-ioa-dd-para {
+	@extend %ffs-bcp-s-font;
+	@extend %normal-400;
+	opacity: 0.6;
+}

@@ -490,7 +490,7 @@
 	}
 
 	@if $content-vh-center {
-		@extend %inline-flex-vh-center;
+		@extend %inline-flex-v-center-h-center;
 	}
 
 	@if $text-align {
@@ -864,7 +864,8 @@
 
 // || Animation
 
-@mixin inline-animation($duration: 0.5s) {
+@mixin inline-animation($duration: 0.5s,
+	$animation-fill-mode: false) {
 	$name: inline-#{unique-id()};
 
 	@keyframes #{$name} {
@@ -873,6 +874,10 @@
 
 	animation-name: $name;
 	animation-duration: $duration;
+
+	@if $animation-fill-mode {
+		animation-fill-mode: $animation-fill-mode;
+	}
 }
 
 // || Images

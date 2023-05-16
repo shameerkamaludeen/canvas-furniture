@@ -45,7 +45,7 @@ $c-error: hsl(0, 100%, 74%);
 $c-lead-outline: hsl(210deg 100% 40%);
 $c-lead-outline-light: hsl(210deg 100% 49% / 60%);
 // Website alpha color
-$color-alpha: black;
+$c-alpha: black;
 
 // Font family 
 $ff-primary: 'Zilla Slab', serif;
@@ -77,6 +77,7 @@ $fs-xxs: 0.75rem; // 12px
 $lh-base: 1.2;
 $lh-normal: 1.5;
 $lh-wide: 1.8;
+$lh-input: 3.2;
 
 // Viewports
 $mobile-small-view: 25em; // 20em(320px) standard

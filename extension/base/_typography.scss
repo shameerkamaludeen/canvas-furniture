@@ -290,6 +290,12 @@
 	font-family: var.$ff-primary;
 }
 
+%ffp-bcp-l-font {
+	font-size: var.$fs-l;
+	color: var.$bc-primary;
+	font-family: var.$ff-primary;
+}
+
 %ffp-bcp-m-font {
 	font-size: var.$fs-m;
 	color: var.$bc-primary;
@@ -488,12 +494,6 @@
 
 // || FFS-BCS fonts (ff-secondary bc-secondary fonts)
 
-%ffs-bcs-darker-xs-font {
-	font-size: var.$fs-xs;
-	color: var.$bc-secondary-darker;
-	font-family: var.$ff-secondary;
-}
-
 %ffs-bcs-darker-s-font {
 	font-size: var.$fs-s;
 	color: var.$bc-secondary-darker;
@@ -503,6 +503,24 @@
 %ffs-bcs-darkest-s-font {
 	font-size: var.$fs-s;
 	color: var.$bc-secondary-darkest;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcs-dark-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-secondary-dark;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcs-darker-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-secondary-darker;
+	font-family: var.$ff-secondary;
+}
+
+%ffs-bcs-light-xs-font {
+	font-size: var.$fs-xs;
+	color: var.$bc-secondary-light;
 	font-family: var.$ff-secondary;
 }
 

@@ -113,14 +113,14 @@
 
 	&:hover {
 		@media screen and (min-width: var.$laptop-view) {
-			background-color: color.adjust(var.$color-alpha, $alpha: -0.97);
+			background-color: color.adjust(var.$c-alpha, $alpha: -0.97);
 		}
 	}
 }
 
 .nm-fc-mi-hbg-highlight {
 	@media screen and (min-width: var.$laptop-view) {
-		background-color: color.adjust(var.$color-alpha, $alpha: -0.97);
+		background-color: color.adjust(var.$c-alpha, $alpha: -0.97);
 	}
 
 	&:hover {
@@ -300,7 +300,7 @@
 		left: 0;
 		right: 0;
 		background: var.$bc-primary;
-		box-shadow: 0 2px 2px color.adjust(var.$color-alpha, $alpha: -0.80);
+		box-shadow: 0 2px 2px color.adjust(var.$c-alpha, $alpha: -0.80);
 	}
 
 	// as for "overflow: hidden" not working for border
@@ -342,7 +342,7 @@
 		top: 56px;
 		left: 0;
 		background: var.$bc-primary;
-		box-shadow: 0 2px 2px color.adjust(var.$color-alpha, $alpha: -0.80);
+		box-shadow: 0 2px 2px color.adjust(var.$c-alpha, $alpha: -0.80);
 	}
 
 	&[style^="max-height"] {

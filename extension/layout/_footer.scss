@@ -7,5 +7,5 @@
 @use 'sass:color';
 
 footer {
-	border-top: 1px solid color.adjust(var.$color-alpha, $alpha: -0.85);
+	border-top: 1px solid color.adjust(var.$c-alpha, $alpha: -0.85);
 }

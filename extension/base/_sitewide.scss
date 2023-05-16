@@ -4,12 +4,17 @@
 // strictly not utilities
 
 @use '../abstracts/variables' as var;
+@use '../base/utilities';
 @use 'sass:color';
 
 // || General
 
 .overflow-hidden {
 	overflow: hidden;
+}
+
+.hide-visually {
+	@extend %hide-visually;
 }
 
 // absolute element cover its container

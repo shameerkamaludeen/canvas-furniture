@@ -6,7 +6,7 @@
 
 header {
 	background-color: var.$bc-primary;
-	border-bottom: 1px solid color.adjust(var.$color-alpha, $alpha: -0.9);
+	border-bottom: 1px solid color.adjust(var.$c-alpha, $alpha: -0.9);
 	// For the menu
 	position: relative;
 	top: 0;

@@ -1,0 +1,133 @@
+/* || Component - Form add to cart input controls stock
+	 ========================================================================== */
+
+// 1. Features
+// Form to add to cart with quantity
+// Quantity input controls, right and left btn to increase and descrease with a 
+// center input element
+// Stock availability note and notification if enter quantity more than in stock
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+
+.form-atc-ic-stock {
+	margin: 0 0 20px;
+}
+
+.form-atc-ics-input-ctr {
+	@extend %flex-wrap;
+	gap: 20px 27px;
+	margin-bottom: 20px;
+}
+
+.form-atc-ics-qty-ctr {}
+
+.form-atc-ics-qty-btn {
+	@extend %ffs-xs-font;
+	line-height: var.$lh-input;
+	font-weight: 500;
+
+	@include mx.btn-basic-modifiers($color: var.$bc-primary,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: var.$c-primary,
+		$bg-color: var.$c-primary,
+		$bg-color-focus: false,
+		$bg-color-hover: false,
+		$bg-color-active: var.$bc-primary,
+		$border: 1px solid var.$bc-primary-darker,
+		$width: 44px,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$transition: (color 0.2s ease, background-color 0.2s ease));
+}
+
+// button increase
+.form-atc-ics-qty-btn-ic {
+	margin-left: -3px;
+}
+
+// button decrease
+.form-atc-ics-qty-btn-dc {
+	margin-right: -2px;
+}
+
+.form-atc-ics-qty {
+	@extend %ffs-bcp-xs-font;
+	line-height: var.$lh-input;
+	font-weight: 500;
+	display: inline-block;
+	width: 44px;
+	text-align: center;
+	border: 1px solid var.$bc-primary-darker;
+	background-color: transparent;
+	margin-left: -2px;
+	margin-right: -2px;
+
+	&:focus-visible {
+		outline: 2px solid var.$c-lead-outline-light;
+	}
+}
+
+.form-atc-ics-qty-error {
+	border: 1px solid var.$c-error;
+}
+
+
+.form-atc-ics-submit {
+	@extend %ffs-m-font;
+	line-height: 2.3;
+	font-weight: 500;
+
+	@include mx.btn-basic-modifiers($color: var.$c-primary,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: false,
+		$bg-color: var.$bc-primary,
+		$bg-color-focus: false,
+		$bg-color-hover: var.$bc-primary-darker,
+		$bg-color-active: false,
+		$border: none,
+		$width: 170px,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$transition: (background-color 0.2s ease));
+}
+
+.form-atc-ics-submit-icon {
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+	@include mx.svg-fixed-size ($color: false,
+		$width: 20px,
+		$height: 20px,
+		$stroke: var.$c-primary,
+		$fill: false,
+		$display: inline-block);
+}
+
+.form-atc-ics-notif {
+	text-transform: uppercase;
+	@extend %ffs-bcs-dark-xs-font;
+	@extend %base-400;
+	margin: 0 0 1rem;
+	letter-spacing: var.$ls-normal;
+}
+
+.form-atc-ics-notif-error {
+	color: var.$c-error;
+}

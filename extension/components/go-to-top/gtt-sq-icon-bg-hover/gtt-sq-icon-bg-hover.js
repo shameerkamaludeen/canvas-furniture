@@ -6,7 +6,7 @@ export default function addGotoTopEvents() {
 	const gotoTopElem = document.querySelector('.gtt-sq-icon-bg-hover');
 
 	if (typeof (gotoTopElem) == 'undefined' || gotoTopElem == null) {
-		return null;
+		return;
 	}
 	gotoTopElem.addEventListener('click', () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });

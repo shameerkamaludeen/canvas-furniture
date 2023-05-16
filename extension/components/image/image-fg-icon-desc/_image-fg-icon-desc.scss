@@ -1,7 +1,8 @@
 /* || Component - Image foreground icon with description as caption
    ========================================================================== */
 // Features
-// Image height will be auto
+// Foreground icon and description will be visible on hover of the image
+// The foreground will have a transition opacity effect on hover
 
 @use '../../../abstracts/variables' as var;
 @use '../../../abstracts/mixins' as mx;

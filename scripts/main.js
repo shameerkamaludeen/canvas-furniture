@@ -7,6 +7,8 @@ import addDecorTUAnimation from '../extension/components/shape/decor-texture-und
 import addGotoTopEvents from '../extension/components/go-to-top/gtt-sq-icon-bg-hover/gtt-sq-icon-bg-hover.js';
 import addSubscribePEFormEvents from '../extension/components/subscribe/subscribe-para-email-form/subscribe-pe-form.js';
 import addFAQEvents from '../extension/blocks/faq/faq-centered-open-all/faq-centered-open-all.js';
+import addDLIconOpenAllevents from '../extension/components/description-list/dl-icon-open-all/dl-icon-open-all.js';
+import addFormATCEvents from '../extension/components/form/form-atc-ic-stock/form-atc-ic-stock.js';
 
 addHamburgerCloseTBGEvents();
 addNavMenuFCEvents();
@@ -18,3 +20,5 @@ addDecorTUAnimation();
 addGotoTopEvents();
 addSubscribePEFormEvents();
 addFAQEvents();
+addDLIconOpenAllevents();
+addFormATCEvents();
