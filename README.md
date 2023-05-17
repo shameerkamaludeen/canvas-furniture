@@ -18,11 +18,12 @@ This is a website design made with the help of a design inspired by one of the [
 - CSS Grid
 - Mobile-first workflow
 - CSS custom properties
+- Javascript
+- Javascript modules
 
 ## Author
 
 - Github - [Shameer Kamaludeen](https://github.com/shameerkamaludeen)
-- Frontend Mentor - [@shameerkamaludeen](https://www.frontendmentor.io/profile/shameerkamaludeen)
 
 ## Acknowledgments
 
