@@ -1,0 +1,209 @@
+/* || Component - Modal product description list image gallery
+	 ========================================================================== */
+
+// 1. Feature
+// Single product details modal
+// Product details and description
+// Data list for the product description which is stick to top while scrolling 
+// for image gallery
+// Quantity input and add to cart options
+// Responsive image gallery
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+@use '../../../components/form/form-atc-ic-stock/form-atc-ic-stock';
+@use '../../../components/description-list/dl-icon-open-all/dl-icon-open-all';
+@use '../../button/close-btn-transparent-bg';
+@use 'sass:color';
+
+.modal-prd-dl-img-gallery {
+	background-color: color.adjust(var.$c-primary, $alpha: -0.2);
+	z-index: 11;
+	display: none;
+	@extend %position-fixed-cover;
+	align-items: center;
+	justify-content: center
+}
+
+.modal-prd-dl-ig-active {
+	display: flex;
+}
+
+.modal-prd-dl-ig-layout-wr {
+	width: 90%;
+	height: 90vh;
+	background-color: var.$bc-primary;
+	position: relative;
+	overflow-y: scroll;
+
+	@media screen and (min-width: var.$tablet-view) {
+		width: 95%;
+	}
+}
+
+.modal-prd-dl-ig-close-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	.close-btn-transparent-bg {
+		@media screen and (min-width: var.$tablet-view) {
+			margin: 15px;
+		}
+	}
+}
+
+.modal-prd-dl-ig-ctr {
+	padding: 3rem 0;
+
+	@media screen and (min-width: var.$tablet-view) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 36px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		column-gap: 60px;
+	}
+}
+
+.modal-prd-dl-ig-gallery-wr {
+	margin-bottom: 48px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		margin-bottom: initial;
+	}
+}
+
+.modal-prd-dl-ig-img-wr {
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}
+
+.modal-prd-dl-ig-img {
+	@extend %img-icon-cover-center;
+}
+
+.modal-prd-dl-ig-cnt-ctr {
+	@media screen and (min-width: var.$tablet-view) {
+		position: relative;
+		padding-top: 3rem;
+	}
+}
+
+// Content container sticky
+.modal-prd-dl-ig-cc-sticky {
+	@media screen and (min-width: var.$tablet-view) {
+		position: sticky;
+		top: 2rem;
+	}
+}
+
+.modal-prd-dl-ig-tittle {
+	@extend %ffp-cp-l-font;
+	@extend %normal-400;
+	margin: 0 0 1rem;
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xl;
+	}
+}
+
+.modal-prd-dl-ig-price {
+	@extend %ffp-cp-l-font;
+	@extend %normal-600;
+	margin: 0 0 3rem;
+}
+
+// Add to cart component alteration
+.modal-prd-dl-ig-atc {
+	.form-atc-ics-qty-btn {
+		color: var.$c-primary;
+		background-color: var.$bc-secondary;
+
+		&:active {
+			background-color: var.$c-primary;
+			color: var.$bc-primary;
+		}
+	}
+
+	.form-atc-ics-qty {
+		background-color: var.$bc-secondary;
+		color: var.$c-primary;
+	}
+
+	.form-atc-ics-submit {
+		color: var.$bc-primary;
+		background-color: var.$c-primary;
+
+		&:hover {
+			background-color: var.$c-primary-light;
+		}
+	}
+
+	.form-atc-ics-submit-icon {
+		stroke: var.$bc-primary;
+	}
+
+	.form-atc-ics-notif {
+		color: var.$c-primary-light;
+	}
+
+	.form-atc-ics-notif-error {
+		color: var.$c-error;
+	}
+}
+
+.modal-prd-dl-ig-hr {
+	border: none;
+	border-top: 1px solid color.adjust(var.$c-primary, $alpha: -0.8);
+	margin: 0 0 2rem;
+}
+
+// Product description list component alteration
+.modal-prd-dl-ig-product-dl {
+	.dl-ioa-dt-term {
+		color: var.$c-primary
+	}
+
+	.dl-ioa-dt-icon {
+		color: var.$c-primary
+	}
+
+	.dl-ioa-dd-para {
+		color: var.$c-primary;
+	}
+}
+
+// Layout
+// --------
+
+.modal-prd-dl-ig-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.modal-prd-dl-ig-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.modal-prd-dl-ig-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.modal-prd-dl-ig-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.modal-prd-dl-ig-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.modal-prd-dl-ig-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.modal-prd-dl-ig-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

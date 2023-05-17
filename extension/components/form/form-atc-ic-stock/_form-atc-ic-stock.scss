@@ -13,16 +13,18 @@
 @use '../../../base/sitewide';
 
 .form-atc-ic-stock {
-	margin: 0 0 20px;
+	margin: 0 0 16px;
 }
 
 .form-atc-ics-input-ctr {
 	@extend %flex-wrap;
 	gap: 20px 27px;
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
-.form-atc-ics-qty-ctr {}
+.form-atc-ics-qty-ctr {
+	display: flex;
+}
 
 .form-atc-ics-qty-btn {
 	@extend %ffs-xs-font;
@@ -42,7 +44,7 @@
 		$height: false,
 		$border-radius: false,
 		$outline: 2px solid var.$c-lead-outline-light,
-		$outline-offset: false,
+		$outline-offset: -1px,
 		$cursor: pointer,
 		$text-align: center,
 		$content-vh-center: false,
@@ -52,15 +54,23 @@
 
 // button increase
 .form-atc-ics-qty-btn-ic {
-	margin-left: -3px;
 }
 
 // button decrease
 .form-atc-ics-qty-btn-dc {
-	margin-right: -2px;
 }
 
 .form-atc-ics-qty {
+
+	// Chrome, Safari, Edge, Opera
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+
+	//Firefox
+	-moz-appearance: textfield;
+
 	@extend %ffs-bcp-xs-font;
 	line-height: var.$lh-input;
 	font-weight: 500;
@@ -68,10 +78,8 @@
 	width: 44px;
 	text-align: center;
 	border: 1px solid var.$bc-primary-darker;
-	background-color: transparent;
-	margin-left: -2px;
-	margin-right: -2px;
-
+	background-color: var.$c-primary;
+	outline-offset: -1px;
 	&:focus-visible {
 		outline: 2px solid var.$c-lead-outline-light;
 	}
@@ -93,7 +101,7 @@
 		$color-active: false,
 		$bg-color: var.$bc-primary,
 		$bg-color-focus: false,
-		$bg-color-hover: var.$bc-primary-darker,
+		$bg-color-hover: var.$bc-primary-dark,
 		$bg-color-active: false,
 		$border: none,
 		$width: 170px,

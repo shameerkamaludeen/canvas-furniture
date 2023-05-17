@@ -4,6 +4,7 @@
 // 1. Features
 // Product card contains controls like add to cart and quick view over an image along 
 // with name and price at the bottom
+// Quick view option open that product details in a modal
 // 2. Notes:
 // The card background required to set on block that implementing this component
 
@@ -110,6 +111,9 @@
 		$transition: false);
 	padding: 10px;
 }
+
+// Only for the purpose of javascript click event to open modal
+.card-pd-ci-control-btn-qv {}
 
 .card-pd-ci-control-btn-icon {
 	@include mx.svg-fixed-size ($color: false,

@@ -9,6 +9,8 @@ import addSubscribePEFormEvents from '../extension/components/subscribe/subscrib
 import addFAQEvents from '../extension/blocks/faq/faq-centered-open-all/faq-centered-open-all.js';
 import addDLIconOpenAllevents from '../extension/components/description-list/dl-icon-open-all/dl-icon-open-all.js';
 import addFormATCEvents from '../extension/components/form/form-atc-ic-stock/form-atc-ic-stock.js';
+import addCardProductDCIEvents from '../extension/components/card/card-product-dtls-controls-img/card-product-dtls-controls-img.js';
+import addModalProductDIGEvents from '../extension/components/modal/modal-prd-dl-img-gallery/modal-prd-dl-img-gallery.js';
 
 addHamburgerCloseTBGEvents();
 addNavMenuFCEvents();
@@ -22,3 +24,5 @@ addSubscribePEFormEvents();
 addFAQEvents();
 addDLIconOpenAllevents();
 addFormATCEvents();
+addCardProductDCIEvents();
+addModalProductDIGEvents();

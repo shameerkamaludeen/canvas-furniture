@@ -12,7 +12,7 @@
 		$width: 35px,
 		$height: 35px,
 		$border-radius: false,
-		$outline: 2px solid var.$bc-ternary,
+		$outline: 2px solid var.$c-lead-outline-light,
 		$outline-offset: false,
 		$transition: false);
 	padding: 0;
@@ -20,8 +20,8 @@
 
 .close-btn-tbg-icon {
 	@include mx.svg-fixed-size($color: false,
-		$width: 10px,
-		$height: 10px,
-		$stroke: false,
-		$fill: var.$bc-ternary);
+		$width: 24px,
+		$height: 24px,
+		$stroke: var.$c-primary,
+		$fill: false);
 }
