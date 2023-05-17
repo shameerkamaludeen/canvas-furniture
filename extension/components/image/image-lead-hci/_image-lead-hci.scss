@@ -1,0 +1,49 @@
+/* || Component - Image lead hover centered icon
+	 ========================================================================== */
+
+// 1. Features 
+// Image with a foreground lead centered icon with background darker effect 
+// appread on hover on this image
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/sitewide';
+@use 'sass:color';
+
+.image-lead-hci {
+	position: relative;
+	height: 220px;
+
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		height: 270px;
+	}
+}
+
+.image-l-hci-img {
+	@extend %img-icon-cover-center;
+}
+
+.image-l-hci-lead {
+	width: 100%;
+	height: 100%;
+	@extend %flex-v-center-h-center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: color.adjust(hsl(0, 0%, 0%), $alpha: -0.35);
+	opacity: 0;
+	transition: opacity 0.4s ease;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.image-l-hci-lead-icon {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 40px,
+		$height: 40px,
+		$stroke: false,
+		$fill: var.$bc-primary,
+		$display: inline-block);
+}

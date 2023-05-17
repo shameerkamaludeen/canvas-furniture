@@ -1,0 +1,58 @@
+/* || Block - Fixed width centered content
+	 ========================================================================== */
+
+// 1. Features
+// Fixed width layout using our layout base utilities
+// The block is centered using margin auto
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../layout/layout-base';
+@use '../../../components/image/img-lead-fg-centered-cnt/img-lead-fg-centered-cnt';
+
+.fw-centered-cnt {
+	padding: 48px 0;
+}
+
+.fw-cc-tittle {
+	@extend %ffp-cp-l-font;
+	@extend %normal-500;
+	text-align: center;
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xl;
+	}
+}
+
+.fw-cc-para {
+	text-align: center;
+	@extend %ffs-cp-s-font;
+	@extend %normal-400;
+	margin-bottom: 3rem;
+
+	@media screen and (min-width: var.$tablet-view) {
+		padding: 0 48px;
+	}
+}
+
+// Layout
+// -------
+.fw-cc-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.fw-cc-lm-fixed-mpv {
+	@extend %lm-fixed-mpv;
+}
+
+.fw-cc-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.fw-cc-lm-auto-tv {
+	@extend %lm-auto-tv;
+}
+
+.fw-cc-fw-layout-tv {
+	@extend %fw-layout-tv;
+}

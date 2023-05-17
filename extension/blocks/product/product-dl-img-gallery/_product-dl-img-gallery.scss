@@ -1,0 +1,141 @@
+/* || Block - Product data list image gallery
+	 ========================================================================== */
+
+// 1. Feature
+// Single product details
+// Product details and description
+// Data list for the product description which is stick to top while scrolling 
+// for image gallery
+// Quantity input and add to cart options
+// Responsive image gallery
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+@use '../../../components/form/form-atc-ic-stock/form-atc-ic-stock';
+@use '../../../components/description-list/dl-icon-open-all/dl-icon-open-all';
+@use 'sass:color';
+
+.product-dl-img-gallery {
+	background-color: var.$c-primary;
+	padding: 64px 0;
+}
+
+.product-dl-ig-ctr {
+	@media screen and (min-width: var.$tablet-view) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 36px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		column-gap: 60px;
+	}
+}
+
+.product-dl-ig-gallery-wr {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+
+	@media screen and (max-width: (var.$tablet-view - 0.0625em)) {
+		margin-bottom: 48px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.product-dl-ig-img-wr {
+	align-self: stretch;
+}
+
+.product-dl-ig-img {
+	@extend %img-icon-cover-center;
+}
+
+.product-dl-ig-cnt-ctr {
+	@media screen and (max-width: calc(var.$tablet-view - 0.0625em)) {
+		padding: 0 12px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		position: relative;
+	}
+}
+
+// Content container sticky
+.product-dl-ig-cc-sticky {
+	@media screen and (min-width: var.$tablet-view) {
+		position: sticky;
+		top: 2rem;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		top: 6rem;
+	}
+}
+
+.product-dl-ig-tittle {
+	@extend %ffp-bcp-l-font;
+	@extend %normal-400;
+	margin: 0 0 1rem;
+	
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xl;
+	}
+}
+
+.product-dl-ig-price {
+	@extend %ffp-bcp-l-font;
+	@extend %normal-500;
+	margin: 0 0 3rem;
+	
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xl;
+	}
+}
+
+// Add to cart
+.product-dl-ig-atc {}
+
+.product-dl-ig-hr {
+	border: none;
+	border-top: 1px solid color.adjust(var.$bc-primary, $alpha: -0.9);
+	margin: 0 0 2rem;
+}
+
+// Product description list
+.product-dl-ig-product-dl {}
+
+// Layout
+// --------
+
+.product-dl-ig-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.product-dl-ig-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.product-dl-ig-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.product-dl-ig-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.product-dl-ig-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.product-dl-ig-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.product-dl-ig-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

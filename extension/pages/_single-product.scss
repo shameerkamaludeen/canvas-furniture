@@ -1,0 +1,14 @@
+/* || Page - Single product
+	 ========================================================================== */
+
+@use '../blocks/product/product-dl-img-gallery/product-dl-img-gallery';
+@use '../blocks/common/fw-centered-cnt/fw-centered-cnt';
+@use '../blocks/feature/feature-flex-centered-cards/feature-flex-centered-cards';
+
+.product-dl-ig-single-product {
+	margin-bottom: 2.5rem;
+}
+
+.fw-cc-single-product {
+	margin-bottom: 2.5rem;
+}

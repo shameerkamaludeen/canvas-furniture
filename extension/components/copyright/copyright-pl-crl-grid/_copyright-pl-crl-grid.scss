@@ -1,0 +1,110 @@
+/* || Component - Copyright paragraph links and copyright links using grid
+	 ========================================================================== */
+
+// 1. Features
+// Copyright paragraph, paragraph links(attributions), copyright links and 
+// copyright links seperators styles
+// Copyright paragraph and copyright links are in a grid for responsiveness
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../layout/layout-base';
+@use 'sass:color';
+
+.copyright-pl-crl-grid {
+	margin-top: 80px;
+	background-color: var.$bc-secondary;
+	padding: 20px 0;
+}
+
+.cr-pl-crl-grid-ctr {
+	opacity: 0.4;
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.cr-pl-crl-grid-para {
+	@extend %ffs-cp-xs-font;
+	@extend %normal-400;
+	margin: 0.5em 0;
+}
+
+// Attribution
+.cr-pl-crl-grid-para-attr {
+	font-size: var.$fs-xxs;
+}
+
+.cr-pl-crl-grid-para-link {
+	@include mx.link-no-underline ($color: var.$c-primary-dark,
+		$color-visited: var.$c-primary-dark,
+		$color-focus: false,
+		$color-hover: var.$c-primary-light,
+		$color-active: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$cursor: pointer,
+		$transition: (color 0.3s ease));
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// The 'cr-pl-crl-grid-cr' and 'cr-pl-crl-grid-cr-link' seperated for 
+// copyrights seperators ('/' or '|')
+.cr-pl-crl-grid-cr {
+	@extend %ffs-cp-dark-xs-font;
+	@extend %normal-400;
+	margin: 0.5em 0;
+
+	@media screen and (min-width: var.$laptop-view) {
+		text-align: right;
+	}
+}
+
+.cr-pl-crl-grid-cr-link {
+	@include mx.link-border-underline($color: var.$c-primary-dark,
+		$color-visited: var.$c-primary-dark,
+		$color-focus: false,
+		$color-hover: var.$c-primary-light,
+		$color-active: false,
+		$border-bottom: 1.5px solid var.$bc-secondary-darkest,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$transition: (color 0.3s ease, border-bottom-color 0.3s ease));
+}
+
+// Layout
+// -------
+
+.cr-pl-crl-grid-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.cr-pl-crl-grid-lm-fixed-mlv {
+	@extend %lm-fixed-mlv;
+}
+
+.cr-pl-crl-grid-lm-fixed-tv {
+	@extend %lm-fixed-tv;
+}
+
+.cr-pl-crl-grid-lm-fixed-lv {
+	@extend %lm-fixed-lv;
+}
+
+.cr-pl-crl-grid-lm-auto-pcv {
+	@extend %lm-auto-pcv;
+}
+
+.cr-pl-crl-grid-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.cr-pl-crl-grid-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

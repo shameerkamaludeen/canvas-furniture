@@ -1,0 +1,52 @@
+/* || Component - Hamburger close button transparent background
+	 ========================================================================== */
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/utilities';
+@use '../../../base/sitewide';
+
+.hamburger-close-btn-trans-bg {
+	width: 35px;
+	height: 33px;
+
+	@media screen and (max-width: (var.$laptop-view - 0.0625em)) {
+		margin-left: 7px;
+		margin-right: 25px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: none;
+	}
+}
+
+.hc-btn-tbg-button {
+	@include mx.btn-icon-compatible($bg-color: transparent,
+		$border: none,
+		$width: 100%,
+		$height: 100%,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$transition: false);
+	padding: 0;
+}
+
+.hc-btn-tbg-icon {
+	@include mx.svg-fixed-size($color: false,
+		$width: 24px,
+		$height: 24px,
+		$stroke: var.$c-primary,
+		$fill: var.$c-primary);
+
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	stroke-width: 0;
+	display: block;
+	margin: auto;
+}
+
+.hc-btn-tbg-icon-inactive {
+	opacity: 0;
+	@extend %hide-visually;
+}

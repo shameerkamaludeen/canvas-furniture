@@ -1,22 +1,29 @@
-﻿# Avoid accidental upload of the Sketch and Figma design files
-#####################################################
-## Please do not remove lines 5 and 6 - thanks! 🙂 ##
-#####################################################
+﻿# Avoid accidental Sketch file upload 
+###############################################
+## Please do not remove line 5 - thanks! 🙂 ##
+###############################################
 *.sketch
-*.fig
 
-# Avoid accidental XD upload if you convert the design file
-###############################################
-## Please do not remove line 12 - thanks! 🙂 ##
-###############################################
+# Avoid accidental XD or Figma upload if you convert the design file
+#######################################################
+## Please do not remove lines 11 and 12 - thanks! 🙂 ##
+#######################################################
 *.xd
+*.fig
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
-.prettierignore
+
+# Avoid google drive sync helper
+.tmp.driveupload/
+.tmp.driveupload/
 
 # Avoid design images
 design/
 
 # Avoid icons collected while resource gathering
 icons/collection/
+
+# Avoid dynamically modified style and style map
+styles/style.css
+styles/style.css.map

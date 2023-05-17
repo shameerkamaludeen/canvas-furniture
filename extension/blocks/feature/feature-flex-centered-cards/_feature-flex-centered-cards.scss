@@ -1,0 +1,79 @@
+/* || Block - Feature flexible centered cards
+	 ========================================================================== */
+
+// 1. Features
+// list of flexible centered cards with icon
+
+@use '../../../abstracts/variables' as var;
+@use '../../../layout/layout-base';
+@use '../../../components/card/card-center-columnwise-cnt/card-center-columnwise-cnt';
+
+.feature-flex-centered-cards {
+	background-color: var.$bc-neutral;
+}
+
+.feature-fcc-ctr {
+	padding: 81px 0 63px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		padding: 81px 0 68px;
+		display: flex;
+		column-gap: 24px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 101px 0 85px;
+	}
+}
+
+.feature-fcc-card {
+	&:not(:last-child) {
+		margin-bottom: 50px;
+
+		@media screen and (min-width: var.$tablet-view) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.feature-fcc-para {
+	opacity: 0.6;
+}
+
+// Layout
+// ------
+
+// Layout margin
+.feature-fcc-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.feature-fcc-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.feature-fcc-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.feature-fcc-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.feature-fcc-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.feature-fcc-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.feature-fcc-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}
+
+// Layout padding
+
+.feature-fcc-lp-fixed {
+	@extend %lp-fixed;
+}

@@ -1,0 +1,131 @@
+/* || Block - FAQ centered open all
+	 ========================================================================== */
+
+// 1. Features
+// The block is centered after a device width
+// contains plus and minus icon which swap visibility to open and close
+// A border seperated datalists
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/sitewide';
+@use '../../../base/typography';
+@use '../../../layout/layout-base';
+@use '../../../components/shape/decor-texture-underline/decor-texture-underline';
+@use 'sass:color';
+
+.faq-centered-open-all {
+	background-color: var.$bc-secondary;
+	padding: 64px 0;
+}
+
+.faq-coa-tittle {
+	@extend %ffp-bcs-darkest-l-font;
+	text-align: center;
+	margin-bottom: 1.5em;
+	margin-top: 0;
+	@extend %normal-400;
+
+	@media screen and (min-width: var.$mobile-portrait-view) {
+		font-size: var.$fs-xl;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-xxl;
+	}
+}
+
+.faq-coa-decor-tu {
+	&::after {
+		bottom: -1px;
+
+		@media screen and (min-width: var.$mobile-landscape-view) {
+			bottom: 2;
+		}
+	}
+}
+
+.faq-coa-dl {
+	margin: 0;
+}
+
+.faq-coa-td-ctr {
+	padding: 20px 0;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid color.adjust(var.$c-primary, $alpha: -0.9);
+	}
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		padding: 23px 0;
+	}
+}
+
+.faq-coa-dt {
+	@extend %flex-h-sb;
+	cursor: pointer;
+}
+
+.faq-coa-dt-term {
+	margin-top: 0;
+	@extend %ffp-bcs-darkest-m-font;
+	@extend %normal-500;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		font-size: calc(var.$fs-m * 1.12);
+	}
+}
+
+.faq-coa-dt-icon-ctr {
+	flex: 0 0 auto;
+}
+
+.faq-coa-dt-icon {
+	display: none;
+}
+
+.faq-coa-dt-icon-active {
+	display: initial;
+}
+
+.faq-coa-dd {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.3s, top 0.3s;
+	position: relative;
+	top: -10px;
+	margin-left: 0;
+}
+
+.faq-coa-dd-active {
+	top: 0;
+}
+
+.faq-coa-dd-para {
+	padding: 12px 0;
+	@extend %ffs-cp-s-font;
+	@extend %normal-400;
+	opacity: 0.7;
+}
+
+// Layout
+// ------
+
+.faq-coa-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.faq-coa-lm-auto-mpv {
+	@extend %lm-auto-mpv;
+}
+
+.faq-coa-fw-layout-mpv {
+	@extend %fw-layout-mpv;
+}
+
+.faq-coa-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.faq-coa-fw-layout-tv {
+	@extend %fw-layout-tv;
+}

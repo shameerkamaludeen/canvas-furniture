@@ -1,0 +1,19 @@
+/* || Abstracts - Header
+   ========================================================================== */
+
+@use '../abstracts/variables' as var;
+@use 'sass:color';
+
+header {
+	background-color: var.$bc-primary;
+	border-bottom: 1px solid color.adjust(var.$c-alpha, $alpha: -0.9);
+	// For the menu
+	position: relative;
+	top: 0;
+	z-index: 10;
+
+	@media screen and (min-width: var.$laptop-view) {
+		box-shadow: initial;
+		position: sticky;
+	}
+}

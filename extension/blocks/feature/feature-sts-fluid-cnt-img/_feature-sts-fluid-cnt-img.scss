@@ -1,0 +1,74 @@
+/* || Block - Feature side to side fluid content image
+	 ========================================================================== */
+
+// 1. Features
+// Side to side image and content box fluid container
+// Reversible image and content box that work content after image in mobile
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+
+.feature-sts-fluid-cnt-img {}
+
+.feature-sts-fci-flex {
+	@media screen and (min-width: var.$tablet-view) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+// flex row-reverse
+.feature-sts-fci-flex-rr {
+	@media screen and (min-width: var.$tablet-view) {
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+}
+
+.feature-sts-fci-img-wr {
+	height: 400px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		flex: 1 1 50%;
+		height: 420px;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		height: 500px;
+	}
+}
+
+.feature-sts-fci-img {
+	@extend %img-icon-cover-center;
+	display: block;
+}
+
+.feature-sts-fci-cnt-ctr {
+	padding: 48px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		flex: 1 1 50%;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		padding: 80px;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		padding: 120px;
+	}
+}
+
+.feature-sts-fci-tittle {
+	@extend %ffp-bcs-darkest-l-font;
+	@extend %normal-500;
+	margin-top: 0;
+}
+
+.feature-sts-fci-para {
+	@extend %ffs-cp-s-font;
+	@extend %wide-400;
+	margin-bottom: 0;
+}

@@ -1,0 +1,140 @@
+/* || Block - Social single lead gallery grid
+	 ========================================================================== */
+
+// 1. Feature
+// Single social media details like socail icon, follow link and image gallery
+// The elements are placed in a three column grid with center having social 
+// details between the two image gallery
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use 'sass:color';
+@use '../../../components/image/image-lead-hci/image-lead-hci';
+
+.social-single-lead-gallery-grid {
+	background-color: var.$c-primary;
+
+	@media screen and (min-width: var.$tablet-view) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0 16px;
+	}
+
+	grid-column: 1 / 3;
+	grid-row: 1;
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.social-sl-gg-content-wr {
+	text-align: center;
+	padding: 96px 38px 95px;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		padding: 96px 95px 95px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-column: 1 / 3;
+		grid-row: 1;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-column: 2;
+		grid-row: 1;
+		padding: 0 50px 0;
+		margin: auto;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		padding: 0 30px 0;
+	}
+}
+
+.social-sl-gg-svg {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 64px,
+		$height: 64px,
+		$stroke: false,
+		$fill: var.$bc-primary,
+		$display: inline-block);
+}
+
+.social-sl-gg-tittle {
+	margin: 0.65em 0;
+	text-align: center;
+	@extend %ffp-bcp-dark-l-font;
+	@extend %base-400;
+
+	@media screen and (min-width: var.$laptop-view) {
+		font-size: var.$fs-xl;
+	}
+}
+
+.social-sl-gg-decor-tu {
+	&::after {
+		bottom: -4px;
+		background: url(../images/underline_dark.svg) center / 100% auto no-repeat;
+	}
+}
+
+.social-sl-gg-lead {
+	@extend %ffs-bcp-s-font;
+	@extend %base-400;
+	@include mx.link-btn-basic($bg-color: var.$c-primary,
+		$bg-active-color: false,
+		$bg-hover-color: var.$bc-primary,
+		$color-hover: var.$c-primary,
+		$border: 1.5px solid color.adjust(var.$bc-primary, $alpha: -0.75),
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$text-decoration: none,
+		$transition: (background-color 0.3s ease, color 0.3s ease));
+
+	padding: 11px 30px;
+	margin-top: 32px;
+	text-transform: lowercase;
+}
+
+.social-sl-gg-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+}
+
+.social-sl-gg-gallery-left {
+	margin-bottom: 5px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-column: 1;
+		grid-row: 2;
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-column: 1;
+		grid-row: 1;
+	}
+}
+
+.social-sl-gg-gallery-right {
+	@media screen and (min-width: var.$tablet-view) {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-column: 3;
+		grid-row: 1;
+	}
+}

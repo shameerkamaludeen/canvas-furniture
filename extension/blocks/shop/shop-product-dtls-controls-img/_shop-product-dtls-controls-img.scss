@@ -1,0 +1,217 @@
+/* || Block - Shop product details controls image
+	 ========================================================================== */
+
+// 1. Features
+// Section tittle, para and grid of products list
+// Each product contains controls like add to cart and quick view over an image along 
+// with name and price at the bottom
+// Section description and Products are placed in a full width grid and the 
+// description itself one of the grid item
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../layout/layout-base';
+@use '../../../components/card/card-product-dtls-controls-img/card-product-dtls-controls-img';
+
+.shop-product-dtls-controls-img {
+	background-color: var.$bc-ternary;
+	padding: 119px 0 122px;
+
+	@media screen and (min-width: var.$tv-view) {
+		padding: 145px 0 115px;
+	}
+}
+
+.shop-pd-ci-grid-ctr {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 60px 0;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 60px 30px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.shop-pd-ci-desc-ctr {
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		grid-column: 1 / 3;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-column: 1 / 4;
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-column: 1 / 3;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		grid-column: 1;
+	}
+}
+
+.shop-pd-ci-tittle {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	@extend %ffp-cp-xl-font;
+	@extend %base-400;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		margin-top: 0.84em;
+		margin-bottom: 0.84em;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-xxl;
+	}
+
+	@media screen and (min-width: var.$pc-view) {
+		margin-top: 0;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		font-size: var.$fs-xxxl;
+	}
+}
+
+.shop-pd-ci-decor-tu {
+	&::after {
+		bottom: -3px;
+	}
+}
+
+.shop-pd-ci-para {
+	opacity: 0.7;
+	@extend %ffs-cp-s-font;
+	@extend %wide-400;
+}
+
+.shop-pd-ci-lead-wr {
+	margin-top: 23px;
+}
+
+.shop-pd-ci-lead {
+	@extend %ffs-cs-xs-font;
+	@extend %base-400;
+	@include mx.link-btn-basic($bg-color: transparent,
+		$bg-active-color: false,
+		$bg-hover-color: var.$c-primary,
+		$border: 1.5px solid var.$c-secondary-light,
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$text-decoration: none,
+		$transition: (background-color 0.3s ease, color 0.3s ease));
+
+	&:hover {
+		color: var.$bc-primary;
+	}
+
+	padding: 7.5px 22px;
+	margin: 5px;
+}
+
+.shop-pd-ci-card-bg-1 {
+	background: url(../images/shop/light-grey-sofa-2.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/light-grey-sofa-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-2 {
+	background: url(../images/shop/celling-lights-3.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/celling-lights-3-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-3 {
+	background: url(../images/shop/high-stand-chair-4-1.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/high-stand-chair-4.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-4 {
+	background: url(../images/shop/dining-sofa-5.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/dining-sofa-5-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pd-ci-card-bg-5 {
+	background: url(../images/shop/bathroom-cloths-shelves-6.jpg) 20% center / cover no-repeat;
+}
+
+.shop-pd-ci-card-bg-6 {
+	background: url(../images/shop/golden-lamp-7.jpg) 20% center / cover no-repeat;
+}
+
+.shop-pd-ci-card-bg-7 {
+	background: url(../images/shop/white-cuddle-chair-8.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/white-cuddle-chair-8-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+// Layout 
+// -------
+
+.shop-pd-ci-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.shop-pd-ci-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.shop-pd-ci-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.shop-pd-ci-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.shop-pd-ci-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.shop-pd-ci-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.shop-pd-ci-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

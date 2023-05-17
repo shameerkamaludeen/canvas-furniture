@@ -1,0 +1,40 @@
+/* || Component - Search close button transparent background
+	 ========================================================================== */
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/utilities';
+@use '../../../base/sitewide';
+
+.search-close-btn-trans-bg {}
+
+.sc-btn-tbg-button {
+	@include mx.btn-icon-compatible($bg-color: transparent,
+		$border: none,
+		$width: 100%,
+		$height: 100%,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$transition: false,
+		$cursor: pointer);
+}
+
+.sc-btn-tbg-icon {
+	@include mx.svg-fixed-size($color: false,
+		$width: 100%,
+		$height: 100%,
+		$stroke: var.$c-primary,
+		$fill: var.$c-primary);
+
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	stroke-width: 0;
+	display: block;
+	padding: 5px;
+}
+
+.sc-btn-tbg-icon-inactive {
+	opacity: 0;
+	@extend %hide-visually;
+}

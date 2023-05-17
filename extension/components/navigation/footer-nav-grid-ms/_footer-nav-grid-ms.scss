@@ -1,0 +1,123 @@
+/* || Component - Footer navigation grid with menu and subscription form
+	 ========================================================================== */
+
+// 1. Features
+// 5 column grid with the last one larger as to accomodate subscription form
+// Each grid with menu group tittle and menu items with and without icon
+// Well responsive on devices
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/utilities';
+@use '../../../layout/layout-base';
+@use '../../subscribe/subscribe-para-email-form/subscribe-pe-form';
+
+.footer-nav-grid-ms {
+	padding-top: 80px;
+
+	@media screen and (min-width: var.$laptop-view) {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 24px;
+	}
+}
+
+.footer-ng-ms-nav {}
+
+.footer-ng-ms-menu {
+	@extend %ul-no-style;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 36px 10px;
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 24px;
+	}
+}
+
+/* menu group tittle */
+.footer-ng-ms-mg-tittle {
+	@extend %ffp-cp-s-font;
+	@extend %base-600;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-bottom: 26.5px;
+	margin-top: 0;
+}
+
+.footer-ng-ms-submenu {
+	@extend %ul-no-style;
+	margin: 0;
+}
+
+.footer-ng-ms-mi-wr {
+	&:not(:last-child) {
+		margin-bottom: 11px;
+	}
+}
+
+.footer-ng-ms-mi {
+	@extend %ffs-xxs-font;
+	@extend %normal-400;
+	@extend %ws-base-ls-normal;
+	padding: 0 5px;
+	@include mx.link-no-underline ($color: var.$bc-secondary-darkest,
+		$color-visited: var.$bc-secondary-darkest,
+		$color-focus: false,
+		$color-hover: false,
+		$color-active: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$cursor: pointer,
+		$display: inline-block,
+		$transition: (color 0.3s ease));
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer-ng-ms-mi-icon {
+	@include mx.svg-fixed-size ($color: false,
+		$width: 13px,
+		$height: 13px,
+		$stroke: false,
+		$fill: false,
+		$display: inline-block);
+	margin-right: 11px;
+	position: relative;
+	top: 2px;
+}
+
+// Layout
+// ------
+
+.footer-ng-ms-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.footer-ng-ms-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.footer-ng-ms-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.footer-ng-ms-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.footer-ng-ms-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.footer-ng-ms-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.footer-ng-ms-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}

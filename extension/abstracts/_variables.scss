@@ -1,0 +1,129 @@
+/* Abstracts - Variables
+   ========================================================================== */
+
+// 1. Abreviations:
+// msv - Mobile small view
+// mpv - Mobile portrait view
+// mlv - Mobile landscape view
+// tv - Tablet view
+// lv - Laptop view
+// pcv - PC View
+// tvv - TV view
+// lm - Layout margin
+// lp - Layout padding
+// lcp - Layout content padding
+
+@use 'sass:color';
+
+// Background colors
+$bc-primary: hsl(0, 0%, 100%);
+$bc-primary-dark: hsl(0, 0%, 93%);
+$bc-primary-darker: hsl(0, 0%, 60%);
+$bc-primary-darkest: hsl(0, 0%, 40%);
+$bc-secondary: hsl(170, 18%, 93%);
+$bc-secondary-light: hsl(210, 10%, 98%);
+$bc-secondary-dark: hsl(180, 6%, 83%);
+$bc-secondary-darker: hsl(210, 11%, 71%);
+$bc-secondary-darkest: hsl(210, 11%, 15%);
+$bc-ternary: hsl(60, 20%, 94%);
+$bc-ternary-light: hsl(60, 20%, 100%);
+$bc-neutral: hsl(33, 85%, 95%);
+
+// Font colors
+$c-primary: hsl(174, 37%, 15%);
+$c-primary-dark: hsl(174, 37%, 5%);
+$c-primary-light: hsl(174, 23%, 28%);
+$c-secondary: hsl(0, 0%, 20%);
+$c-secondary-light: hsl(0, 0%, 27%);
+$c-secondary-lighter: hsl(0, 0%, 40%);
+$c-secondary-lightest: hsl(0, 0%, 93%);
+$c-ternary: hsl(56, 89%, 49%);
+$c-ternary-light: hsl(45deg 100% 94%);
+
+// Other colors
+$c-error: hsl(0, 100%, 74%);
+$c-lead-outline: hsl(210deg 100% 40%);
+$c-lead-outline-light: hsl(210deg 100% 49% / 60%);
+// Website alpha color
+$c-alpha: black;
+
+// Font family 
+$ff-primary: 'Zilla Slab', serif;
+$ff-secondary: 'Roboto', sans-serif;
+$ff-ternary: 'Montserrat', sans-serif;
+$ff-neutral: 'Nunito Sans', sans-serif;
+
+// Word spacing
+$ws-base: 0.5px;
+$ws-normal: 1.5px;
+$ws-wide: 2.5px;
+
+// Letter spacing
+$ls-base: 0.5px;
+$ls-normal: 1px;
+$ls-wide: 2px;
+
+// Font size
+$fs-xxxl: 2.75rem; // 44px
+$fs-xxl: 2.25rem; // 36px
+$fs-xl: 1.875rem; // 30px
+$fs-l: 1.5rem; // 24px
+$fs-m: 1.125rem; // 18px
+$fs-s: 1rem; // 16px
+$fs-xs: 0.875rem; // 14px
+$fs-xxs: 0.75rem; // 12px
+
+// Line height
+$lh-base: 1.2;
+$lh-normal: 1.5;
+$lh-wide: 1.8;
+$lh-input: 3.2;
+
+// Viewports
+$mobile-small-view: 25em; // 20em(320px) standard
+$mobile-portrait-view: 30em; // 30em(480px) standard
+$mobile-landscape-view: 40em; // 40em(640px) standard
+$tablet-view: 48em; // 48em(768px) standard
+$laptop-view: 64em; // 64em(1024px) standard
+$pc-view: 75em; // 75em(1200px) standard
+$tv-view: 87.5em; // 87.5em(1400px) standard
+
+// Fixed width layout
+$fw-layout: 250px;
+$fw-layout-msv: 300px;
+$fw-layout-mpv: 440px;
+$fw-layout-mlv: 516px;
+$fw-layout-tv: 696px;
+$fw-layout-lv: 936px;
+$fw-layout-pcv: 1116px;
+$fw-layout-tvv: 1296px;
+
+// layout margin fixed
+$lm-fixed: 12px;
+$lm-fixed-msv: 25px;
+$lm-fixed-mpv: 25px;
+$lm-fixed-mlv: 25px;
+$lm-fixed-tv: 35px;
+$lm-fixed-lv: 45px;
+$lm-fixed-pcv: 65px;
+$lm-fixed-tvv: 80px;
+
+// Layout padding fixed
+$lp-fixed: 12px; // 10px;
+$lp-fixed-msv: 25px; // 15px;
+$lp-fixed-mpv: 25px; // 20px;
+$lp-fixed-mlv: 25px; // 30px;
+$lp-fixed-tv: 35px; // 40px;
+$lp-fixed-lv: 45px; // 50px;
+$lp-fixed-pcv: 65px; // 60px;
+$lp-fixed-tvv: 80px; // 80px;
+
+// Layout content padding
+$lcp-fixed: 10px;
+$lcp-fixed-msv: 20px;
+$lcp-fixed-mpv: 30px;
+$lcp-fixed-mlv: 40px;
+$lcp-fixed-tv: 50px;
+$lcp-fixed-lv: 70px;
+$lcp-fixed-pcv: 95px;
+$lcp-fixed-tvv: 120px;

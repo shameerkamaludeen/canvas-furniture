@@ -1,0 +1,46 @@
+/* || Component - Button full width with icon and hover background effect
+	 ========================================================================== */
+
+// 1. Features
+// Full width button/anchor
+// Action with an icon along with it
+// Background effect on hover
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+
+.btn-full-width-icon-hbe {
+	@include mx.link-btn-basic($bg-color: var.$c-primary,
+		$bg-active-color: false,
+		$bg-hover-color: var.$c-secondary-light,
+		$border: none,
+		$width: false,
+		$height: false,
+		$border-radius: false,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: block,
+		$text-decoration: none,
+		$transition: (background-color 0.2s ease-in-out));
+	margin: 0 16px 16px;
+	@extend %base-400;
+	@extend %ffs-bcp-xs-font;
+	text-transform: uppercase;
+	padding: 8px 0;
+}
+
+.btn-fwi-hbe-icon {
+	@include mx.svg-fixed-size ($color: var.$c-secondary-lightest,
+		$width: 18px,
+		$height: 18px,
+		$stroke: false,
+		$fill: var.$c-secondary-lightest);
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}

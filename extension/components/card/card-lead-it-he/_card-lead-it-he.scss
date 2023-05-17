@@ -1,0 +1,58 @@
+/* || Component - Card lead image tittle hover effect
+	 ========================================================================== */
+
+// 1. Features
+// Card is act like lead(link) with image and tittle
+// Hover effect on card
+// Usefule for product card
+
+@use '../../../abstracts/variables' as var;
+@use '../../../abstracts/mixins' as mx;
+@use '../../../base/typography';
+@use '../../../base/sitewide';
+
+.card-lead-it-he {
+	position: relative;
+	height: 340px;
+}
+
+.card-lead-it-he-lead {
+	text-transform: uppercase;
+	@extend %ffp-cp-xs-font;
+	@extend %base-700;
+	@extend %ws-base-ls-normal;
+
+	@include mx.link-img-icon-wr($border: none,
+		$hover-opacity: 0.9,
+		$width: 100%,
+		$height: 100%,
+		$border-radius: 4px,
+		$outline: 2px solid var.$c-lead-outline-light,
+		$outline-offset: false,
+		$cursor: pointer,
+		$text-align: center,
+		$content-vh-center: false,
+		$display: inline-block,
+		$text-decoration: none,
+		$transition: (opacity 0.3s ease));
+}
+
+.card-lead-it-he-lead-img {
+	@extend %img-icon-cover-center;
+}
+
+.card-lead-it-he-tittle {
+	@extend %ffp-cp-xs-font;
+	@extend %base-700;
+	@extend %ws-base-ls-normal;
+	padding: 15px;
+	background-color: var.$bc-primary;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+
+	@media screen and (min-width: var.$tv-view) {
+		padding: 15px 22px;
+	}
+}

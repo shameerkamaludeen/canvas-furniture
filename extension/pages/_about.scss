@@ -1,0 +1,32 @@
+/* || Pages - About us
+	 ========================================================================== */
+
+@use '../blocks/hero/hero-fixed-height-bg-img/hero-fixed-height-bg-img';
+@use '../blocks/feature/feature-flex-centered-cards/feature-flex-centered-cards';
+@use '../blocks/feature/feature-sts-fluid-cnt-img/feature-sts-fluid-cnt-img';
+@use '../blocks/faq/faq-centered-open-all/faq-centered-open-all';
+
+.feature-fcc-about {
+	background-color: hsl(48deg 50% 96%);
+
+	.feature-fcc-card:nth-child(1) {
+		.card-ccc-svg {
+			stroke: rgb(174, 190, 137);
+			fill: rgb(174, 190, 137);
+		}
+	}
+
+	.feature-fcc-card:nth-child(2) {
+		.card-ccc-svg {
+			stroke: rgb(13, 82, 147);
+			fill: rgb(13, 82, 147);
+		}
+	}
+
+	.feature-fcc-card:nth-child(3) {
+		.card-ccc-svg {
+			stroke: rgb(246, 109, 194);
+			fill: rgb(246, 109, 194);
+		}
+	}
+}

@@ -1,0 +1,158 @@
+/* || Block - Shop product grid pagination filter
+	 ========================================================================== */
+
+// 1. Features
+// Products grid
+// Product card component with details, controls and image
+// Pagination, filter and sort componet
+// 2. Notes
+// Pagination, filter and sort components are remaining to develop
+
+@use '../../../abstracts/variables' as var;
+@use '../../../base/typography';
+@use '../../../layout/layout-base';
+@use '../../../components/card/card-product-dtls-controls-img/card-product-dtls-controls-img';
+
+.shop-product-grid-pf {
+	background-color: var.$bc-primary;
+	padding: 55px 0 110px;
+}
+
+.shop-pg-pf-tittle {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	@extend %ffp-cp-xl-font;
+	@extend %base-500;
+
+	@media screen and (min-width: var.$tablet-view) {
+		font-size: var.$fs-xxl;
+	}
+
+	@media screen and (min-width: var.$tv-view) {
+		font-size: var.$fs-xxxl;
+	}
+}
+
+.shop-pg-pf-decor-tu {
+	&::after {
+		bottom: -3px;
+	}
+}
+
+.shop-pg-pf-grid-ctr {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 60px 0;
+
+	@media screen and (min-width: var.$mobile-landscape-view) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 60px 30px;
+	}
+
+	@media screen and (min-width: var.$tablet-view) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (min-width: var.$laptop-view) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.shop-pg-pf-card-bg-1 {
+	background: url(../images/shop/golden-lamp-9.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/golden-lamp-9-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pg-pf-card-bg-2 {
+	background: url(../images/shop/light-grey-sofa-2.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/light-grey-sofa-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pg-pf-card-bg-3 {
+	background: url(../images/shop/celling-lights-3.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/celling-lights-3-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pg-pf-card-bg-4 {
+	background: url(../images/shop/high-stand-chair-4-1.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/high-stand-chair-4.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pg-pf-card-bg-5 {
+	background: url(../images/shop/dining-sofa-5.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/dining-sofa-5-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+.shop-pg-pf-card-bg-6 {
+	background: url(../images/shop/bathroom-cloths-shelves-6.jpg) 20% center / cover no-repeat;
+}
+
+.shop-pg-pf-card-bg-7 {
+	background: url(../images/shop/golden-lamp-7.jpg) 20% center / cover no-repeat;
+}
+
+.shop-pg-pf-card-bg-8 {
+	background: url(../images/shop/white-cuddle-chair-8.jpg) 20% center / cover no-repeat;
+
+	@media screen and (min-width: var.$tablet-view) {
+		&:hover {
+			background: url(../images/shop/white-cuddle-chair-8-1.jpg) center / cover no-repeat;
+		}
+	}
+}
+
+// Layout 
+// -------
+
+.shop-pg-pf-lm-fixed {
+	@extend %lm-fixed;
+}
+
+.shop-pg-pf-lm-auto-mlv {
+	@extend %lm-auto-mlv;
+}
+
+.shop-pg-pf-fw-layout-mlv {
+	@extend %fw-layout-mlv;
+}
+
+.shop-pg-pf-fw-layout-tv {
+	@extend %fw-layout-tv;
+}
+
+.shop-pg-pf-fw-layout-lv {
+	@extend %fw-layout-lv;
+}
+
+.shop-pg-pf-fw-layout-pcv {
+	@extend %fw-layout-pcv;
+}
+
+.shop-pg-pf-fw-layout-tvv {
+	@extend %fw-layout-tvv;
+}
