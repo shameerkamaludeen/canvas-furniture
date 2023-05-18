@@ -7,10 +7,13 @@ export { default as addRowFullWidthTabsEvents } from '../../../components/tab/ro
 export { default as animateCounters } from '../../../components/counter/counters-splitter-tag/counters-splitter-tag.js';
 // animate company image
 export function animateCTCImage() {
-	const companyImg = $('#companyTCImg');
-	if (companyImg.length && !companyImg.hasClass('ctc-img-animate')) {
+	const companyImg = document.getElementById('companyTCImg');
+	if (typeof (companyImg) == 'undefined' || companyImg == null) {
+		return;
+	}
+	if (!companyImg.classList.contains('ctc-img-animate')) {
 		animateOnScroll(companyImg, (elem = companyImg) => {
-			elem.addClass('ctc-img-animate');
+			elem.classList.add('ctc-img-animate');
 		});
 	}
 }

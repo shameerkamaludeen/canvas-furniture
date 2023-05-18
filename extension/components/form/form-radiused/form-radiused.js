@@ -1,16 +1,16 @@
 /* || Component - Form radiused
 	 ========================================================================== */
 
-const contactMFForm = $('#contactMFForm');
+const contactMFForm = document.getElementById('contactMFForm');
 
 export default function addFormRadiusedEvents() {
-	contactMFForm.attr('novalidate', '');
+	contactMFForm.setAttribute('novalidate', '');
 
-	contactMFForm.on('submit', function (event) {
-		if (!contactMFFormValidation($(this))) {
-			const globalErrorMsgElem = $(this).find('.form-rd-global-errormsg');
-			globalErrorMsgElem.addClass('form-rd-g-errormsg-active');
-			globalErrorMsgElem[0].textContent = 'Some error occured, please check and try again.';
+	contactMFForm.addEventListener('submit', function (event) {
+		if (!contactMFFormValidation(this)) {
+			const globalErrorMsgElem = this.querySelector('.form-rd-global-errormsg');
+			globalErrorMsgElem.classList.add('form-rd-g-errormsg-active');
+			globalErrorMsgElem.textContent = 'Some error occured, please check and try again.';
 			event.preventDefault();
 		};
 	});
@@ -19,33 +19,33 @@ export default function addFormRadiusedEvents() {
 function contactMFFormValidation(contactMFFormElem) {
 	let isContactMFFormValid = true;
 	// Name (text)
-	const nameElem = contactMFFormElem.find('#name');
-	if (!nameElem[0].validity.valid) {
-		if (nameElem[0].validity.valueMissing || nameElem.value.trim() === '') {
-			nameElem.next()[0].textContent = 'Name required!';
+	const nameElem = contactMFFormElem.querySelector('#name');
+	if (!nameElem.validity.valid) {
+		if (nameElem.validity.valueMissing || nameElem.value.trim() === '') {
+			nameElem.nextElementSibling.textContent = 'Name required!';
 		}
-		nameElem.next().addClass('form-rd-errormsg-active');
-		nameElem.addClass('form-rd-input-text-error');
+		nameElem.nextElementSibling.classList.add('form-rd-errormsg-active');
+		nameElem.classList.add('form-rd-input-text-error');
 		isContactMFFormValid = false;
 	} else {
-		nameElem.next().removeClass('form-rd-errormsg-active');
-		nameElem.removeClass('form-rd-input-text-error');
+		nameElem.nextElementSibling.classList.remove('form-rd-errormsg-active');
+		nameElem.classList.remove('form-rd-input-text-error');
 	}
 
 	// email (email)
-	const emailElem = contactMFFormElem.find('#email');
-	if (!emailElem[0].validity.valid) {
-		if (emailElem[0].validity.valueMissing || emailElem.value.trim() === '') {
-			emailElem.next()[0].textContent = 'Email required!';
+	const emailElem = contactMFFormElem.querySelector('#email');
+	if (!emailElem.validity.valid) {
+		if (emailElem.validity.valueMissing || emailElem.value.trim() === '') {
+			emailElem.nextElementSibling.textContent = 'Email required!';
 		} else if (emailElem.validity.typeMismatch) {
-			emailElem.next()[0].textContent = 'Email not valid!';
+			emailElem.nextElementSibling.textContent = 'Email not valid!';
 		}
-		emailElem.next().addClass('form-rd-errormsg-active');
-		emailElem.addClass('form-rd-input-email-error');
+		emailElem.nextElementSibling.classList.add('form-rd-errormsg-active');
+		emailElem.classList.add('form-rd-input-email-error');
 		isContactMFFormValid = false;
 	} else {
-		nameElem.next().removeClass('form-rd-errormsg-active');
-		nameElem.removeClass('form-rd-input-email-error');
+		nameElem.nextElementSibling.classList.remove('form-rd-errormsg-active');
+		nameElem.classList.remove('form-rd-input-email-error');
 	}
 
 	return isContactMFFormValid;

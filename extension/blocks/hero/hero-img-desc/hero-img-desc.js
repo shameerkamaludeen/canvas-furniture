@@ -4,10 +4,14 @@
 import { animateOnScroll } from '../../../../scripts/utilities.js'
 
 export default function animateHeroIDImage() {
-	const heroIDImg = $('#heroIDImg');
-	if (heroIDImg.length && !heroIDImg.hasClass('hero-id-img-animate')) {
+	const heroIDImg = document.getElementById('heroIDImg');
+
+	if (typeof (heroIDImg) == 'undefined' || heroIDImg == null) {
+		return;
+	}
+	if (!heroIDImg.classList.contains('hero-id-img-animate')) {
 		animateOnScroll(heroIDImg, (elem = heroIDImg) => {
-			elem.addClass('hero-id-img-animate');
+			elem.classList.add('hero-id-img-animate');
 		});
 	}
 }

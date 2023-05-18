@@ -5,15 +5,16 @@ import { animateOnScroll } from '../../../../scripts/utilities.js';
 
 // animate prices
 export default function animatePrices() {
-	const priceOCCPriceWrElem = $('#priceOCCPriceWr');
-	if (priceOCCPriceWrElem.length) {
-		priceOCCPriceWrElem.find('.price-occ-price').each(function () {
-			const priceElem = $(this);
-			if (!priceElem.hasClass('price-occ-price-animate')) {
-				animateOnScroll(priceElem, (elem = priceElem) => {
-					elem.addClass('price-occ-price-animate');
-				});
-			}
-		});
+	const priceOCCPriceWrElem = document.getElementById('priceOCCPriceWr');
+	if (typeof (priceOCCPriceWrElem) == 'undefined' || priceOCCPriceWrElem == null) {
+		return;
+	}
+	const priceElems = priceOCCPriceWrElem.querySelectorAll('.price-occ-price');
+	for (const priceElem of priceElems) {
+		if (!priceElem.classList.contains('price-occ-price-animate')) {
+			animateOnScroll(priceElem, (elem = priceElem) => {
+				elem.classList.add('price-occ-price-animate');
+			});
+		}
 	}
 }
