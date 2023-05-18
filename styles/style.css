@@ -345,11 +345,6 @@ img {
    ========================================================================== */
 /* || Base - Typography
    ========================================================================== */
-.form-rd-submit-btn {
-  word-spacing: 0.5px;
-  letter-spacing: 0.5px;
-}
-
 .lead-icg-lead, .shop-cti-lead, .card-lead-it-he-lead, .card-lead-it-he-tittle, .hero-lai-tittle, .hero-lai-lead, .cart-fh-obg-cart-tittle, .footer-ng-ms-mi, .lc-tittle {
   word-spacing: 0.5px;
   letter-spacing: 1px;
@@ -404,8 +399,7 @@ img {
   font-family: "Zilla Slab", serif;
 }
 
-.card-lead-it-he-lead, .card-lead-it-he-tittle, .form-rd-label, .form-rd-label-required, .form-rd-input-email,
-.form-rd-input-text, .form-rd-textarea, .cart-fh-obg-cart-tittle {
+.card-lead-it-he-lead, .card-lead-it-he-tittle, .cart-fh-obg-cart-tittle {
   font-size: 0.875rem;
   color: hsl(174deg, 37%, 15%);
   font-family: "Zilla Slab", serif;
@@ -447,12 +441,6 @@ img {
   font-family: "Zilla Slab", serif;
 }
 
-.form-rd-submit-btn {
-  font-size: 0.875rem;
-  color: hsl(0deg, 0%, 100%);
-  font-family: "Zilla Slab", serif;
-}
-
 .contact-al-mg-tittle {
   font-size: 1.875rem;
   color: hsl(210deg, 10%, 98%);
@@ -480,13 +468,6 @@ img {
 .contact-al-mg-addr-tittle {
   font-size: 1.125rem;
   color: hsl(210deg, 10%, 98%);
-  font-family: "Zilla Slab", serif;
-}
-
-.form-rd-errormsg,
-.form-rd-global-errormsg {
-  font-size: 0.875rem;
-  color: hsl(0deg, 100%, 74%);
   font-family: "Zilla Slab", serif;
 }
 
@@ -598,8 +579,7 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
-.hero-fh-bgi-tag, .form-atc-ics-notif, .social-sl-gg-tittle, .social-sl-gg-lead, .lead-icg-tittle, .shop-pd-ci-tittle, .shop-pd-ci-lead, .card-pd-ci-price, .shop-cti-tittle, .why-us-cccc-tittle, .form-rd-label, .form-rd-label-required, .form-rd-input-email,
-.form-rd-input-text, .form-rd-submit-btn, .btn-full-width-icon-hbe, .cart-fh-obg-cart-item-count, .cart-fh-obg-coupon-para, .cart-fh-obg-total, .card-ci-aid-price, .card-ci-aid-action, .card-ci-aid-quantity, .cart-btn-trans-bg-count::after, .nm-fc-mi-ht-link-ssm {
+.hero-fh-bgi-tag, .form-atc-ics-notif, .social-sl-gg-tittle, .social-sl-gg-lead, .lead-icg-tittle, .shop-pd-ci-tittle, .shop-pd-ci-lead, .card-pd-ci-price, .shop-cti-tittle, .why-us-cccc-tittle, .btn-full-width-icon-hbe, .cart-fh-obg-cart-item-count, .cart-fh-obg-coupon-para, .cart-fh-obg-total, .card-ci-aid-price, .card-ci-aid-action, .card-ci-aid-quantity, .cart-btn-trans-bg-count::after, .nm-fc-mi-ht-link-ssm {
   line-height: 1.2;
   font-weight: 400;
 }
@@ -624,8 +604,7 @@ img {
   font-weight: 300;
 }
 
-.fw-cc-para, .img-lf-cc-text, .product-dl-ig-tittle, .contact-ic-sg-tittle, .contact-al-mg-map-ll, .contact-al-mg-tittle, .contact-al-mg-addr-para, .faq-coa-tittle, .faq-coa-dd-para, .modal-prd-dl-ig-tittle, .dl-ioa-dd-para, .card-ccc-para, .hero-lai-tagline, .form-rd-errormsg,
-.form-rd-global-errormsg, .form-rd-textarea, .top-bar-sb-para, .cr-pl-crl-grid-para, .cr-pl-crl-grid-cr, .footer-ng-ms-mi, .btn-half-radiused-se, .form-ess-input-email, .form-ess-input-email::placeholder {
+.fw-cc-para, .img-lf-cc-text, .product-dl-ig-tittle, .contact-ic-sg-tittle, .contact-al-mg-map-ll, .contact-al-mg-tittle, .contact-al-mg-addr-para, .faq-coa-tittle, .faq-coa-dd-para, .modal-prd-dl-ig-tittle, .dl-ioa-dd-para, .card-ccc-para, .hero-lai-tagline, .top-bar-sb-para, .cr-pl-crl-grid-para, .cr-pl-crl-grid-cr, .footer-ng-ms-mi, .btn-half-radiused-se, .form-ess-input-email, .form-ess-input-email::placeholder {
   line-height: 1.5;
   font-weight: 400;
 }
@@ -660,13 +639,13 @@ body {
 
 /* || Abstracts - Utilities
    ========================================================================== */
-.contact-al-mg-vh, .gtt-sq-ibh-inactive, .form-rd-hide-visually, .cart-fh-obg-inactive, .sf-sl-form-inactive, .sc-btn-tbg-icon-inactive, .hc-btn-tbg-icon-inactive, .hide-visually {
+.contact-al-mg-vh, .gtt-sq-ibh-inactive, .cart-fh-obg-inactive, .sf-sl-form-inactive, .sc-btn-tbg-icon-inactive, .hc-btn-tbg-icon-inactive, .hide-visually {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
-.form-rd-ul, .footer-ng-ms-menu, .footer-ng-ms-submenu, .navbar-rcm-wr-ul, .nm-fc-menu-ul {
+.footer-ng-ms-menu, .footer-ng-ms-submenu, .navbar-rcm-wr-ul, .nm-fc-menu-ul {
   padding: 0;
   list-style-type: none;
 }
@@ -2226,78 +2205,6 @@ footer {
 
 /* || Abstracts - Sidebar
    ========================================================================== */
-/* || Component - Form radiused
-   ========================================================================== */
-.form-rd-row-wr:not(:last-child),
-.form-rd-li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.form-rd-errormsg,
-.form-rd-global-errormsg {
-  display: none;
-}
-
-.form-rd-global-errormsg {
-  margin-top: 10px;
-}
-
-.form-rd-errormsg-active,
-.form-rd-g-errormsg-active {
-  display: inline-block;
-}
-
-.form-rd-input-email,
-.form-rd-input-text,
-.form-rd-textarea {
-  padding-left: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 1px solid rgba(24, 52, 50, 0.1);
-  border-radius: 8px;
-}
-
-.form-rd-input-email:focus,
-.form-rd-input-text:focus,
-.form-rd-textarea:focus {
-  outline: 2px solid hsl(170deg, 18%, 93%);
-  box-shadow: 0 5px 32px rgba(234, 240, 239, 0.1);
-}
-
-.form-rd-input-email-error:invalid,
-.form-rd-input-text-error:invalid {
-  border: 1px solid hsl(0deg, 100%, 74%);
-}
-
-.form-rd-textarea {
-  vertical-align: top;
-  height: 165px;
-}
-
-.form-rd-full-width {
-  width: 100%;
-}
-
-.form-rd-block {
-  display: block;
-}
-
-.form-rd-submit-btn {
-  background-color: hsl(170deg, 18%, 93%);
-  border-radius: 200px;
-  cursor: pointer;
-  border: none;
-  padding: 13px 35px;
-  transition: color 0.2s ease, background-color 0.2s ease;
-}
-.form-rd-submit-btn:hover, .form-rd-submit-btn:focus {
-  background-color: hsl(174deg, 37%, 15%);
-  outline: none;
-}
-.form-rd-submit-btn:active {
-  background-color: #171717;
-}
-
 /* || Abstracts - Forms
    ========================================================================== */
 /* || Component - Decor texture underline
@@ -2809,10 +2716,10 @@ footer {
 
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he {
-    animation-name: inline-umy1kh8;
+    animation-name: inline-uasbjwd;
     animation-duration: 1s;
   }
-  @keyframes inline-umy1kh8 {
+  @keyframes inline-uasbjwd {
     from {
       opacity: 0.3;
     }
@@ -2823,10 +2730,10 @@ footer {
 }
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he:hover {
-    animation-name: inline-umy1khn;
+    animation-name: inline-uasbjwu;
     animation-duration: 1s;
   }
-  @keyframes inline-umy1khn {
+  @keyframes inline-uasbjwu {
     from {
       opacity: 0.3;
     }
@@ -4399,11 +4306,11 @@ footer {
   outline: 2px solid hsl(210deg, 100%, 40%);
 }
 .img-lead-fg-centered-cnt:hover {
-  animation-name: inline-umy1ki5;
+  animation-name: inline-uasbjww;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
-@keyframes inline-umy1ki5 {
+@keyframes inline-uasbjww {
   from {
     transform: scale(1);
   }
