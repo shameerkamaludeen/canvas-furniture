@@ -4,32 +4,34 @@
 export default function addNavbarResponsiveRMEvents() {
 
 	// click event for hamburger or close button
-	$('.nm-fs-transparent-bg').on('click', function () {
+	const navMenuTransElem = document.querySelector('.nm-fs-transparent-bg');
+	if (typeof (navMenuTransElem) == 'undefined' || navMenuTransElem == null) return;
+	navMenuTransElem.addEventListener('click', function () {
 
 		// setting transparent background 
-		$(this).toggleClass('nm-fs-tbg-active');
+		this.classList.toggle('nm-fs-tbg-active');
 
 		// activate menu
-		$('.nm-fs-menu').toggleClass('nm-fs-menu-active');
+		document.querySelector('.nm-fs-menu').classList.toggle('nm-fs-menu-active');
 
 		// toggle close and hamburger icon
-		$(this).find('.hc-btn-icon').toggleClass("hc-btn-icon-inactive");
+		this.querySelector('.hc-btn-icon').classList.toggle("hc-btn-icon-inactive");
 
 		// tittle changing based on the button type
-		const hamburgerCloseBtn = $(this).find('.hamburger-close-btn');
-		if (hamburgerCloseBtn.attr('data-buttontype') == 'menu') {
-			hamburgerCloseBtn.attr('data-buttontype', 'close');
-			hamburgerCloseBtn.attr('tittle', 'Close');
+		const hamburgerCloseBtn = this.querySelector('.hamburger-close-btn');
+		if (hamburgerCloseBtn.getAttribute('data-buttontype') == 'menu') {
+			hamburgerCloseBtn.setAttribute('data-buttontype', 'close');
+			hamburgerCloseBtn.setAttribute('tittle', 'Close');
 
 			// solve flex being spread over the other element
-			$(this).parent().toggleClass('nav-menu-fs-active');
+			this.parentElement.classList.toggle('nav-menu-fs-active');
 		} else {
-			hamburgerCloseBtn.attr('data-buttontype', 'menu');
-			hamburgerCloseBtn.attr('tittle', 'Menu');
+			hamburgerCloseBtn.setAttribute('data-buttontype', 'menu');
+			hamburgerCloseBtn.setAttribute('tittle', 'Menu');
 
 			// solve flex being spread over the other element
 			setTimeout(() => {
-				$(this).parent().toggleClass('nav-menu-fs-active');
+				this.parentElement.classList.toggle('nav-menu-fs-active');
 			}, 500);
 		}
 	});

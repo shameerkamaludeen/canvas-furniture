@@ -5,10 +5,13 @@ import { animateOnScroll } from '../../../../scripts/utilities.js';
 
 // animate team gallery
 export default function animateTeamGallery() {
-	const teamDGGalleryElem = $('#teamDGGallery');
-	if (teamDGGalleryElem.length && !teamDGGalleryElem.hasClass('team-dg-gallery-animate')) {
+	const teamDGGalleryElem = document.getElementById('teamDGGallery');
+	if (typeof (teamDGGalleryElem) == 'undefined' || teamDGGalleryElem == null) {
+		return;
+	}
+	if (!teamDGGalleryElem.classList.contains('team-dg-gallery-animate')) {
 		animateOnScroll(teamDGGalleryElem, (elem = teamDGGalleryElem) => {
-			elem.addClass('team-dg-gallery-animate');
+			elem.classList.add('team-dg-gallery-animate');
 		});
 	}
 }
