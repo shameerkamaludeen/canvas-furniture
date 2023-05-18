@@ -2809,10 +2809,10 @@ footer {
 
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he {
-    animation-name: inline-u8v0od7;
+    animation-name: inline-umy1kh8;
     animation-duration: 1s;
   }
-  @keyframes inline-u8v0od7 {
+  @keyframes inline-umy1kh8 {
     from {
       opacity: 0.3;
     }
@@ -2823,10 +2823,10 @@ footer {
 }
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he:hover {
-    animation-name: inline-u8v0odp;
+    animation-name: inline-umy1khn;
     animation-duration: 1s;
   }
-  @keyframes inline-u8v0odp {
+  @keyframes inline-umy1khn {
     from {
       opacity: 0.3;
     }
@@ -4399,11 +4399,11 @@ footer {
   outline: 2px solid hsl(210deg, 100%, 40%);
 }
 .img-lead-fg-centered-cnt:hover {
-  animation-name: inline-u8v0odx;
+  animation-name: inline-umy1ki5;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
-@keyframes inline-u8v0odx {
+@keyframes inline-umy1ki5 {
   from {
     transform: scale(1);
   }
