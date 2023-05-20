@@ -2,11 +2,8 @@
 		 ======================================================================== */
 
 export default function addDecorTUAnimation() {
-	var decorUnderlines = document.querySelectorAll('.decor-texture-underline');
-
-	if (typeof (decorUnderlines) == 'undefined' || decorUnderlines == null) {
-		return;
-	}
+	var decorUnderlines = $('.decor-texture-underline');
+	if (!decorUnderlines.length) return;
 
 	// Animate decor-texture-underline on page load
 	animateDecorTU(decorUnderlines);
@@ -18,12 +15,13 @@ export default function addDecorTUAnimation() {
 }
 
 function animateDecorTU(decorUnderlines) {
-	for (const decorUnderline of decorUnderlines) {
+	decorUnderlines.each(function () {
+		const decorUnderline = $(this);
 		const windowHeight = window.innerHeight;
 		// get distance from the top of the viewport
-		const elementTop = decorUnderline.getBoundingClientRect().top;
+		const elementTop = decorUnderline[0].getBoundingClientRect().top;
 		if (elementTop < windowHeight) {
-			decorUnderline.classList.add('decor-tu-animate');
+			decorUnderline.addClass('decor-tu-animate');
 		}
-	}
+	});
 }

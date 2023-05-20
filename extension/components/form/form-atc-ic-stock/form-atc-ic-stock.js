@@ -2,34 +2,32 @@
 	 ========================================================================== */
 
 export default function addFormATCEvents() {
-	const formATCElem = document.querySelector('.form-atc-ic-stock');
-	if (typeof (formATCElem) == 'undefined' || formATCElem == null) {
-		return;
-	}
-	const qtyElem = formATCElem.querySelector('#qty');
-	const formATCNotifyElem = formATCElem.querySelector(".form-atc-ics-notif");
-	const btnQtyIncreaseElem = formATCElem.querySelector('.form-atc-ics-qty-btn-ic');
-	const btnQtyDecreaseElem = formATCElem.querySelector('.form-atc-ics-qty-btn-dc');
+	const formATCElem = $('.form-atc-ic-stock');
+	if (!formATCElem.length) return;
+	const qtyElem = formATCElem.find('#qty');
+	const formATCNotifyElem = formATCElem.find(".form-atc-ics-notif");
+	const btnQtyIncreaseElem = formATCElem.find('.form-atc-ics-qty-btn-ic');
+	const btnQtyDecreaseElem = formATCElem.find('.form-atc-ics-qty-btn-dc');
 
-	formATCElem.setAttribute('novalidate', '');
+	formATCElem.attr('novalidate', '');
 
 	// Quantity input event
-	qtyElem.addEventListener('input', () => {
+	qtyElem.on('input', () => {
 		qtyValueChangeValidation(qtyElem, formATCNotifyElem);
 	});
 
-	btnQtyIncreaseElem.addEventListener('click', () => {
-		qtyElem.value = (qtyElem.valueAsNumber + 1);
+	btnQtyIncreaseElem.on('click', () => {
+		qtyElem.val(qtyElem[0].valueAsNumber + 1);
 		qtyValueChangeValidation(qtyElem, formATCNotifyElem);
 	});
 
-	btnQtyDecreaseElem.addEventListener('click', () => {
-		qtyElem.value = (qtyElem.valueAsNumber - 1);
+	btnQtyDecreaseElem.on('click', () => {
+		qtyElem.val(qtyElem[0].valueAsNumber - 1);
 		qtyValueChangeValidation(qtyElem, formATCNotifyElem);
 	});
 
 	// Form submit event
-	formATCElem.addEventListener('submit', (event) => {
+	formATCElem.on('submit', (event) => {
 		if (!formATCFormValidation(qtyElem, formATCNotifyElem)) {
 			event.preventDefault();
 		}
@@ -37,12 +35,12 @@ export default function addFormATCEvents() {
 }
 
 function qtyValueChangeValidation(qtyElem, formATCNotifyElem) {
-	if (qtyElem.validity.valid) {
+	if (qtyElem[0].validity.valid) {
 		// Removing validation error and resetting notify message
-		if (qtyElem.classList.contains('form-atc-ics-qty-error')) {
-			qtyElem.classList.remove('form-atc-ics-qty-error');
-			formATCNotifyElem.classList.remove('form-atc-ics-notif-error');
-			formATCNotifyElem.textContent = 'Only 3 stocks available';
+		if (qtyElem.hasClass('form-atc-ics-qty-error')) {
+			qtyElem.removeClass('form-atc-ics-qty-error');
+			formATCNotifyElem.removeClass('form-atc-ics-notif-error');
+			formATCNotifyElem.val('Only 3 stocks available');
 		}
 	} else {
 		checkQtyValidationError(qtyElem, formATCNotifyElem);
@@ -50,7 +48,7 @@ function qtyValueChangeValidation(qtyElem, formATCNotifyElem) {
 }
 
 function formATCFormValidation(qtyElem, formATCNotifyElem) {
-	if (!qtyElem.validity.valid) {
+	if (!qtyElem[0].validity.valid) {
 		checkQtyValidationError(qtyElem, formATCNotifyElem);
 		return false;
 	} else {
@@ -59,18 +57,18 @@ function formATCFormValidation(qtyElem, formATCNotifyElem) {
 }
 
 function checkQtyValidationError(qtyElem, formATCNotifyElem) {
-	qtyElem.classList.add('form-atc-ics-qty-error');
-	if (qtyElem.validity.valueMissing) {
-		formATCNotifyElem.classList.add('form-atc-ics-notif-error');
-		formATCNotifyElem.textContent = 'Please enter the quantity';
-	} else if (qtyElem.validity.rangeOverflow) {
-		formATCNotifyElem.classList.add('form-atc-ics-notif-error');
-		formATCNotifyElem.textContent = 'Oops! stock unavailable';
-	} else if (qtyElem.validity.rangeUnderflow) {
-		formATCNotifyElem.classList.add('form-atc-ics-notif-error');
-		formATCNotifyElem.textContent = 'Wrong quantity!';
+	qtyElem.addClass('form-atc-ics-qty-error');
+	if (qtyElem[0].validity.valueMissing) {
+		formATCNotifyElem.addClass('form-atc-ics-notif-error');
+		formATCNotifyElem.val('Please enter the quantity');
+	} else if (qtyElem[0].validity.rangeOverflow) {
+		formATCNotifyElem.addClass('form-atc-ics-notif-error');
+		formATCNotifyElem.val('Oops! stock unavailable');
+	} else if (qtyElem[0].validity.rangeUnderflow) {
+		formATCNotifyElem.addClass('form-atc-ics-notif-error');
+		formATCNotifyElem.val('Wrong quantity!');
 	} else {
-		formATCNotifyElem.classList.add('form-atc-ics-notif-error');
-		formATCNotifyElem.textContent = 'Oops! something went wrong';
+		formATCNotifyElem.addClass('form-atc-ics-notif-error');
+		formATCNotifyElem.val('Oops! something went wrong');
 	}
 }

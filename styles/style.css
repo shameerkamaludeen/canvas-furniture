@@ -1591,9 +1591,13 @@ header {
   height: 100%;
   border: none;
   outline: none;
+  /* disable chrome autofill background color change */
 }
 .sf-sl-input-search::-webkit-search-cancel-button {
   display: none;
+}
+.sf-sl-input-search:-webkit-autofill, .sf-sl-input-search:-webkit-autofill:hover, .sf-sl-input-search:-webkit-autofill:focus, .sf-sl-input-search:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px hsl(0deg, 0%, 100%) inset !important;
 }
 .sf-sl-input-search::placeholder {
   color: var(--c-secondary);
@@ -2716,10 +2720,10 @@ footer {
 
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he {
-    animation-name: inline-u420ipx;
+    animation-name: inline-uaata69;
     animation-duration: 1s;
   }
-  @keyframes inline-u420ipx {
+  @keyframes inline-uaata69 {
     from {
       opacity: 0.3;
     }
@@ -2730,10 +2734,10 @@ footer {
 }
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he:hover {
-    animation-name: inline-u420iqc;
+    animation-name: inline-uaata71;
     animation-duration: 1s;
   }
-  @keyframes inline-u420iqc {
+  @keyframes inline-uaata71 {
     from {
       opacity: 0.3;
     }
@@ -4306,11 +4310,11 @@ footer {
   outline: 2px solid hsl(210deg, 100%, 40%);
 }
 .img-lead-fg-centered-cnt:hover {
-  animation-name: inline-u420iqd;
+  animation-name: inline-uaata7t;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
-@keyframes inline-u420iqd {
+@keyframes inline-uaata7t {
   from {
     transform: scale(1);
   }

@@ -5,7 +5,7 @@ import addCartBtnClickEvent from '../extension/components/button/cart-btn-trans-
 import addShopingCartCloseEvent from '../extension/blocks/cart/cart-fh-overlay-bg/cart-fh-overlay-bg.js';
 import addDecorTUAnimation from '../extension/components/shape/decor-texture-underline/decor-texture-underline.js';
 import addGotoTopEvents from '../extension/components/go-to-top/gtt-sq-icon-bg-hover/gtt-sq-icon-bg-hover.js';
-import addSubscribePEFormEvents from '../extension/components/subscribe/subscribe-para-email-form/subscribe-pe-form.js';
+import addFormEmailSubscribeEvents from '../extension/components/form/form-email-subscribe-sl/form-email-subscribe-sl.js';
 import addFAQEvents from '../extension/blocks/faq/faq-centered-open-all/faq-centered-open-all.js';
 import addDLIconOpenAllevents from '../extension/components/description-list/dl-icon-open-all/dl-icon-open-all.js';
 import addFormATCEvents from '../extension/components/form/form-atc-ic-stock/form-atc-ic-stock.js';
@@ -20,7 +20,7 @@ addCartBtnClickEvent();
 addShopingCartCloseEvent();
 addDecorTUAnimation();
 addGotoTopEvents();
-addSubscribePEFormEvents();
+addFormEmailSubscribeEvents();
 addFAQEvents();
 addDLIconOpenAllevents();
 addFormATCEvents();

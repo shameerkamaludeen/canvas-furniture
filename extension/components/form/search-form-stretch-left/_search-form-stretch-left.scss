@@ -52,12 +52,22 @@
 		display: none;
 	}
 
+	/* disable chrome autofill background color change */
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-box-shadow: 0 0 0 30px var.$bc-primary inset !important;
+	}
+
 	&::placeholder {
 		color: var(--c-secondary);
 		opacity: 0.8;
 		text-transform: uppercase;
 	}
 }
+
+
 
 // Layout
 //-------

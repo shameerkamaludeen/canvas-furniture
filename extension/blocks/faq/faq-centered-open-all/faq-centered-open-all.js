@@ -1,24 +1,25 @@
 /* || Block - FAQ centered open all
 	 ========================================================================== */
 
+
 export default function addFAQEvents() {
-	const dataTermElems = document.querySelectorAll('.faq-coa-dt');
+	$('.faq-coa-dt').each(function () {
+		const dataTermElem = $(this);
+		dataTermElem.on('click', function () {
+			const iconCtrElem = dataTermElem.find('.faq-coa-dt-icon-ctr');
+			const dataDescElem = dataTermElem.next();
 
-	for (const dataTermElem of dataTermElems) {
-		dataTermElem.addEventListener('click', () => {
-			const iconCtrElem = dataTermElem.querySelector('.faq-coa-dt-icon-ctr');
-			const dataDescElem = dataTermElem.nextElementSibling;
-
-			if (dataDescElem.classList.contains('faq-coa-dd-active')) {
-				dataDescElem.classList.remove('faq-coa-dd-active');
-				dataDescElem.style.removeProperty('max-height');
+			if (dataDescElem.hasClass('faq-coa-dd-active')) {
+				dataDescElem.removeClass('faq-coa-dd-active');
+				dataDescElem.css('max-height', '');
 			} else {
-				dataDescElem.classList.add('faq-coa-dd-active');
-				dataDescElem.style.maxHeight = `${dataDescElem.firstElementChild.offsetHeight + 20}px`;
+				dataDescElem.addClass('faq-coa-dd-active');
+				dataDescElem.css("max-height", `${dataDescElem.find('>:first-child').outerHeight() + 20}px`);
+				// dataDescElem.css("max-height", `${dataDescElem.firstElementChild.offsetHeight + 20}px`);
 			}
 
-			iconCtrElem.firstElementChild.classList.toggle('faq-coa-dt-icon-active');
-			iconCtrElem.lastElementChild.classList.toggle('faq-coa-dt-icon-active');
+			iconCtrElem.find('>:first-child').toggleClass('faq-coa-dt-icon-active');
+			iconCtrElem.find('>:last-child').toggleClass('faq-coa-dt-icon-active');
 		});
-	}
+	});
 }
