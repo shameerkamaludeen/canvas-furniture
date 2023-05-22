@@ -23,7 +23,3 @@ design/
 
 # Avoid icons collected while resource gathering
 icons/collection/
-
-# Avoid dynamically modified style and style map
-styles/style.css
-styles/style.css.map
