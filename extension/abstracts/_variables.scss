@@ -25,8 +25,8 @@ $bc-secondary-light: hsl(210, 10%, 98%);
 $bc-secondary-dark: hsl(180, 6%, 83%);
 $bc-secondary-darker: hsl(210, 11%, 71%);
 $bc-secondary-darkest: hsl(210, 11%, 15%);
-$bc-ternary: hsl(60, 20%, 94%);
-$bc-ternary-light: hsl(60, 20%, 100%);
+$bc-tertiary: hsl(60, 20%, 94%);
+$bc-tertiary-light: hsl(60, 20%, 100%);
 $bc-neutral: hsl(33, 85%, 95%);
 
 // Font colors
@@ -37,8 +37,8 @@ $c-secondary: hsl(0, 0%, 20%);
 $c-secondary-light: hsl(0, 0%, 27%);
 $c-secondary-lighter: hsl(0, 0%, 40%);
 $c-secondary-lightest: hsl(0, 0%, 93%);
-$c-ternary: hsl(56, 89%, 49%);
-$c-ternary-light: hsl(45deg 100% 94%);
+$c-tertiary: hsl(56, 89%, 49%);
+$c-tertiary-light: hsl(45deg 100% 94%);
 
 // Other colors
 $c-error: hsl(0, 100%, 74%);
@@ -50,7 +50,7 @@ $c-alpha: black;
 // Font family 
 $ff-primary: 'Zilla Slab', serif;
 $ff-secondary: 'Roboto', sans-serif;
-$ff-ternary: 'Montserrat', sans-serif;
+$ff-tertiary: 'Montserrat', sans-serif;
 $ff-neutral: 'Nunito Sans', sans-serif;
 
 // Word spacing

@@ -145,42 +145,42 @@
 // || FFT fonts
 
 %fft-xxxl-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-xxxl;
 }
 
 %fft-xxl-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-xxl;
 }
 
 %fft-xl-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-xl;
 }
 
 %fft-l-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-l;
 }
 
 %fft-m-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-m;
 }
 
 %fft-s-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-s;
 }
 
 %fft-xs-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-xs;
 }
 
 %fft-xxs-font {
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 	font-size: var.$fs-xxs;
 }
 
@@ -262,11 +262,11 @@
 	font-family: var.$ff-primary;
 }
 
-// || FFP-CT fonts (ff-primary c-ternary fonts)
+// || FFP-CT fonts (ff-primary c-tertiary fonts)
 
 %ffp-ct-xs-font {
 	font-size: var.$fs-xs;
-	color: var.$c-ternary;
+	color: var.$c-tertiary;
 	font-family: var.$ff-primary;
 }
 
@@ -524,32 +524,32 @@
 	font-family: var.$ff-secondary;
 }
 
-// || FFT-CP fonts (ff-ternary c-primary fonts)
+// || FFT-CP fonts (ff-tertiary c-primary fonts)
 
 %fft-cp-l-font {
 	font-size: var.$fs-l;
 	color: var.$c-primary;
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 }
 
 %fft-cp-s-font {
 	font-size: var.$fs-s;
 	color: var.$c-primary;
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 }
 
 %fft-cs-s-font {
 	font-size: var.$fs-s;
 	color: var.$c-secondary;
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 }
 
-// || FFT-BCP fonts (ff-ternary bc-primary fonts)
+// || FFT-BCP fonts (ff-tertiary bc-primary fonts)
 
 %fft-bcp-xxs-font {
 	font-size: var.$fs-xxs;
 	color: var.$bc-primary;
-	font-family: var.$ff-ternary;
+	font-family: var.$ff-tertiary;
 }
 
 // || FFN-BCS fonts (ff-neutral bc-secondary fonts)
