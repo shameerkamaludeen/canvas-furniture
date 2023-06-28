@@ -14,7 +14,7 @@
 @use '../../../components/icon/icon-social-bg-color/icon-social-bg-color';
 
 .contact-img-cnt-sts-grid {
-	background-color: var.$c-ternary-light;
+	background-color: var.$c-tertiary-light;
 
 	@media screen and (min-width: var.$tablet-view) {
 		display: grid;

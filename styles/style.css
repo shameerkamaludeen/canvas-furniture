@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Abstracts - Variables
    ========================================================================== */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -377,205 +376,205 @@ img {
 
 .hero-fh-bgi-tittle {
   font-size: 2.25rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .shop-pg-pf-tittle, .lead-icg-tittle, .shop-pd-ci-tittle, .shop-cti-tittle, .why-us-cccc-tittle {
   font-size: 1.875rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .fw-cc-tittle, .modal-prd-dl-ig-tittle, .modal-prd-dl-ig-price {
   font-size: 1.5rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .card-pd-ci-tittle, .card-ccc-tittle, .top-bar-sb-para, .footer-ng-ms-mg-tittle, .subscribe-pef-tittle {
   font-size: 1rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .card-lead-it-he-lead, .card-lead-it-he-tittle, .cart-fh-obg-cart-tittle {
   font-size: 0.875rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .sf-sl-input-search {
   font-size: 1.5rem;
-  color: hsl(0deg, 0%, 20%);
+  color: hsl(0, 0%, 20%);
   font-family: "Zilla Slab", serif;
 }
 
 .card-pd-ci-price {
   font-size: 1.125rem;
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
   font-family: "Zilla Slab", serif;
 }
 
 .hero-lai-tittle {
   font-size: 1.875rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-family: "Zilla Slab", serif;
 }
 
 .social-sl-gg-tittle {
   font-size: 1.5rem;
-  color: hsl(0deg, 0%, 93%);
+  color: hsl(0, 0%, 93%);
   font-family: "Zilla Slab", serif;
 }
 
 .product-dl-ig-tittle, .product-dl-ig-price {
   font-size: 1.5rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-family: "Zilla Slab", serif;
 }
 
 .img-lf-cc-text, .dl-ioa-dt-term {
   font-size: 1.125rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-family: "Zilla Slab", serif;
 }
 
 .contact-al-mg-tittle {
   font-size: 1.875rem;
-  color: hsl(210deg, 10%, 98%);
+  color: hsl(210, 10%, 98%);
   font-family: "Zilla Slab", serif;
 }
 
 .contact-ic-sg-tittle {
   font-size: 1.875rem;
-  color: hsl(210deg, 11%, 15%);
+  color: hsl(210, 11%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .faq-coa-tittle, .feature-sts-fci-tittle {
   font-size: 1.5rem;
-  color: hsl(210deg, 11%, 15%);
+  color: hsl(210, 11%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .contact-ic-sg-ci-tittle, .faq-coa-dt-term {
   font-size: 1.125rem;
-  color: hsl(210deg, 11%, 15%);
+  color: hsl(210, 11%, 15%);
   font-family: "Zilla Slab", serif;
 }
 
 .contact-al-mg-addr-tittle {
   font-size: 1.125rem;
-  color: hsl(210deg, 10%, 98%);
+  color: hsl(210, 10%, 98%);
   font-family: "Zilla Slab", serif;
 }
 
 .lc-tittle {
   font-size: 1.5rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Roboto", sans-serif;
 }
 
 .fw-cc-para, .faq-coa-dd-para, .feature-sts-fci-para, .lead-icg-para, .shop-pd-ci-para, .card-ccc-para, .hero-lai-lead {
   font-size: 1rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Roboto", sans-serif;
 }
 
 .hero-fh-bgi-tag, .cart-fh-obg-total, .cr-pl-crl-grid-para, .subscribe-pef-para, .nm-fc-mib-link-mm {
   font-size: 0.875rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Roboto", sans-serif;
 }
 
 .cr-pl-crl-grid-cr {
   font-size: 0.875rem;
-  color: hsl(174deg, 37%, 5%);
+  color: hsl(174, 37%, 5%);
   font-family: "Roboto", sans-serif;
 }
 
 .cart-fh-obg-cart-item-count {
   font-size: 0.75rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   font-family: "Roboto", sans-serif;
 }
 
 .lead-icg-lead, .shop-pd-ci-lead {
   font-size: 0.875rem;
-  color: hsl(0deg, 0%, 20%);
+  color: hsl(0, 0%, 20%);
   font-family: "Roboto", sans-serif;
 }
 
 .shop-cti-lead, .card-ci-aid-tittle {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 20%);
+  color: hsl(0, 0%, 20%);
   font-family: "Roboto", sans-serif;
 }
 
 .card-ci-aid-quantity {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 27%);
+  color: hsl(0, 0%, 27%);
   font-family: "Roboto", sans-serif;
 }
 
 .nm-fc-mi-hbg-link-sm, .nm-fc-mi-ht-link-ssm {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
   font-family: "Roboto", sans-serif;
 }
 
 .dl-ioa-dd-para, .social-sl-gg-lead {
   font-size: 1rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-family: "Roboto", sans-serif;
 }
 
 .form-atc-ics-qty, .btn-full-width-icon-hbe {
   font-size: 0.875rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-family: "Roboto", sans-serif;
 }
 
 .hero-lai-tagline, .cart-btn-trans-bg-count::after {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-family: "Roboto", sans-serif;
 }
 
 .form-ess-input-email::placeholder {
   font-size: 0.875rem;
-  color: hsl(0deg, 0%, 60%);
+  color: hsl(0, 0%, 60%);
   font-family: "Roboto", sans-serif;
 }
 
 .card-ci-aid-price {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 60%);
+  color: hsl(0, 0%, 60%);
   font-family: "Roboto", sans-serif;
 }
 
 .cart-fh-obg-coupon-para {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
   font-family: "Roboto", sans-serif;
 }
 
 .contact-al-mg-map-ll, .contact-al-mg-addr-para {
   font-size: 1rem;
-  color: hsl(210deg, 11%, 71%);
+  color: hsl(210, 11%, 71%);
   font-family: "Roboto", sans-serif;
 }
 
 .form-ess-input-email {
   font-size: 1rem;
-  color: hsl(210deg, 11%, 15%);
+  color: hsl(210, 11%, 15%);
   font-family: "Roboto", sans-serif;
 }
 
 .form-atc-ics-notif {
   font-size: 0.875rem;
-  color: hsl(180deg, 6%, 83%);
+  color: hsl(180, 6%, 83%);
   font-family: "Roboto", sans-serif;
 }
 
@@ -632,7 +631,7 @@ img {
 body {
   font-size: 15px;
   font-family: "Zilla Slab", serif;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
   line-height: 1.5;
   font-weight: 400;
 }
@@ -748,19 +747,19 @@ body {
   cursor: pointer;
 }
 .top-bar-sb-link:link {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 .top-bar-sb-link:visited {
-  color: hsl(0deg, 0%, 20%);
+  color: hsl(0, 0%, 20%);
 }
 .top-bar-sb-link:focus {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .top-bar-sb-link:hover {
-  color: hsl(174deg, 23%, 28%);
+  color: hsl(174, 23%, 28%);
 }
 .top-bar-sb-link:active {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 
 @keyframes wipe-in-down {
@@ -787,251 +786,6 @@ body {
     clip-path: inset(0 0 0 0);
   }
 }
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.slick-list:focus {
-  outline: none;
-}
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.slick-track:before, .slick-track:after {
-  content: "";
-  display: table;
-}
-.slick-track:after {
-  clear: both;
-}
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  display: none;
-}
-[dir=rtl] .slick-slide {
-  float: right;
-}
-.slick-slide img {
-  display: block;
-}
-.slick-slide.slick-loading img {
-  display: none;
-}
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
-
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
-
-/* Icons */
-@font-face {
-  font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Arrows */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0px;
-  font-size: 0px;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  padding: 0;
-  border: none;
-  outline: none;
-}
-.slick-prev:hover, .slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  outline: none;
-  background: transparent;
-  color: transparent;
-}
-.slick-prev:hover:before, .slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 0.25;
-}
-.slick-prev:before,
-.slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  color: white;
-  opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev {
-  left: -25px;
-}
-[dir=rtl] .slick-prev {
-  left: auto;
-  right: -25px;
-}
-.slick-prev:before {
-  content: "←";
-}
-[dir=rtl] .slick-prev:before {
-  content: "→";
-}
-
-.slick-next {
-  right: -25px;
-}
-[dir=rtl] .slick-next {
-  left: -25px;
-  right: auto;
-}
-.slick-next:before {
-  content: "→";
-}
-[dir=rtl] .slick-next:before {
-  content: "←";
-}
-
-/* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-.slick-dots li button {
-  border: 0;
-  background: transparent;
-  display: block;
-  height: 20px;
-  width: 20px;
-  outline: none;
-  line-height: 0px;
-  font-size: 0px;
-  color: transparent;
-  padding: 5px;
-  cursor: pointer;
-}
-.slick-dots li button:hover, .slick-dots li button:focus {
-  outline: none;
-}
-.slick-dots li button:hover:before, .slick-dots li button:focus:before {
-  opacity: 1;
-}
-.slick-dots li button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
-  font-family: "slick";
-  font-size: 6px;
-  line-height: 20px;
-  text-align: center;
-  color: black;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before {
-  color: black;
-  opacity: 0.75;
-}
-
 /* || Layout - Layout base
    ========================================================================== */
 .fw-cc-lm-fixed, .faq-coa-lm-fixed, .hero-fh-bgi-lm-fixed, .shop-pg-pf-lm-fixed, .feature-fcc-lm-fixed, .lead-icg-lm-fixed, .shop-pd-ci-lm-fixed, .shop-cti-lm-fixed, .top-bar-sb-lm-fixed, .cr-pl-crl-grid-lm-fixed, .footer-ng-ms-lm-fixed, .modal-prd-dl-ig-lm-fixed, .product-dl-ig-lm-fixed, .why-us-cccc-lm-fixed, .hero-lai-lm-fixed, .navbar-rcm-lm-fixed, .nm-fc-lm-fixed {
@@ -1158,7 +912,7 @@ body {
 /* || Abstracts - Header
    ========================================================================== */
 header {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   top: 0;
@@ -1198,13 +952,13 @@ header {
   padding: 0;
 }
 .hc-btn-tbg-button:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .hc-btn-tbg-icon {
   width: 24px;
   height: 24px;
-  stroke: hsl(174deg, 37%, 15%);
-  fill: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
+  fill: hsl(174, 37%, 15%);
   display: inline-block;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -1220,7 +974,7 @@ header {
 /* || Component - Nav menu fixed center
 	 =========================================================================== */
 .nm-fc-menu-wr {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   left: 0;
   top: 60px;
   transition: max-height 0.2s cubic-bezier(0.42, 0, 1, 1);
@@ -1243,13 +997,13 @@ header {
 
 @media screen and (max-width: 63.9375em) {
   .nm-fc-mi-border-bottom {
-    border-bottom: 1px solid hsl(0deg, 0%, 93%);
+    border-bottom: 1px solid hsl(0, 0%, 93%);
   }
 }
 
 @media screen and (max-width: 63.9375em) {
   .nm-fc-mi-border-top {
-    border-top: 1px solid hsl(0deg, 0%, 93%);
+    border-top: 1px solid hsl(0, 0%, 93%);
   }
 }
 
@@ -1276,7 +1030,7 @@ header {
   text-decoration: none;
 }
 .nm-fc-mib-link-mm:link {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 .nm-fc-mib-link-mm:active {
   color: #182726;
@@ -1321,7 +1075,7 @@ header {
   text-decoration: none;
 }
 .nm-fc-mi-hbg-link-sm:link {
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
 }
 .nm-fc-mi-hbg-link-sm:active {
   color: #182726;
@@ -1348,7 +1102,7 @@ header {
   text-decoration: none;
 }
 .nm-fc-mi-ht-link-ssm:link {
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
 }
 .nm-fc-mi-ht-link-ssm:active {
   color: #182726;
@@ -1373,7 +1127,7 @@ header {
 
 .nm-fc-mi-li-active {
   font-weight: 700;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 
 @media screen and (max-width: 63.9375em) {
@@ -1401,12 +1155,12 @@ header {
 
 .nm-fc-mi-li-btn-mm {
   font-size: 0.875rem;
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 
 .nm-fc-mi-li-btn-sm {
   font-size: 0.75rem;
-  color: hsl(0deg, 0%, 27%);
+  color: hsl(0, 0%, 27%);
 }
 
 .nm-fc-mi-li-btn i {
@@ -1453,13 +1207,13 @@ header {
     top: 60px;
     left: 0;
     right: 0;
-    background: hsl(0deg, 0%, 100%);
+    background: hsl(0, 0%, 100%);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (min-width: 64em) {
   .nm-fc-dd-fw-columnwise[style^=max-height] {
-    border-top: 1px solid hsl(174deg, 37%, 15%);
+    border-top: 1px solid hsl(174, 37%, 15%);
   }
 }
 @media screen and (min-width: 64em) {
@@ -1490,13 +1244,13 @@ header {
     position: absolute;
     top: 56px;
     left: 0;
-    background: hsl(0deg, 0%, 100%);
+    background: hsl(0, 0%, 100%);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (min-width: 64em) {
   .nm-fc-dd-rowwise[style^=max-height] {
-    border-top: 1px solid hsl(174deg, 37%, 15%);
+    border-top: 1px solid hsl(174, 37%, 15%);
   }
 }
 @media screen and (min-width: 64em) {
@@ -1540,13 +1294,13 @@ header {
   cursor: pointer;
 }
 .sc-btn-tbg-button:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .sc-btn-tbg-icon {
   width: 100%;
   height: 100%;
-  stroke: hsl(174deg, 37%, 15%);
-  fill: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
+  fill: hsl(174, 37%, 15%);
   display: inline-block;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -1648,12 +1402,12 @@ header {
   margin-left: 3px;
 }
 .cart-btn-trans-bg-count:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .cart-btn-trans-bg-count::after {
   position: absolute;
   content: "3";
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
   border-radius: 10px;
   width: 16px;
   height: 16px;
@@ -1666,8 +1420,8 @@ header {
 .cart-btn-tbg-count-icon {
   width: 100%;
   height: 100%;
-  stroke: hsl(174deg, 37%, 15%);
-  fill: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
+  fill: hsl(174, 37%, 15%);
   display: inline-block;
   stroke-width: 0;
   display: block;
@@ -1724,7 +1478,7 @@ header {
 /* || Layout - Main
    ========================================================================== */
 main {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .main-margin-top {
@@ -1759,12 +1513,12 @@ main {
 .btn-half-radiused-se {
   border: none;
   transition: background-color 0.2s ease, color 0.2s ease;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(174deg, 37%, 15%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(174, 37%, 15%);
   cursor: pointer;
 }
 .btn-half-radiused-se:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .btn-hr-se-rd-right {
   border-bottom-left-radius: 0;
@@ -1793,20 +1547,20 @@ main {
 .form-ess-input-email {
   flex: 1;
   line-height: 2.5;
-  border-top: 1px solid hsl(210deg, 11%, 71%);
-  border-left: 1px solid hsl(210deg, 11%, 71%);
-  border-bottom: 1px solid hsl(210deg, 11%, 71%);
+  border-top: 1px solid hsl(210, 11%, 71%);
+  border-left: 1px solid hsl(210, 11%, 71%);
+  border-bottom: 1px solid hsl(210, 11%, 71%);
   border-right: none;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
-  background-color: hsl(60deg, 20%, 94%);
+  background-color: hsl(60, 20%, 94%);
   padding: 0 0.625em;
   outline: none;
 }
 .form-ess-ie-error {
-  border-top: 1px solid hsl(0deg, 100%, 74%);
-  border-left: 1px solid hsl(0deg, 100%, 74%);
-  border-bottom: 1px solid hsl(0deg, 100%, 74%);
+  border-top: 1px solid hsl(0, 100%, 74%);
+  border-left: 1px solid hsl(0, 100%, 74%);
+  border-bottom: 1px solid hsl(0, 100%, 74%);
 }
 
 .form-ess-submit {
@@ -1887,13 +1641,13 @@ main {
   cursor: pointer;
 }
 .footer-ng-ms-mi:link {
-  color: hsl(210deg, 11%, 15%);
+  color: hsl(210, 11%, 15%);
 }
 .footer-ng-ms-mi:visited {
-  color: hsl(210deg, 11%, 15%);
+  color: hsl(210, 11%, 15%);
 }
 .footer-ng-ms-mi:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .footer-ng-ms-mi:hover {
   text-decoration: underline;
@@ -1912,7 +1666,7 @@ main {
 	 ========================================================================== */
 .copyright-pl-crl-grid {
   margin-top: 80px;
-  background-color: hsl(170deg, 18%, 93%);
+  background-color: hsl(170, 18%, 93%);
   padding: 20px 0;
 }
 
@@ -1940,16 +1694,16 @@ main {
   cursor: pointer;
 }
 .cr-pl-crl-grid-para-link:link {
-  color: hsl(174deg, 37%, 5%);
+  color: hsl(174, 37%, 5%);
 }
 .cr-pl-crl-grid-para-link:visited {
-  color: hsl(174deg, 37%, 5%);
+  color: hsl(174, 37%, 5%);
 }
 .cr-pl-crl-grid-para-link:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .cr-pl-crl-grid-para-link:hover {
-  color: hsl(174deg, 23%, 28%);
+  color: hsl(174, 23%, 28%);
 }
 .cr-pl-crl-grid-para-link:hover {
   text-decoration: underline;
@@ -1970,19 +1724,19 @@ main {
   cursor: pointer;
 }
 .cr-pl-crl-grid-cr-link:link {
-  color: hsl(174deg, 37%, 5%);
-  border-bottom: 1.5px solid hsl(210deg, 11%, 15%);
+  color: hsl(174, 37%, 5%);
+  border-bottom: 1.5px solid hsl(210, 11%, 15%);
 }
 .cr-pl-crl-grid-cr-link:visited {
-  color: hsl(174deg, 37%, 5%);
-  border-bottom-color: hsl(174deg, 37%, 5%);
+  color: hsl(174, 37%, 5%);
+  border-bottom-color: hsl(174, 37%, 5%);
 }
 .cr-pl-crl-grid-cr-link:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .cr-pl-crl-grid-cr-link:hover {
-  color: hsl(174deg, 23%, 28%);
-  border-bottom-color: hsl(174deg, 23%, 28%);
+  color: hsl(174, 23%, 28%);
+  border-bottom-color: hsl(174, 23%, 28%);
 }
 /* || Abstracts - Footer
    ========================================================================== */
@@ -1993,7 +1747,7 @@ footer {
 /* || Component - Top bar space between
 	 ========================================================================== */
 .top-bar-space-between {
-  background-color: hsl(170deg, 18%, 93%);
+  background-color: hsl(170, 18%, 93%);
   padding: 14px 0 12px;
 }
 
@@ -2047,16 +1801,16 @@ footer {
   padding: 5px 10px 5px 0;
   border: none;
   background-color: transparent;
-  color: hsl(0deg, 0%, 60%);
+  color: hsl(0, 0%, 60%);
   cursor: pointer;
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 .card-ci-aid-action:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .card-ci-aid-action:hover {
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
 }
 .card-ci-aid-footer {
   text-align: right;
@@ -2070,23 +1824,23 @@ footer {
   text-align: center;
   border: none;
   transition: background-color 0.2s ease-in-out;
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
   cursor: pointer;
   margin: 0 16px 16px;
   text-transform: uppercase;
   padding: 8px 0;
 }
 .btn-full-width-icon-hbe:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .btn-full-width-icon-hbe:hover {
-  background-color: hsl(0deg, 0%, 27%);
+  background-color: hsl(0, 0%, 27%);
 }
 .btn-fwi-hbe-icon {
   width: 18px;
   height: 18px;
-  color: hsl(0deg, 0%, 93%);
-  fill: hsl(0deg, 0%, 93%);
+  color: hsl(0, 0%, 93%);
+  fill: hsl(0, 0%, 93%);
   display: inline-block;
   display: inline-block;
   position: relative;
@@ -2125,7 +1879,7 @@ footer {
 .cart-fh-obg-cart {
   width: 300px;
   height: 100%;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   position: absolute;
   right: -300px;
   transition: right 0.4s ease;
@@ -2136,7 +1890,7 @@ footer {
 }
 
 .cart-fh-obg-cart-header {
-  border-bottom: 1px solid hsl(0deg, 0%, 93%);
+  border-bottom: 1px solid hsl(0, 0%, 93%);
 }
 
 .cart-fh-obg-cart-tittle {
@@ -2149,7 +1903,7 @@ footer {
   padding: 5px 8px;
   margin-left: 3px;
   border-radius: 45px;
-  background-color: hsl(170deg, 18%, 93%);
+  background-color: hsl(170, 18%, 93%);
 }
 
 .cart-fh-obg-cart-body {
@@ -2160,11 +1914,11 @@ footer {
 }
 
 .cart-fh-obg-cart-item:not(:last-child) {
-  border-bottom: 1px solid hsl(0deg, 0%, 93%);
+  border-bottom: 1px solid hsl(0, 0%, 93%);
 }
 
 .cart-fh-obg-coupon-wr {
-  background-color: hsl(170deg, 18%, 93%);
+  background-color: hsl(170, 18%, 93%);
   padding: 8px 16px;
 }
 
@@ -2176,9 +1930,9 @@ footer {
 .cart-fh-obg-coupon-icon {
   width: 16px;
   height: 16px;
-  color: hsl(0deg, 0%, 100%);
-  stroke: hsl(174deg, 37%, 15%);
-  fill: hsl(174deg, 37%, 15%);
+  color: hsl(0, 0%, 100%);
+  stroke: hsl(174, 37%, 15%);
+  fill: hsl(174, 37%, 15%);
   display: inline-block;
   display: inline-block;
   stroke-width: 0;
@@ -2234,7 +1988,7 @@ footer {
 /* || Block - Hero with lead and an absolute image
 	 ========================================================================== */
 .hero-lead-absolute-img {
-  background-image: linear-gradient(to bottom, hsl(174deg, 23%, 28%) 0%, hsl(174deg, 37%, 15%) 90%, hsl(170deg, 18%, 93%) 90%);
+  background-image: linear-gradient(to bottom, hsl(174, 23%, 28%) 0%, hsl(174, 37%, 15%) 90%, hsl(170, 18%, 93%) 90%);
   text-align: center;
 }
 @media screen and (min-width: 75em) {
@@ -2245,7 +1999,7 @@ footer {
 }
 @media screen and (min-width: 87.5em) {
   .hero-lead-absolute-img {
-    background-image: linear-gradient(to bottom, hsl(174deg, 23%, 28%) 0%, hsl(174deg, 37%, 15%) 84%, hsl(170deg, 18%, 93%) 84%);
+    background-image: linear-gradient(to bottom, hsl(174, 23%, 28%) 0%, hsl(174, 37%, 15%) 84%, hsl(170, 18%, 93%) 84%);
   }
 }
 
@@ -2343,7 +2097,7 @@ footer {
   padding: 7px 24px;
 }
 .hero-lai-lead:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .hero-lai-lead:hover {
   background-color: rgba(247, 247, 247, 0.9);
@@ -2351,8 +2105,8 @@ footer {
 .hero-lai-lead-icon {
   width: 20px;
   height: 20px;
-  stroke: hsl(174deg, 37%, 15%);
-  fill: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
+  fill: hsl(174, 37%, 15%);
   display: inline-block;
   position: relative;
   top: 4px;
@@ -2361,7 +2115,7 @@ footer {
 
 .hero-lai-line {
   border: none;
-  border-top: 1px solid hsl(0deg, 0%, 93%);
+  border-top: 1px solid hsl(0, 0%, 93%);
   margin: 0;
   opacity: 0.15;
 }
@@ -2413,8 +2167,8 @@ footer {
 .card-ccc-svg {
   width: 100%;
   height: 100%;
-  stroke: hsl(174deg, 37%, 15%);
-  fill: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
+  fill: hsl(174, 37%, 15%);
   display: inline-block;
   stroke-width: 0;
 }
@@ -2475,7 +2229,7 @@ footer {
 /* || Block - Why us cards center columnwise content
 	 ========================================================================== */
 .why-us-cards-ccc {
-  background-color: hsl(170deg, 18%, 93%);
+  background-color: hsl(170, 18%, 93%);
   padding: 76px 0 100px;
   text-align: center;
 }
@@ -2577,7 +2331,7 @@ footer {
   cursor: pointer;
 }
 .card-lead-it-he-lead:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .card-lead-it-he-lead:hover {
   opacity: 0.9;
@@ -2585,7 +2339,7 @@ footer {
 
 .card-lead-it-he-tittle {
   padding: 15px;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2635,7 +2389,7 @@ footer {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  border: 1.5px solid hsl(0deg, 0%, 93%);
+  border: 1.5px solid hsl(0, 0%, 93%);
   transition: background-color 0.3s ease;
   background-color: transparent;
   cursor: pointer;
@@ -2643,17 +2397,17 @@ footer {
   padding: 9.5px 30px;
 }
 .shop-cti-lead:hover {
-  background-color: hsl(174deg, 37%, 15%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(174, 37%, 15%);
+  color: hsl(0, 0%, 100%);
 }
 .shop-cti-lead:hover .shop-cti-lead-icon {
-  fill: hsl(0deg, 0%, 100%);
+  fill: hsl(0, 0%, 100%);
 }
 
 .shop-cti-lead-icon {
   width: 12px;
   height: 12px;
-  fill: hsl(0deg, 0%, 20%);
+  fill: hsl(0, 0%, 20%);
   display: inline-block;
   position: relative;
   top: 1px;
@@ -2716,10 +2470,10 @@ footer {
 
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he {
-    animation-name: inline-u420ipx;
+    animation-name: inline-unw46va;
     animation-duration: 1s;
   }
-  @keyframes inline-u420ipx {
+  @keyframes inline-unw46va {
     from {
       opacity: 0.3;
     }
@@ -2730,10 +2484,10 @@ footer {
 }
 @media screen and (min-width: 64em) {
   .card-pd-ci-img-bg-he:hover {
-    animation-name: inline-u420iqc;
+    animation-name: inline-unw46vd;
     animation-duration: 1s;
   }
-  @keyframes inline-u420iqc {
+  @keyframes inline-unw46vd {
     from {
       opacity: 0.3;
     }
@@ -2761,17 +2515,17 @@ footer {
   text-align: center;
   border: none;
   border-radius: 5px;
-  background-color: hsl(210deg, 10%, 98%);
+  background-color: hsl(210, 10%, 98%);
   cursor: pointer;
   padding: 10px;
 }
 .card-pd-ci-control-btn:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .card-pd-ci-control-btn-icon {
   width: 20px;
   height: 20px;
-  fill: hsl(0deg, 0%, 20%);
+  fill: hsl(0, 0%, 20%);
   display: block;
 }
 
@@ -2788,7 +2542,7 @@ footer {
 /* || Block - Shop product details controls image
 	 ========================================================================== */
 .shop-product-dtls-controls-img {
-  background-color: hsl(60deg, 20%, 94%);
+  background-color: hsl(60, 20%, 94%);
   padding: 119px 0 122px;
 }
 @media screen and (min-width: 87.5em) {
@@ -2882,7 +2636,7 @@ footer {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  border: 1.5px solid hsl(0deg, 0%, 27%);
+  border: 1.5px solid hsl(0, 0%, 27%);
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: transparent;
   cursor: pointer;
@@ -2890,13 +2644,13 @@ footer {
   margin: 5px;
 }
 .shop-pd-ci-lead:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .shop-pd-ci-lead:hover {
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
 }
 .shop-pd-ci-lead:hover {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .shop-pd-ci-card-bg-1 {
@@ -3026,7 +2780,7 @@ footer {
 .lead-icg-lead {
   text-decoration: none;
   display: inline-block;
-  border: 1.5px solid hsl(0deg, 0%, 93%);
+  border: 1.5px solid hsl(0, 0%, 93%);
   border-radius: 4px;
   transition: background-color 0.2s ease;
   background-color: transparent;
@@ -3035,21 +2789,21 @@ footer {
   text-transform: uppercase;
 }
 .lead-icg-lead:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .lead-icg-lead:hover {
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
 }
 .lead-icg-lead:hover {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 .lead-icg-lead:hover .lead-icg-lead-svg {
-  fill: hsl(0deg, 0%, 100%);
+  fill: hsl(0, 0%, 100%);
 }
 
 .lead-icg-lead-svg {
   width: 16px;
-  fill: hsl(0deg, 0%, 20%);
+  fill: hsl(0, 0%, 20%);
   display: inline-block;
   position: relative;
   top: 3px;
@@ -3059,7 +2813,7 @@ footer {
 /* || Block - Feature flexible centered cards
 	 ========================================================================== */
 .feature-flex-centered-cards {
-  background-color: hsl(33deg, 85%, 95%);
+  background-color: hsl(33, 85%, 95%);
 }
 
 .feature-fcc-ctr {
@@ -3120,14 +2874,14 @@ footer {
 .image-l-hci-lead-icon {
   width: 40px;
   height: 40px;
-  fill: hsl(0deg, 0%, 100%);
+  fill: hsl(0, 0%, 100%);
   display: inline-block;
 }
 
 /* || Block - Social single lead gallery grid
 	 ========================================================================== */
 .social-single-lead-gallery-grid {
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
   grid-column: 1/3;
   grid-row: 1;
 }
@@ -3176,7 +2930,7 @@ footer {
 .social-sl-gg-svg {
   width: 64px;
   height: 64px;
-  fill: hsl(0deg, 0%, 100%);
+  fill: hsl(0, 0%, 100%);
   display: inline-block;
 }
 
@@ -3201,18 +2955,18 @@ footer {
   text-align: center;
   border: 1.5px solid rgba(255, 255, 255, 0.25);
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
   cursor: pointer;
   padding: 11px 30px;
   margin-top: 32px;
   text-transform: lowercase;
 }
 .social-sl-gg-lead:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .social-sl-gg-lead:hover {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(174deg, 37%, 15%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(174, 37%, 15%);
 }
 .social-sl-gg-gallery {
   display: grid;
@@ -3270,20 +3024,20 @@ footer {
   font-weight: 500;
   display: inline-block;
   text-align: center;
-  border: 1px solid hsl(0deg, 0%, 60%);
+  border: 1px solid hsl(0, 0%, 60%);
   width: 44px;
   outline-offset: -1px;
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(174deg, 37%, 15%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(174, 37%, 15%);
   cursor: pointer;
 }
 .form-atc-ics-qty-btn:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .form-atc-ics-qty-btn:active {
-  color: hsl(174deg, 37%, 15%);
-  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(174, 37%, 15%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .form-atc-ics-qty {
@@ -3293,19 +3047,19 @@ footer {
   display: inline-block;
   width: 44px;
   text-align: center;
-  border: 1px solid hsl(0deg, 0%, 60%);
-  background-color: hsl(174deg, 37%, 15%);
+  border: 1px solid hsl(0, 0%, 60%);
+  background-color: hsl(174, 37%, 15%);
   outline-offset: -1px;
 }
 .form-atc-ics-qty::-webkit-outer-spin-button, .form-atc-ics-qty::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 .form-atc-ics-qty:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 
 .form-atc-ics-qty-error {
-  border: 1px solid hsl(0deg, 100%, 74%);
+  border: 1px solid hsl(0, 100%, 74%);
 }
 
 .form-atc-ics-submit {
@@ -3316,15 +3070,15 @@ footer {
   border: none;
   width: 170px;
   transition: background-color 0.2s ease;
-  color: hsl(174deg, 37%, 15%);
-  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(174, 37%, 15%);
+  background-color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
 .form-atc-ics-submit:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .form-atc-ics-submit:hover {
-  background-color: hsl(0deg, 0%, 93%);
+  background-color: hsl(0, 0%, 93%);
 }
 .form-atc-ics-submit-icon {
   position: relative;
@@ -3332,7 +3086,7 @@ footer {
   margin-right: 5px;
   width: 20px;
   height: 20px;
-  stroke: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
   display: inline-block;
 }
 
@@ -3343,7 +3097,7 @@ footer {
 }
 
 .form-atc-ics-notif-error {
-  color: hsl(0deg, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
 
 /* || Component - Description list icon all open
@@ -3374,7 +3128,7 @@ footer {
 
 .dl-ioa-dt-icon {
   display: none;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 0.875rem;
 }
 
@@ -3411,12 +3165,12 @@ footer {
   padding: 0;
 }
 .close-btn-transparent-bg:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .close-btn-tbg-icon {
   width: 24px;
   height: 24px;
-  stroke: hsl(174deg, 37%, 15%);
+  stroke: hsl(174, 37%, 15%);
   display: inline-block;
 }
 
@@ -3437,7 +3191,7 @@ footer {
 .modal-prd-dl-ig-layout-wr {
   width: 90%;
   height: 90vh;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   position: relative;
   overflow-y: scroll;
 }
@@ -3515,32 +3269,32 @@ footer {
 }
 
 .modal-prd-dl-ig-atc .form-atc-ics-qty-btn {
-  color: hsl(174deg, 37%, 15%);
-  background-color: hsl(170deg, 18%, 93%);
+  color: hsl(174, 37%, 15%);
+  background-color: hsl(170, 18%, 93%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-qty-btn:active {
-  background-color: hsl(174deg, 37%, 15%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(174, 37%, 15%);
+  color: hsl(0, 0%, 100%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-qty {
-  background-color: hsl(170deg, 18%, 93%);
-  color: hsl(174deg, 37%, 15%);
+  background-color: hsl(170, 18%, 93%);
+  color: hsl(174, 37%, 15%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-submit {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(174deg, 37%, 15%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(174, 37%, 15%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-submit:hover {
-  background-color: hsl(174deg, 23%, 28%);
+  background-color: hsl(174, 23%, 28%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-submit-icon {
-  stroke: hsl(0deg, 0%, 100%);
+  stroke: hsl(0, 0%, 100%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-notif {
-  color: hsl(174deg, 23%, 28%);
+  color: hsl(174, 23%, 28%);
 }
 .modal-prd-dl-ig-atc .form-atc-ics-notif-error {
-  color: hsl(0deg, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
 
 .modal-prd-dl-ig-hr {
@@ -3550,13 +3304,13 @@ footer {
 }
 
 .modal-prd-dl-ig-product-dl .dl-ioa-dt-term {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 .modal-prd-dl-ig-product-dl .dl-ioa-dt-icon {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 .modal-prd-dl-ig-product-dl .dl-ioa-dd-para {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 
 /* || Component - Go to top square icon background hover
@@ -3582,7 +3336,7 @@ footer {
   height: 100%;
   border-radius: 2px;
   transition: opacity 0.4s ease;
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
   cursor: pointer;
   opacity: 0.7;
   display: block;
@@ -3594,8 +3348,8 @@ footer {
 .gtt-sq-ibh-btn-svg {
   width: 24px;
   height: 24px;
-  color: hsl(174deg, 37%, 15%);
-  fill: hsl(0deg, 0%, 100%);
+  color: hsl(174, 37%, 15%);
+  fill: hsl(0, 0%, 100%);
   display: block;
   margin: auto;
 }
@@ -3610,7 +3364,7 @@ footer {
 /* || Block - Shop product grid pagination filter
 	 ========================================================================== */
 .shop-product-grid-pf {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   padding: 55px 0 110px;
 }
 
@@ -3833,7 +3587,7 @@ footer {
 /* || Block - FAQ centered open all
 	 ========================================================================== */
 .faq-centered-open-all {
-  background-color: hsl(170deg, 18%, 93%);
+  background-color: hsl(170, 18%, 93%);
   padding: 64px 0;
 }
 
@@ -3924,7 +3678,7 @@ footer {
 /* || Pages - About us
 	 ========================================================================== */
 .feature-fcc-about {
-  background-color: hsl(48deg, 50%, 96%);
+  background-color: hsl(48, 50%, 96%);
 }
 .feature-fcc-about .feature-fcc-card:nth-child(1) .card-ccc-svg {
   stroke: rgb(174, 190, 137);
@@ -3942,7 +3696,7 @@ footer {
 /* || Block - Contact address list map grid
 	 ========================================================================== */
 .contact-addr-list-map-grid {
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
 }
 @media screen and (min-width: 48em) {
   .contact-addr-list-map-grid {
@@ -4016,7 +3770,7 @@ footer {
   cursor: pointer;
 }
 .contact-al-mg-addr-lead-ctr:focus-visible {
-  outline: 2px solid hsl(210deg, 100%, 40%);
+  outline: 2px solid hsl(210, 100%, 40%);
 }
 .contact-al-mg-addr-lead-ctr:hover {
   opacity: 0.9;
@@ -4048,38 +3802,38 @@ footer {
   cursor: pointer;
 }
 .icon-sbc-lead:focus-visible {
-  outline: 2px solid hsl(210deg, 100%, 40%);
+  outline: 2px solid hsl(210, 100%, 40%);
 }
 .icon-sbc-lead:hover {
   opacity: 0.7;
 }
 
 .icon-sbc-facebook {
-  background-color: hsl(221deg, 44%, 41%);
+  background-color: hsl(221, 44%, 41%);
 }
 
 .icon-sbc-instagram {
-  background-color: hsl(283deg, 61%, 47%);
+  background-color: hsl(283, 61%, 47%);
 }
 
 .icon-sbc-twitter {
-  background-color: hsl(203deg, 89%, 53%);
+  background-color: hsl(203, 89%, 53%);
 }
 
 .icon-sbc-youtube {
-  background-color: hsl(0deg, 100%, 50%);
+  background-color: hsl(0, 100%, 50%);
 }
 
 .icon-sbc-icon {
   font-size: 14px;
   display: block;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 /* || Block - Contact image content side to side grid
 	 ========================================================================== */
 .contact-img-cnt-sts-grid {
-  background-color: hsl(45deg, 100%, 94%);
+  background-color: hsl(45, 100%, 94%);
 }
 @media screen and (min-width: 48em) {
   .contact-img-cnt-sts-grid {
@@ -4164,13 +3918,13 @@ footer {
   cursor: pointer;
 }
 .contact-ic-sg-ci-lead:link {
-  color: hsl(174deg, 37%, 15%);
+  color: hsl(174, 37%, 15%);
 }
 .contact-ic-sg-ci-lead:focus-visible {
-  outline: 2px solid hsla(210deg, 100%, 49%, 0.6);
+  outline: 2px solid hsla(210, 100%, 49%, 0.6);
 }
 .contact-ic-sg-ci-lead:hover {
-  color: hsl(174deg, 37%, 5%);
+  color: hsl(174, 37%, 5%);
 }
 .contact-ic-sg-si-ctr {
   margin-top: 1rem;
@@ -4207,7 +3961,7 @@ footer {
 /* || Block - Product data list image gallery
 	 ========================================================================== */
 .product-dl-img-gallery {
-  background-color: hsl(174deg, 37%, 15%);
+  background-color: hsl(174, 37%, 15%);
   padding: 64px 0;
 }
 
@@ -4303,14 +4057,14 @@ footer {
   cursor: pointer;
 }
 .img-lead-fg-centered-cnt:focus-visible {
-  outline: 2px solid hsl(210deg, 100%, 40%);
+  outline: 2px solid hsl(210, 100%, 40%);
 }
 .img-lead-fg-centered-cnt:hover {
-  animation-name: inline-u420iqd;
+  animation-name: inline-unw46vr;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
-@keyframes inline-u420iqd {
+@keyframes inline-unw46vr {
   from {
     transform: scale(1);
   }
@@ -4331,7 +4085,7 @@ footer {
   font-size: 2.25rem;
   margin-bottom: 2rem;
   display: block;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 @media screen and (min-width: 48em) {
   .img-lf-cc-icon {
