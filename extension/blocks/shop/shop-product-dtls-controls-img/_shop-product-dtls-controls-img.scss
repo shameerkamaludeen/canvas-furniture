@@ -15,7 +15,7 @@
 @use '../../../components/card/card-product-dtls-controls-img/card-product-dtls-controls-img';
 
 .shop-product-dtls-controls-img {
-	background-color: var.$bc-ternary;
+	background-color: var.$bc-tertiary;
 	padding: 119px 0 122px;
 
 	@media screen and (min-width: var.$tv-view) {
